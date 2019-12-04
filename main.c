@@ -1,6 +1,7 @@
 #include "stm32f10x_lib.h"
 #include"system_func.h"
 #include"lcd.h"
+#include "key_pad.h"
 
 #define BUFSIZE 128
 #define TRUE 1
@@ -10,16 +11,17 @@
 void UART_NVIC_Configuration(void);
 void UART_GPIO_Configuration(void);
 void USART_Configuration(void);
-void Timer_Configuration(int Prescaler, int Period)void EXTI_Configuration(void);
-void GPIO_Setting_Output(u16 GPIO_Pin_n);
-void GPIO_Setting_Input(u16 GPIO_Pin_n);
+void Timer_Configuration(int Prescaler, int Period)
+void EXTI_Interrupt_Configuration(u8 EXTIx_IRQChannel, u32 EXTI_Linex, u8 GPIO_PortSourceGPIOx, u8 GPIO_PinSourcex)
+void GPIO_Setting_Output(u16 GPIO_Pin_n, u16 GPIOx);
+void GPIO_Setting_Input(u16 GPIO_Pin_n, u16 GPIOx);
 int UARTRead(char* buffer);
 void UARTSend(const  char* pucBuffer, int ulCount);
 void Uart_Init_Setting(void);
 void StringCopy(char* destination, char* source, int size);
 void MemCopy(char* destination, char* source, int length );
 void UARTGet(void);
-int RxAvailable(void);
+int UART_RxAvailable(void);
 void Delay(vu32 nCount);
 
 //프로토타입 끝
@@ -34,17 +36,27 @@ int MainLength = 0;
 
 //  타이머 시간 변수
 unsigned char time_10m = 0, time_1m = 0, time_10s = 0, time_1s = 0;
-//
+// 타이머 시간 변수 끝
+
 int main(void)
 {
-
+//// setting for initializing
+	// init stm32
 	Init_STM32F103();
+	// set uart
 	Uart_Init_Setting();
+	// set timer
 	Timer_Configuration(1200, 10000);
-
+	
+//// end initializing
+	
+	// initialzing message 
 	const char start_string1[100] = "Start\n";
 	UARTSend(start_string1, 6);
+	// message end
 
+
+	
 	while (1)
 	{
           if (BufferValid)
@@ -59,14 +71,30 @@ int main(void)
 				  UARTGet();
 			  }
           }
-        }
+    }
         
 }
 
 
-void EXTI_Configuration(void)
+void EXTI_Interrupt_Configuration(u8 EXTIx_IRQChannel, u32 EXTI_Linex, u8 GPIO_PortSourceGPIOx, u8 GPIO_PinSourcex)
 {
 	EXTI_InitTypeDef EXTI_InitStructure;
+	NVIC_InitTypeDef NVIC_InitStructure;
+
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+
+	NVIC_InitStructure.NVIC_IRQChannel = EXTIx_IRQChannel;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init(&NVIC_InitStructure);
+
+	GPIO_EXTILineConfig(GPIO_PortSourceGPIOx, GPIO_PinSourcex);
+	EXTI_InitStructure.EXTI_Line = EXTI_Linex;
+	EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+	EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising;
+	EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+	EXTI_Init(&EXTI_InitStructure);
 
 }
 void Uart_Init_Setting(void)
@@ -80,21 +108,21 @@ void Uart_Init_Setting(void)
 	/* NVIC Configuration */
 	UART_NVIC_Configuration();
 }
-void GPIO_Setting_Output(u16 GPIO_Pin_n)
+void GPIO_Setting_Output(u16 GPIO_Pin_n, u16 GPIOx)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_n;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-	GPIO_Init(GPIOA, &GPIO_InitStructure);
+	GPIO_Init(GPIOx, &GPIO_InitStructure);
 }
-void GPIO_Setting_Input(u16 GPIO_Pin_n)
+void GPIO_Setting_Input(u16 GPIO_Pin_n, u16 GPIOx)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_n;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
-	GPIO_Init(GPIOA, &GPIO_InitStructure);
+	GPIO_Init(GPIOx, &GPIO_InitStructure);
 }
 void UART_GPIO_Configuration(void)
 {
@@ -165,7 +193,7 @@ void UART_NVIC_Configuration(void)
 	NVIC_Init(&NVIC_InitStructure);
 */
 }
-int RxAvailable(void)
+int UART_RxAvailable(void)
 {
 	if (USART_GetFlagStatus(USART1, USART_FLAG_RXNE) != RESET)// 수신 버퍼가 비어있지 않으면 // USART_IT_RXNE ??
 		return TRUE;

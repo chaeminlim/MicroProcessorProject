@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\Chaemin Lim\Desktop\UART_echo\settings\UART_Hello.EMB_FLASH.general.xcl" --backend -f "C:\Users\Chaemin Lim\Desktop\UART_echo\settings\UART_Hello.EMB_FLASH.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\Chaemin Lim\Desktop\MicroProcessorProject\settings\UART_Hello.EMB_FLASH.general.xcl" --backend -f "C:\Users\Chaemin Lim\Desktop\MicroProcessorProject\settings\UART_Hello.EMB_FLASH.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\Chaemin Lim\Desktop\UART_echo\settings\UART_Hello.EMB_FLASH.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Chaemin Lim\Desktop\UART_echo\settings\UART_Hello.EMB_FLASH.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\Chaemin Lim\Desktop\MicroProcessorProject\settings\UART_Hello.EMB_FLASH.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Chaemin Lim\Desktop\MicroProcessorProject\settings\UART_Hello.EMB_FLASH.driver.xcl" 
 
 @echo off 
 :end

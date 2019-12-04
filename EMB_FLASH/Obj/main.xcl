@@ -1,34 +1,34 @@
-"C:\Users\Chaemin Lim\Desktop\UART_echo\main.c"
+"C:\Users\Chaemin Lim\Desktop\MicroProcessorProject\main.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -MD
 -MF
-C:\Users\Chaemin Lim\Desktop\UART_echo\EMB_FLASH\Obj\main.pbi.dep
+C:\Users\Chaemin Lim\Desktop\MicroProcessorProject\EMB_FLASH\Obj\main.pbi.dep
 -o
 main.pbi
 -I
-C:\Users\Chaemin Lim\Desktop\UART_echo
+C:\Users\Chaemin Lim\Desktop\MicroProcessorProject
 -I
-C:\Users\Chaemin Lim\Desktop\UART_echo
+C:\Users\Chaemin Lim\Desktop\MicroProcessorProject
 -I
-C:\Users\Chaemin Lim\Desktop\UART_echo\config
+C:\Users\Chaemin Lim\Desktop\MicroProcessorProject\config
 -I
-C:\Users\Chaemin Lim\Desktop\UART_echo\board
+C:\Users\Chaemin Lim\Desktop\MicroProcessorProject\board
 -I
-C:\Users\Chaemin Lim\Desktop\UART_echo\Library\inc
+C:\Users\Chaemin Lim\Desktop\MicroProcessorProject\Library\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c
 -I
-C:\Users\Chaemin Lim\Desktop\UART_echo
+C:\Users\Chaemin Lim\Desktop\MicroProcessorProject
 -I
-C:\Users\Chaemin Lim\Desktop\UART_echo\config
+C:\Users\Chaemin Lim\Desktop\MicroProcessorProject\config
 -I
-C:\Users\Chaemin Lim\Desktop\UART_echo\board
+C:\Users\Chaemin Lim\Desktop\MicroProcessorProject\board
 -I
-C:\Users\Chaemin Lim\Desktop\UART_echo\Library\inc
+C:\Users\Chaemin Lim\Desktop\MicroProcessorProject\Library\inc
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
