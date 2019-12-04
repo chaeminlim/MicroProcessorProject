@@ -1,0 +1,15 @@
+lcd.pbi: C:\Users\Chaemin\ Lim\Desktop\UART_echo\lcd.c \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc\stm32f10x_lib.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc/stm32f10x_map.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\stm32f10x_conf.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc\stm32f10x_type.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc/stm32f10x_type.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc/cortexm3_macro.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc/stm32f10x_exti.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc/stm32f10x_flash.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc/stm32f10x_gpio.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc/stm32f10x_nvic.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc/stm32f10x_rcc.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc/stm32f10x_usart.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo/lcd.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo/lcdconf.h

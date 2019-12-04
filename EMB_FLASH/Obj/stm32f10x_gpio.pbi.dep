@@ -1,0 +1,9 @@
+stm32f10x_gpio.pbi: \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\src\stm32f10x_gpio.c \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc\stm32f10x_gpio.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc/stm32f10x_map.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\stm32f10x_conf.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc\stm32f10x_type.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc/stm32f10x_type.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc/cortexm3_macro.h \
+  C:\Users\Chaemin\ Lim\Desktop\UART_echo\Library\inc\stm32f10x_rcc.h

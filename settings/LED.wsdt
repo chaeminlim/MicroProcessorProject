@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>LED/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>253</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>916</ColumnWidth1><ColumnWidth2>244</ColumnWidth2><ColumnWidth3>61</ColumnWidth3></Build>
+      <TerminalIO/>
+    </Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-11644-27183</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>LED</ExpandedNode><ExpandedNode>LED/config</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-14843-27532</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>D:\Project\Cotext-M3\STM32_exam_Ver.5.xx\1.LED\stm32f10x_conf.h</Filename><XPos>0</XPos><YPos>99</YPos><SelStart>4303</SelStart><SelEnd>4303</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Project\Cotext-M3\STM32_exam_Ver.5.xx\1.LED\stm32f10x_it.c</Filename><XPos>0</XPos><YPos>449</YPos><SelStart>16734</SelStart><SelEnd>16734</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Project\Cotext-M3\STM32_exam_Ver.5.xx\1.LED\System_func.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>174</SelStart><SelEnd>174</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Project\Cotext-M3\STM32_exam_Ver.5.xx\1.LED\Library\src\stm32f10x_rcc.c</Filename><XPos>0</XPos><YPos>125</YPos><SelStart>6097</SelStart><SelEnd>6097</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>D:\Project\Cotext-M3\STM32_exam_Ver.5.xx\1.LED\main.c</Filename><XPos>0</XPos><YPos>117</YPos><SelStart>3848</SelStart><SelEnd>3910</SelEnd></Tab><ActiveTab>4</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01388eb0><key>iaridepm.enu1</key></Toolbar-01388eb0></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>679</Bottom><Right>327</Right><x>-2</x><y>-2</y><xscreen>176</xscreen><yscreen>206</yscreen><sizeHorzCX>156444</sizeHorzCX><sizeHorzCY>221983</sizeHorzCY><sizeVertCX>292444</sizeVertCX><sizeVertCY>733836</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>204</Bottom><Right>1127</Right><x>-2</x><y>-2</y><xscreen>1129</xscreen><yscreen>206</yscreen><sizeHorzCX>1003556</sizeHorzCX><sizeHorzCY>221983</sizeHorzCY><sizeVertCX>156444</sizeVertCX><sizeVertCY>221983</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

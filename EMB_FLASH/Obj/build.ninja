@@ -1,0 +1,42 @@
+#Generating source browse information for project UART_Hello
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build System_func.pbi : index System_func.xcl
+build stm32f10x_flash.pbi : index stm32f10x_flash.xcl
+build stm32f10x_gpio.pbi : index stm32f10x_gpio.xcl
+build stm32f10x_lib.pbi : index stm32f10x_lib.xcl
+build stm32f10x_nvic.pbi : index stm32f10x_nvic.xcl
+build stm32f10x_rcc.pbi : index stm32f10x_rcc.xcl
+build stm32f10x_usart.pbi : index stm32f10x_usart.xcl
+build stm32f10x_it.pbi : index stm32f10x_it.xcl
+build stm32f10x_vector.pbi : index stm32f10x_vector.xcl
+build key_pad.pbi : index key_pad.xcl
+build lcd.pbi : index lcd.xcl
+build main.pbi : index main.xcl
+build UART_Hello_part0.pbi : link System_func.pbi stm32f10x_flash.pbi stm32f10x_gpio.pbi
+build UART_Hello_part1.pbi : link stm32f10x_lib.pbi stm32f10x_nvic.pbi stm32f10x_rcc.pbi
+build UART_Hello_part2.pbi : link stm32f10x_usart.pbi stm32f10x_it.pbi stm32f10x_vector.pbi
+build UART_Hello_part3.pbi : link key_pad.pbi lcd.pbi main.pbi
+build UART_Hello.pbd : link UART_Hello_part0.pbi UART_Hello_part1.pbi UART_Hello_part2.pbi UART_Hello_part3.pbi
+build UART_Hello.pbw : browsedata UART_Hello.pbd
+
+
