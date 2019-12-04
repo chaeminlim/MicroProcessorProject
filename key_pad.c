@@ -20,7 +20,7 @@ void Init_keypad(void){
 
 
 
-int GetButtonInput(void) 
+int GetKeypadInput(void) 
 {
 	//ROW_PORT	=	ROW_1;
 	GPIO_ResetBits(ROW_PORT, ROW_KEY);

@@ -28,7 +28,7 @@
 #define COLUMN_MASK  (KEY_1 | KEY_2|KEY_3)
 
 void Init_keypad(void);
-int GetButtonInput(void);
+int GetKeypadInput(void);
 
 #endif
 

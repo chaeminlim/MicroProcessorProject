@@ -29668,30 +29668,30 @@
     "scope": null
   },
   {
-    "ID": "c:@F@GetButtonInput",
+    "ID": "c:@F@GetKeypadInput",
     "What": "Function",
     "defdec": "Dec",
-    "display": "int GetButtonInput(void)",
+    "display": "int GetKeypadInput(void)",
     "location": {
       "column": "5",
       "line": "31",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
     },
-    "name": "GetButtonInput",
+    "name": "GetKeypadInput",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@GetButtonInput",
+    "ID": "c:@F@GetKeypadInput",
     "What": "Function",
     "defdec": "Dec",
-    "display": "int GetButtonInput(void)",
+    "display": "int GetKeypadInput(void)",
     "location": {
       "column": "5",
       "line": "31",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
     },
-    "name": "GetButtonInput",
+    "name": "GetKeypadInput",
     "origin": "user_include",
     "scope": null
   },
@@ -29724,16 +29724,16 @@
     "scope": null
   },
   {
-    "ID": "c:@F@GetButtonInput",
+    "ID": "c:@F@GetKeypadInput",
     "What": "Function",
     "defdec": "Def",
-    "display": "int GetButtonInput(void)",
+    "display": "int GetKeypadInput(void)",
     "location": {
       "column": "5",
       "line": "23",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
     },
-    "name": "GetButtonInput",
+    "name": "GetKeypadInput",
     "origin": "project_file",
     "scope": null
   },

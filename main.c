@@ -49,10 +49,10 @@ int main(void)
 	UART_Send(start_string1, 6);
 	// message end
 
-        // test code
+        // keypad test code
         while(1)
         {
-          int keypadinput = GetButtonInput();
+          int keypadinput = GetKeypadInput();
           if(keypadinput != -1)
           {
             
@@ -62,8 +62,10 @@ int main(void)
           }
           
         }
-	// test code end
-	while (1)
+	// keypad test code end
+	
+        //  uart test code
+        while (1)
 	{
           if (BufferValid)
           {
@@ -77,7 +79,8 @@ int main(void)
 				  UART_Get();
 			  }
           }
-    }
+        }
+        //  uart test code end
         
 }
 
