@@ -6,33 +6,36 @@
 #define TRUE 1
 #define FALSE 0
 
-void NVIC_Configuration(void);
-void GPIO_Configuration(void);
+// 프로토타입 선언
+void UART_NVIC_Configuration(void);
+void UART_GPIO_Configuration(void);
 void USART_Configuration(void);
 void EXTI_Configuration(void);
 void GPIO_Setting_Output(u16 GPIO_Pin_n);
 void GPIO_Setting_Input(u16 GPIO_Pin_n);
-
-//void USART1_IRQHandler(void);
 int UARTRead(char* buffer);
 void UARTSend(const  char* pucBuffer, int ulCount);
-void usart_rxtx(void);
+void Uart_Init_Setting(void);
 void StringCopy(char* destination, char* source, int size);
 void MemCopy(char* destination, char* source, int length );
 void UARTGet(void);
 int RxAvailable(void);
-//
+//프로토타입 끝
+
+// uart 통신을 위한 버퍼 및 변수들
 char MainBuffer[BUFSIZE];
 char ReceiveBuffer[BUFSIZE];
 int BufferValid = 0;
 int ReceiveLength = 0;
 int MainLength = 0;
+// uart 변수 끝
+
 
 int main(void)
 {
 
 	Init_STM32F103();
-	usart_rxtx();
+	Uart_Init_Setting();
 
 	const char start_string1[100] = "Start\n";
 	UARTSend(start_string1, 6);
@@ -63,16 +66,16 @@ void EXTI_Configuration(void)
 }
 
 
-void usart_rxtx(void)
+void Uart_Init_Setting(void)
 {
 	/* Enable USART1 and GPIOA clock */
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1 | RCC_APB2Periph_GPIOA, ENABLE);
 	/* Configure the GPIOs */
-	GPIO_Configuration();
+	UART_GPIO_Configuration();
 	/* Configure the USART1 */
 	USART_Configuration();
 	/* NVIC Configuration */
-   	NVIC_Configuration();
+	UART_NVIC_Configuration();
 }
 
 void GPIO_Setting_Output(u16 GPIO_Pin_n)
@@ -96,7 +99,7 @@ void GPIO_Setting_Input(u16 GPIO_Pin_n)
 * Function Name  : GPIO_Configuration
 * Description    : Configures the different GPIO ports
 *******************************************************************************/
-void GPIO_Configuration(void)
+void UART_GPIO_Configuration(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 
@@ -135,7 +138,7 @@ void USART_Configuration(void)
 	// USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
 }
 
-void NVIC_Configuration(void) 
+void UART_NVIC_Configuration(void)
 {
 /*
 	NVIC_InitTypeDef NVIC_InitStructure;
