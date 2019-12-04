@@ -57,7 +57,7 @@ int UART_RxAvailable(void)
 	else
 		return FALSE;
 }
-void UARTSend(const char* pucBuffer, int ulCount)
+void UART_Send(const char* pucBuffer, int ulCount)
 {
 	while (ulCount--)
 	{
@@ -65,7 +65,14 @@ void UARTSend(const char* pucBuffer, int ulCount)
 		USART_SendData(USART1, (char)* pucBuffer++);
 	}
 }
-void UARTGet(void)
+
+void UART_Send_Char(u8 c)
+{
+  USART_SendData(USART1, c);
+  while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET);
+}
+
+void UART_Get(void)
 {
 	char rx = (char)USART_ReceiveData(USART1);
 	if ((rx == '\r') || (rx == '\n'))

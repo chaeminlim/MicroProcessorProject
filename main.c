@@ -14,7 +14,7 @@ void EXTI_Interrupt_Configuration(u8 EXTIx_IRQChannel, u32 EXTI_Linex, u8 GPIO_P
 void GPIO_Setting_Output(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
 void GPIO_Setting_Input(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
 void Delay(vu32 nCount);
-
+char NumToChar(int num);
 //프로토타입 끝
 
 // uart 통신을 위한 버퍼 및 변수들
@@ -37,29 +37,44 @@ int main(void)
 	// set uart
 	Uart_Init_Setting();
 	// set timer
-	//Timer_Configuration(1200, 10000);
+        Timer_Configuration(1200, 10000);
+	// set keypad
+        Init_keypad();
+
 	
 //// end initializing
 	
 	// initialzing message 
 	const char start_string1[100] = "Start\n";
-	UARTSend(start_string1, 6);
+	UART_Send(start_string1, 6);
 	// message end
 
+        // test code
+        while(1)
+        {
+          int keypadinput = GetButtonInput();
+          if(keypadinput != -1)
+          {
+            
+            UART_Send_Char(NumToChar(keypadinput));
+            delay_ms(1000);
 
-	
+          }
+          
+        }
+	// test code end
 	while (1)
 	{
           if (BufferValid)
           {
-            UARTSend(MainBuffer, MainLength);
+            UART_Send(MainBuffer, MainLength);
             BufferValid = 0;
           }
           else
           {
 			  if (UART_RxAvailable())
 			  {
-				  UARTGet();
+				  UART_Get();
 			  }
           }
     }
@@ -132,6 +147,11 @@ void Delay(vu32 nCount)
 {
 	for (; nCount != 0; nCount--);
 }
+char NumToChar(int num)
+{
+  return num + 0x30; 
+}
+
 
 /*
 void USART1_IRQHandler(void)

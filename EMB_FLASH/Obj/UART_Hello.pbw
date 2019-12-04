@@ -27960,972 +27960,6 @@
     "scope": null
   },
   {
-    "ID": "c:@F@NMIException",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void NMIException(void)",
-    "location": {
-      "column": "6",
-      "line": "40",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "NMIException",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@HardFaultException",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void HardFaultException(void)",
-    "location": {
-      "column": "6",
-      "line": "51",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "HardFaultException",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@MemManageException",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void MemManageException(void)",
-    "location": {
-      "column": "6",
-      "line": "66",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "MemManageException",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@BusFaultException",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void BusFaultException(void)",
-    "location": {
-      "column": "6",
-      "line": "81",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "BusFaultException",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UsageFaultException",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void UsageFaultException(void)",
-    "location": {
-      "column": "6",
-      "line": "96",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "UsageFaultException",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DebugMonitor",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void DebugMonitor(void)",
-    "location": {
-      "column": "6",
-      "line": "111",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "DebugMonitor",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SVCHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SVCHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "122",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "SVCHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PendSVC",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void PendSVC(void)",
-    "location": {
-      "column": "6",
-      "line": "133",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "PendSVC",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SysTickHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SysTickHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "144",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "SysTickHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@WWDG_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void WWDG_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "155",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "WWDG_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PVD_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void PVD_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "166",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "PVD_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TAMPER_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TAMPER_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "177",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "TAMPER_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@RTC_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void RTC_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "188",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "RTC_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@FLASH_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void FLASH_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "199",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "FLASH_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@RCC_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void RCC_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "210",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "RCC_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI0_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void EXTI0_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "221",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "EXTI0_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI1_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void EXTI1_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "232",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "EXTI1_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI2_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void EXTI2_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "243",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "EXTI2_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI3_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void EXTI3_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "254",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "EXTI3_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI4_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void EXTI4_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "265",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "EXTI4_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DMAChannel1_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void DMAChannel1_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "276",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "DMAChannel1_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DMAChannel2_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void DMAChannel2_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "287",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "DMAChannel2_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DMAChannel3_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void DMAChannel3_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "298",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "DMAChannel3_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DMAChannel4_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void DMAChannel4_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "309",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "DMAChannel4_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DMAChannel5_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void DMAChannel5_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "320",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "DMAChannel5_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DMAChannel6_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void DMAChannel6_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "331",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "DMAChannel6_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DMAChannel7_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void DMAChannel7_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "342",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "DMAChannel7_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ADC_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void ADC_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "353",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "ADC_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@USB_HP_CAN_TX_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void USB_HP_CAN_TX_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "365",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "USB_HP_CAN_TX_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@USB_LP_CAN_RX0_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void USB_LP_CAN_RX0_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "377",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "USB_LP_CAN_RX0_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@CAN_RX1_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void CAN_RX1_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "388",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "CAN_RX1_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@CAN_SCE_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void CAN_SCE_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "399",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "CAN_SCE_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI9_5_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void EXTI9_5_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "410",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "EXTI9_5_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TIM1_BRK_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TIM1_BRK_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "421",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "TIM1_BRK_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TIM1_UP_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TIM1_UP_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "433",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "TIM1_UP_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TIM1_TRG_COM_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TIM1_TRG_COM_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "446",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "TIM1_TRG_COM_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TIM1_CC_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TIM1_CC_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "457",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "TIM1_CC_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@time_10m",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "time_10m",
-    "location": {
-      "column": "22",
-      "line": "470",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "time_10m",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@time_1m",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "time_1m",
-    "location": {
-      "column": "32",
-      "line": "470",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "time_1m",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@time_10s",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "time_10s",
-    "location": {
-      "column": "41",
-      "line": "470",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "time_10s",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@time_1s",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "time_1s",
-    "location": {
-      "column": "51",
-      "line": "470",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "time_1s",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TIM2_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TIM2_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "473",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "TIM2_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TIM3_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TIM3_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "505",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "TIM3_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TIM4_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TIM4_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "516",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "TIM4_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@I2C1_EV_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void I2C1_EV_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "527",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "I2C1_EV_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@I2C1_ER_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void I2C1_ER_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "538",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "I2C1_ER_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@I2C2_EV_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void I2C2_EV_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "549",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "I2C2_EV_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@I2C2_ER_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void I2C2_ER_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "560",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "I2C2_ER_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI1_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI1_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "571",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "SPI1_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SPI2_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SPI2_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "582",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "SPI2_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@USART1_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void USART1_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "593",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "USART1_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@USART2_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void USART2_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "660",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "USART2_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@USART3_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void USART3_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "671",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "USART3_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EXTI15_10_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void EXTI15_10_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "682",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "EXTI15_10_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@RTCAlarm_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void RTCAlarm_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "693",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "RTCAlarm_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@USBWakeUp_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void USBWakeUp_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "704",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "USBWakeUp_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@cnt",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "cnt",
-    "location": {
-      "column": "4",
-      "line": "3",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "cnt",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@pass",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "pass",
-    "location": {
-      "column": "4",
-      "line": "4",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "pass",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@_loop",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "_loop",
-    "location": {
-      "column": "4",
-      "line": "5",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "_loop",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@PASSWD",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "PASSWD",
-    "location": {
-      "column": "4",
-      "line": "7",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "PASSWD",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@init_keypad",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void init_keypad(void)",
-    "location": {
-      "column": "6",
-      "line": "11",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "init_keypad",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.c@124@F@init_keypad@GPIO_InitStructure",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "GPIO_InitStructure",
-    "location": {
-      "column": "20",
-      "line": "13",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "GPIO_InitStructure",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@back_pass",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void back_pass(void)",
-    "location": {
-      "column": "6",
-      "line": "39",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "back_pass",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@reset_check",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void reset_check(void)",
-    "location": {
-      "column": "6",
-      "line": "53",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "reset_check",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@passcheck",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void passcheck(u8)",
-    "location": {
-      "column": "6",
-      "line": "71",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "passcheck",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@get_passwd",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "u8 get_passwd(void)",
-    "location": {
-      "column": "4",
-      "line": "110",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "get_passwd",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@passwd_check",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "u8 passwd_check(u8 *)",
-    "location": {
-      "column": "4",
-      "line": "175",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "passwd_check",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.c@3686@F@passwd_check@_error",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "_error",
-    "location": {
-      "column": "5",
-      "line": "176",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "_error",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.c@3705@F@passwd_check@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "5",
-      "line": "178",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:stm32f10x_it.h@1056@macro@__STM32F10x_IT_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -30396,6 +29430,1098 @@
     "scope": null
   },
   {
+    "ID": "c:key_pad.h@29@macro@KEY_PAD_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "KEY_PAD_H",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "KEY_PAD_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@107@macro@ROW_PORT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_PORT",
+    "location": {
+      "column": "9",
+      "line": "9",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_PORT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@131@macro@ROW_DDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_DDR",
+    "location": {
+      "column": "9",
+      "line": "10",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_DDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@173@macro@ROW_MASK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_MASK",
+    "location": {
+      "column": "9",
+      "line": "11",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_MASK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@200@macro@ROW_1",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_1",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_1",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@226@macro@ROW_2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_2",
+    "location": {
+      "column": "9",
+      "line": "14",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_2",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@252@macro@ROW_3",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_3",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_3",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@278@macro@ROW_4",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_4",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_4",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@306@macro@ROW_KEY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_KEY",
+    "location": {
+      "column": "9",
+      "line": "18",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_KEY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@357@macro@COLUMN_PORT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "COLUMN_PORT",
+    "location": {
+      "column": "9",
+      "line": "20",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "COLUMN_PORT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@388@macro@COLUMN_DDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "COLUMN_DDR",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "COLUMN_DDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@449@macro@KEY_1",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "KEY_1",
+    "location": {
+      "column": "9",
+      "line": "24",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "KEY_1",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@477@macro@KEY_2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "KEY_2",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "KEY_2",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@503@macro@KEY_3",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "KEY_3",
+    "location": {
+      "column": "9",
+      "line": "26",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "KEY_3",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@531@macro@COLUMN_MASK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "COLUMN_MASK",
+    "location": {
+      "column": "9",
+      "line": "28",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "COLUMN_MASK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Init_keypad",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Init_keypad(void)",
+    "location": {
+      "column": "6",
+      "line": "30",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "Init_keypad",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Init_keypad",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Init_keypad(void)",
+    "location": {
+      "column": "6",
+      "line": "30",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "Init_keypad",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GetButtonInput",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int GetButtonInput(void)",
+    "location": {
+      "column": "5",
+      "line": "31",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "GetButtonInput",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GetButtonInput",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int GetButtonInput(void)",
+    "location": {
+      "column": "5",
+      "line": "31",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "GetButtonInput",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Init_keypad",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void Init_keypad(void)",
+    "location": {
+      "column": "6",
+      "line": "3",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
+    },
+    "name": "Init_keypad",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.c@54@F@Init_keypad@GPIO_InitStructure",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "GPIO_InitStructure",
+    "location": {
+      "column": "20",
+      "line": "5",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
+    },
+    "name": "GPIO_InitStructure",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GetButtonInput",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int GetButtonInput(void)",
+    "location": {
+      "column": "5",
+      "line": "23",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
+    },
+    "name": "GetButtonInput",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@NMIException",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void NMIException(void)",
+    "location": {
+      "column": "6",
+      "line": "40",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "NMIException",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@HardFaultException",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void HardFaultException(void)",
+    "location": {
+      "column": "6",
+      "line": "51",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "HardFaultException",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@MemManageException",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void MemManageException(void)",
+    "location": {
+      "column": "6",
+      "line": "66",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "MemManageException",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@BusFaultException",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void BusFaultException(void)",
+    "location": {
+      "column": "6",
+      "line": "81",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "BusFaultException",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UsageFaultException",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void UsageFaultException(void)",
+    "location": {
+      "column": "6",
+      "line": "96",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "UsageFaultException",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DebugMonitor",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void DebugMonitor(void)",
+    "location": {
+      "column": "6",
+      "line": "111",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "DebugMonitor",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SVCHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SVCHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "122",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "SVCHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PendSVC",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void PendSVC(void)",
+    "location": {
+      "column": "6",
+      "line": "133",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "PendSVC",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysTickHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SysTickHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "144",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "SysTickHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@WWDG_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void WWDG_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "155",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "WWDG_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PVD_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void PVD_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "166",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "PVD_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TAMPER_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TAMPER_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "177",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "TAMPER_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@RTC_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void RTC_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "188",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "RTC_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@FLASH_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void FLASH_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "199",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "FLASH_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@RCC_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void RCC_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "210",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "RCC_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI0_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI0_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "221",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "EXTI0_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI1_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI1_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "232",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "EXTI1_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI2_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI2_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "243",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "EXTI2_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI3_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI3_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "254",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "EXTI3_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI4_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI4_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "265",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "EXTI4_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DMAChannel1_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void DMAChannel1_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "276",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "DMAChannel1_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DMAChannel2_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void DMAChannel2_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "287",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "DMAChannel2_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DMAChannel3_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void DMAChannel3_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "298",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "DMAChannel3_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DMAChannel4_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void DMAChannel4_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "309",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "DMAChannel4_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DMAChannel5_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void DMAChannel5_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "320",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "DMAChannel5_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DMAChannel6_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void DMAChannel6_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "331",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "DMAChannel6_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DMAChannel7_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void DMAChannel7_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "342",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "DMAChannel7_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ADC_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void ADC_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "353",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "ADC_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@USB_HP_CAN_TX_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void USB_HP_CAN_TX_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "365",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "USB_HP_CAN_TX_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@USB_LP_CAN_RX0_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void USB_LP_CAN_RX0_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "377",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "USB_LP_CAN_RX0_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@CAN_RX1_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void CAN_RX1_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "388",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "CAN_RX1_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@CAN_SCE_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void CAN_SCE_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "399",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "CAN_SCE_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI9_5_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI9_5_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "410",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "EXTI9_5_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TIM1_BRK_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TIM1_BRK_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "421",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "TIM1_BRK_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TIM1_UP_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TIM1_UP_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "433",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "TIM1_UP_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TIM1_TRG_COM_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TIM1_TRG_COM_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "446",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "TIM1_TRG_COM_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TIM1_CC_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TIM1_CC_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "457",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "TIM1_CC_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@time_10m",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "time_10m",
+    "location": {
+      "column": "22",
+      "line": "470",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "time_10m",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@time_1m",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "time_1m",
+    "location": {
+      "column": "32",
+      "line": "470",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "time_1m",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@time_10s",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "time_10s",
+    "location": {
+      "column": "41",
+      "line": "470",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "time_10s",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@time_1s",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "time_1s",
+    "location": {
+      "column": "51",
+      "line": "470",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "time_1s",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TIM2_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TIM2_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "473",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "TIM2_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TIM3_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TIM3_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "505",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "TIM3_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TIM4_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TIM4_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "516",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "TIM4_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2C1_EV_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void I2C1_EV_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "527",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "I2C1_EV_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2C1_ER_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void I2C1_ER_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "538",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "I2C1_ER_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2C2_EV_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void I2C2_EV_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "549",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "I2C2_EV_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2C2_ER_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void I2C2_ER_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "560",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "I2C2_ER_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI1_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI1_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "571",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "SPI1_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SPI2_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SPI2_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "582",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "SPI2_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@USART1_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void USART1_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "593",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "USART1_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@USART2_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void USART2_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "660",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "USART2_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@USART3_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void USART3_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "671",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "USART3_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EXTI15_10_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void EXTI15_10_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "682",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "EXTI15_10_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@RTCAlarm_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void RTCAlarm_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "693",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "RTCAlarm_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@USBWakeUp_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void USBWakeUp_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "704",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "USBWakeUp_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:stm32f10x_vector.c@T@intfunc",
     "What": "Typedef",
     "defdec": "Def",
@@ -30496,380 +30622,562 @@
     "scope": null
   },
   {
-    "ID": "c:key_pad.h@29@macro@KEY_PAD_H",
+    "ID": "c:user_delay.h@31@macro@_USER_DELAY_",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "KEY_PAD_H",
+    "display": "_USER_DELAY_",
     "location": {
-      "column": "9",
-      "line": "3",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "column": "10",
+      "line": "2",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.h"
     },
-    "name": "KEY_PAD_H",
+    "name": "_USER_DELAY_",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:key_pad.h@124@macro@ROW_PORT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_PORT",
+    "ID": "c:@F@Timer3_Delay_init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Timer3_Delay_init(void)",
     "location": {
-      "column": "9",
+      "column": "6",
+      "line": "7",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.h"
+    },
+    "name": "Timer3_Delay_init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Timer3_Delay_init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Timer3_Delay_init(void)",
+    "location": {
+      "column": "6",
+      "line": "7",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.h"
+    },
+    "name": "Timer3_Delay_init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@delay_ms",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void delay_ms(u16)",
+    "location": {
+      "column": "6",
       "line": "9",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.h"
     },
-    "name": "ROW_PORT",
+    "name": "delay_ms",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:key_pad.h@148@macro@ROW_DDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_DDR",
+    "ID": "c:@F@delay_ms",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void delay_ms(u16)",
     "location": {
-      "column": "9",
-      "line": "10",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "column": "6",
+      "line": "9",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.h"
     },
-    "name": "ROW_DDR",
+    "name": "delay_ms",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:key_pad.h@194@macro@ROW_MASK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_MASK",
+    "ID": "c:@GPIO_LCD",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "GPIO_LCD",
     "location": {
-      "column": "9",
-      "line": "11",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "ROW_MASK",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@221@macro@ROW_1",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_1",
-    "location": {
-      "column": "9",
-      "line": "13",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "ROW_1",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@247@macro@ROW_2",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_2",
-    "location": {
-      "column": "9",
-      "line": "14",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "ROW_2",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@273@macro@ROW_3",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_3",
-    "location": {
-      "column": "9",
-      "line": "15",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "ROW_3",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@299@macro@ROW_4",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_4",
-    "location": {
-      "column": "9",
-      "line": "16",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "ROW_4",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@327@macro@ROW_KEY",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_KEY",
-    "location": {
-      "column": "9",
-      "line": "18",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "ROW_KEY",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@378@macro@COLUMN_PORT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "COLUMN_PORT",
-    "location": {
-      "column": "9",
-      "line": "20",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "COLUMN_PORT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@409@macro@COLUMN_DDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "COLUMN_DDR",
-    "location": {
-      "column": "9",
-      "line": "21",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "COLUMN_DDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@473@macro@KEY_1",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "KEY_1",
-    "location": {
-      "column": "9",
+      "column": "18",
       "line": "24",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
     },
-    "name": "KEY_1",
-    "origin": "user_include",
+    "name": "GPIO_LCD",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:key_pad.h@501@macro@KEY_2",
-    "What": "MacroDef",
+    "ID": "c:@F@lcdInitHW",
+    "What": "Function",
     "defdec": "Def",
-    "display": "KEY_2",
+    "display": "void lcdInitHW(void)",
     "location": {
-      "column": "9",
-      "line": "25",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "KEY_2",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@527@macro@KEY_3",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "KEY_3",
-    "location": {
-      "column": "9",
+      "column": "6",
       "line": "26",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
     },
-    "name": "KEY_3",
-    "origin": "user_include",
+    "name": "lcdInitHW",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:key_pad.h@555@macro@COLUMN_MASK",
+    "ID": "c:@F@lcdBusyWait",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdBusyWait(void)",
+    "location": {
+      "column": "6",
+      "line": "69",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdBusyWait",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdControlWrite",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdControlWrite(u8)",
+    "location": {
+      "column": "6",
+      "line": "125",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdControlWrite",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdControlRead",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "u8 lcdControlRead(void)",
+    "location": {
+      "column": "4",
+      "line": "179",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdControlRead",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@5822@F@lcdControlRead@data",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "data",
+    "location": {
+      "column": "5",
+      "line": "182",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "data",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdDataWrite",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdDataWrite(u8)",
+    "location": {
+      "column": "6",
+      "line": "233",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdDataWrite",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdDataRead",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "u8 lcdDataRead(void)",
+    "location": {
+      "column": "4",
+      "line": "286",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdDataRead",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@9431@F@lcdDataRead@data",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "data",
+    "location": {
+      "column": "5",
+      "line": "289",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "data",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdInit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdInit(void)",
+    "location": {
+      "column": "6",
+      "line": "345",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@11265@F@lcdInit@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "6",
+      "line": "347",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdHome",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdHome(void)",
+    "location": {
+      "column": "6",
+      "line": "366",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdHome",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdClear",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdClear(void)",
+    "location": {
+      "column": "6",
+      "line": "372",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdClear",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdGotoXY",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdGotoXY(u8, u8)",
+    "location": {
+      "column": "6",
+      "line": "378",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdGotoXY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@12016@F@lcdGotoXY@DDRAMAddr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "DDRAMAddr",
+    "location": {
+      "column": "6",
+      "line": "380",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "DDRAMAddr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdPrintData",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdPrintData(char *, u8)",
+    "location": {
+      "column": "6",
+      "line": "398",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdPrintData",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@12467@F@lcdPrintData@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "6",
+      "line": "400",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdPrint",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdPrint(char *)",
+    "location": {
+      "column": "6",
+      "line": "412",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdPrint",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@12659@F@lcdPrint@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "6",
+      "line": "414",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@677@macro@LCDCONF_H",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "COLUMN_MASK",
+    "display": "LCDCONF_H",
     "location": {
       "column": "9",
-      "line": "28",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "line": "19",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
     },
-    "name": "COLUMN_MASK",
+    "name": "LCDCONF_H",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@init_keypad",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void init_keypad(void)",
+    "ID": "c:lcdconf.h@2012@macro@LCD_PORT_INTERFACE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_PORT_INTERFACE",
     "location": {
-      "column": "6",
-      "line": "30",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "column": "9",
+      "line": "43",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
     },
-    "name": "init_keypad",
+    "name": "LCD_PORT_INTERFACE",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@init_keypad",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void init_keypad(void)",
+    "ID": "c:lcdconf.h@2264@macro@LCD_CTRL_PORT_CLK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_PORT_CLK",
     "location": {
-      "column": "6",
-      "line": "30",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "column": "11",
+      "line": "51",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
     },
-    "name": "init_keypad",
+    "name": "LCD_CTRL_PORT_CLK",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@passwd_check",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "u8 passwd_check(u8 *)",
+    "ID": "c:lcdconf.h@2328@macro@LCD_CTRL_PORT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_PORT",
     "location": {
-      "column": "4",
-      "line": "31",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "column": "25",
+      "line": "52",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
     },
-    "name": "passwd_check",
+    "name": "LCD_CTRL_PORT",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@passwd_check",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "u8 passwd_check(u8 *)",
+    "ID": "c:lcdconf.h@2367@macro@LCD_CTRL_RS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_RS",
     "location": {
-      "column": "4",
-      "line": "31",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "column": "11",
+      "line": "53",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
     },
-    "name": "passwd_check",
+    "name": "LCD_CTRL_RS",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@passcheck",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void passcheck(u8)",
+    "ID": "c:lcdconf.h@2402@macro@LCD_CTRL_RW",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_RW",
     "location": {
-      "column": "6",
-      "line": "32",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "column": "11",
+      "line": "54",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
     },
-    "name": "passcheck",
+    "name": "LCD_CTRL_RW",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@passcheck",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void passcheck(u8)",
+    "ID": "c:lcdconf.h@2437@macro@LCD_CTRL_E",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_E",
     "location": {
-      "column": "6",
-      "line": "32",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "column": "11",
+      "line": "55",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
     },
-    "name": "passcheck",
+    "name": "LCD_CTRL_E",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@reset_check",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void reset_check(void)",
+    "ID": "c:lcdconf.h@2539@macro@LCD_DATA",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_DATA",
     "location": {
-      "column": "6",
-      "line": "33",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "column": "11",
+      "line": "59",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
     },
-    "name": "reset_check",
+    "name": "LCD_DATA",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@reset_check",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void reset_check(void)",
+    "ID": "c:lcdconf.h@2565@macro@LCD_DATA_CLK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_DATA_CLK",
     "location": {
-      "column": "6",
-      "line": "33",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "column": "11",
+      "line": "60",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
     },
-    "name": "reset_check",
+    "name": "LCD_DATA_CLK",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@back_pass",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void back_pass(void)",
+    "ID": "c:lcdconf.h@2705@macro@LCD_LINES",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINES",
     "location": {
-      "column": "6",
-      "line": "34",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "column": "9",
+      "line": "69",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
     },
-    "name": "back_pass",
+    "name": "LCD_LINES",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@back_pass",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void back_pass(void)",
+    "ID": "c:lcdconf.h@2746@macro@LCD_LINE_LENGTH",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE_LENGTH",
     "location": {
-      "column": "6",
-      "line": "34",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "column": "9",
+      "line": "70",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
     },
-    "name": "back_pass",
+    "name": "LCD_LINE_LENGTH",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@get_passwd",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "u8 get_passwd(void)",
+    "ID": "c:lcdconf.h@2844@macro@LCD_LINE0_DDRAMADDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE0_DDRAMADDR",
     "location": {
-      "column": "4",
-      "line": "35",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "column": "9",
+      "line": "72",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
     },
-    "name": "get_passwd",
+    "name": "LCD_LINE0_DDRAMADDR",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@get_passwd",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "u8 get_passwd(void)",
+    "ID": "c:lcdconf.h@2879@macro@LCD_LINE1_DDRAMADDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE1_DDRAMADDR",
     "location": {
-      "column": "4",
-      "line": "35",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+      "column": "9",
+      "line": "73",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
     },
-    "name": "get_passwd",
+    "name": "LCD_LINE1_DDRAMADDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2914@macro@LCD_LINE2_DDRAMADDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE2_DDRAMADDR",
+    "location": {
+      "column": "9",
+      "line": "74",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_LINE2_DDRAMADDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2949@macro@LCD_LINE3_DDRAMADDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE3_DDRAMADDR",
+    "location": {
+      "column": "9",
+      "line": "75",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_LINE3_DDRAMADDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@3290@macro@LCD_DELAY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_DELAY",
+    "location": {
+      "column": "9",
+      "line": "82",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_DELAY",
     "origin": "user_include",
     "scope": null
   },
@@ -31826,566 +32134,6 @@
     "scope": null
   },
   {
-    "ID": "c:user_delay.h@31@macro@_USER_DELAY_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_USER_DELAY_",
-    "location": {
-      "column": "10",
-      "line": "2",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.h"
-    },
-    "name": "_USER_DELAY_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Timer3_Delay_init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Timer3_Delay_init(void)",
-    "location": {
-      "column": "6",
-      "line": "7",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.h"
-    },
-    "name": "Timer3_Delay_init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Timer3_Delay_init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Timer3_Delay_init(void)",
-    "location": {
-      "column": "6",
-      "line": "7",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.h"
-    },
-    "name": "Timer3_Delay_init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@delay_ms",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void delay_ms(u16)",
-    "location": {
-      "column": "6",
-      "line": "9",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.h"
-    },
-    "name": "delay_ms",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@delay_ms",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void delay_ms(u16)",
-    "location": {
-      "column": "6",
-      "line": "9",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.h"
-    },
-    "name": "delay_ms",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@677@macro@LCDCONF_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCDCONF_H",
-    "location": {
-      "column": "9",
-      "line": "19",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCDCONF_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2012@macro@LCD_PORT_INTERFACE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_PORT_INTERFACE",
-    "location": {
-      "column": "9",
-      "line": "43",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_PORT_INTERFACE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2264@macro@LCD_CTRL_PORT_CLK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_PORT_CLK",
-    "location": {
-      "column": "11",
-      "line": "51",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_PORT_CLK",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2328@macro@LCD_CTRL_PORT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_PORT",
-    "location": {
-      "column": "25",
-      "line": "52",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_PORT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2367@macro@LCD_CTRL_RS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_RS",
-    "location": {
-      "column": "11",
-      "line": "53",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_RS",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2402@macro@LCD_CTRL_RW",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_RW",
-    "location": {
-      "column": "11",
-      "line": "54",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_RW",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2437@macro@LCD_CTRL_E",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_E",
-    "location": {
-      "column": "11",
-      "line": "55",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_E",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2539@macro@LCD_DATA",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_DATA",
-    "location": {
-      "column": "11",
-      "line": "59",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_DATA",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2565@macro@LCD_DATA_CLK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_DATA_CLK",
-    "location": {
-      "column": "11",
-      "line": "60",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_DATA_CLK",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2705@macro@LCD_LINES",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINES",
-    "location": {
-      "column": "9",
-      "line": "69",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINES",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2746@macro@LCD_LINE_LENGTH",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE_LENGTH",
-    "location": {
-      "column": "9",
-      "line": "70",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE_LENGTH",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2844@macro@LCD_LINE0_DDRAMADDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE0_DDRAMADDR",
-    "location": {
-      "column": "9",
-      "line": "72",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE0_DDRAMADDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2879@macro@LCD_LINE1_DDRAMADDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE1_DDRAMADDR",
-    "location": {
-      "column": "9",
-      "line": "73",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE1_DDRAMADDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2914@macro@LCD_LINE2_DDRAMADDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE2_DDRAMADDR",
-    "location": {
-      "column": "9",
-      "line": "74",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE2_DDRAMADDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2949@macro@LCD_LINE3_DDRAMADDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE3_DDRAMADDR",
-    "location": {
-      "column": "9",
-      "line": "75",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE3_DDRAMADDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@3290@macro@LCD_DELAY",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_DELAY",
-    "location": {
-      "column": "9",
-      "line": "82",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_DELAY",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@GPIO_LCD",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "GPIO_LCD",
-    "location": {
-      "column": "18",
-      "line": "24",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "GPIO_LCD",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdInitHW",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdInitHW(void)",
-    "location": {
-      "column": "6",
-      "line": "26",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdInitHW",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdBusyWait",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdBusyWait(void)",
-    "location": {
-      "column": "6",
-      "line": "69",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdBusyWait",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdControlWrite",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdControlWrite(u8)",
-    "location": {
-      "column": "6",
-      "line": "125",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdControlWrite",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdControlRead",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "u8 lcdControlRead(void)",
-    "location": {
-      "column": "4",
-      "line": "179",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdControlRead",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@5822@F@lcdControlRead@data",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "data",
-    "location": {
-      "column": "5",
-      "line": "182",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "data",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdDataWrite",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdDataWrite(u8)",
-    "location": {
-      "column": "6",
-      "line": "233",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdDataWrite",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdDataRead",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "u8 lcdDataRead(void)",
-    "location": {
-      "column": "4",
-      "line": "286",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdDataRead",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@9431@F@lcdDataRead@data",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "data",
-    "location": {
-      "column": "5",
-      "line": "289",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "data",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdInit",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdInit(void)",
-    "location": {
-      "column": "6",
-      "line": "345",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdInit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@11265@F@lcdInit@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "6",
-      "line": "347",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdHome",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdHome(void)",
-    "location": {
-      "column": "6",
-      "line": "366",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdHome",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdClear",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdClear(void)",
-    "location": {
-      "column": "6",
-      "line": "372",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdClear",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdGotoXY",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdGotoXY(u8, u8)",
-    "location": {
-      "column": "6",
-      "line": "378",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdGotoXY",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@12016@F@lcdGotoXY@DDRAMAddr",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "DDRAMAddr",
-    "location": {
-      "column": "6",
-      "line": "380",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "DDRAMAddr",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdPrintData",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdPrintData(char *, u8)",
-    "location": {
-      "column": "6",
-      "line": "398",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdPrintData",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@12467@F@lcdPrintData@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "6",
-      "line": "400",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdPrint",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdPrint(char *)",
-    "location": {
-      "column": "6",
-      "line": "412",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdPrint",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@12659@F@lcdPrint@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "6",
-      "line": "414",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:main.c@125@macro@BUFSIZE",
     "What": "MacroDef",
     "defdec": "Def",
@@ -32494,6 +32242,20 @@
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Delay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@NumToChar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char NumToChar(int)",
+    "location": {
+      "column": "6",
+      "line": "17",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "NumToChar",
     "origin": "project_file",
     "scope": null
   },
@@ -32638,16 +32400,30 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1067@F@main@start_string1",
+    "ID": "c:main.c@1138@F@main@start_string1",
     "What": "Variable",
     "defdec": "Def",
     "display": "start_string1",
     "location": {
       "column": "13",
-      "line": "45",
+      "line": "48",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "start_string1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@1293@F@main@keypadinput",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "keypadinput",
+    "location": {
+      "column": "15",
+      "line": "55",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "keypadinput",
     "origin": "project_file",
     "scope": null
   },
@@ -32658,7 +32434,7 @@
     "display": "void EXTI_Interrupt_Configuration(u8, u32, u8, u8)",
     "location": {
       "column": "6",
-      "line": "70",
+      "line": "85",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "EXTI_Interrupt_Configuration",
@@ -32666,13 +32442,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1563@F@EXTI_Interrupt_Configuration@EXTI_InitStructure",
+    "ID": "c:main.c@1929@F@EXTI_Interrupt_Configuration@EXTI_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "EXTI_InitStructure",
     "location": {
       "column": "19",
-      "line": "72",
+      "line": "87",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "EXTI_InitStructure",
@@ -32680,13 +32456,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1602@F@EXTI_Interrupt_Configuration@NVIC_InitStructure",
+    "ID": "c:main.c@1968@F@EXTI_Interrupt_Configuration@NVIC_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "NVIC_InitStructure",
     "location": {
       "column": "19",
-      "line": "73",
+      "line": "88",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "NVIC_InitStructure",
@@ -32700,7 +32476,7 @@
     "display": "void GPIO_Setting_Output(u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
-      "line": "91",
+      "line": "106",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_Setting_Output",
@@ -32708,13 +32484,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2323@F@GPIO_Setting_Output@GPIO_InitStructure",
+    "ID": "c:main.c@2689@F@GPIO_Setting_Output@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
     "location": {
       "column": "19",
-      "line": "93",
+      "line": "108",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_InitStructure",
@@ -32728,7 +32504,7 @@
     "display": "void GPIO_Setting_Input(u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
-      "line": "99",
+      "line": "114",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_Setting_Input",
@@ -32736,13 +32512,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2618@F@GPIO_Setting_Input@GPIO_InitStructure",
+    "ID": "c:main.c@2984@F@GPIO_Setting_Input@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
     "location": {
       "column": "19",
-      "line": "101",
+      "line": "116",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_InitStructure",
@@ -32756,7 +32532,7 @@
     "display": "void Timer_Configuration(int, int)",
     "location": {
       "column": "6",
-      "line": "108",
+      "line": "123",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Timer_Configuration",
@@ -32764,13 +32540,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2911@F@Timer_Configuration@TIM2_TimeBaseInitStruct",
+    "ID": "c:main.c@3277@F@Timer_Configuration@TIM2_TimeBaseInitStruct",
     "What": "Variable",
     "defdec": "Def",
     "display": "TIM2_TimeBaseInitStruct",
     "location": {
       "column": "26",
-      "line": "110",
+      "line": "125",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "TIM2_TimeBaseInitStruct",
@@ -32778,13 +32554,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2962@F@Timer_Configuration@NVIC_InitStructure",
+    "ID": "c:main.c@3328@F@Timer_Configuration@NVIC_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "NVIC_InitStructure",
     "location": {
       "column": "19",
-      "line": "111",
+      "line": "126",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "NVIC_InitStructure",
@@ -32798,10 +32574,24 @@
     "display": "void Delay(vu32)",
     "location": {
       "column": "6",
-      "line": "131",
+      "line": "146",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Delay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@NumToChar",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "char NumToChar(int)",
+    "location": {
+      "column": "6",
+      "line": "150",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "NumToChar",
     "origin": "project_file",
     "scope": null
   },
@@ -32826,7 +32616,7 @@
     "display": "void UART_NVIC_Configuration(void)",
     "location": {
       "column": "6",
-      "line": "3",
+      "line": "4",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
     "name": "UART_NVIC_Configuration",
@@ -32840,7 +32630,7 @@
     "display": "void UART_NVIC_Configuration(void)",
     "location": {
       "column": "6",
-      "line": "3",
+      "line": "4",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
     "name": "UART_NVIC_Configuration",
@@ -32854,7 +32644,7 @@
     "display": "void UART_GPIO_Configuration(void)",
     "location": {
       "column": "6",
-      "line": "4",
+      "line": "5",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
     "name": "UART_GPIO_Configuration",
@@ -32868,7 +32658,7 @@
     "display": "void UART_GPIO_Configuration(void)",
     "location": {
       "column": "6",
-      "line": "4",
+      "line": "5",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
     "name": "UART_GPIO_Configuration",
@@ -32882,7 +32672,7 @@
     "display": "void USART_Configuration(void)",
     "location": {
       "column": "6",
-      "line": "5",
+      "line": "6",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
     "name": "USART_Configuration",
@@ -32896,7 +32686,7 @@
     "display": "void USART_Configuration(void)",
     "location": {
       "column": "6",
-      "line": "5",
+      "line": "6",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
     "name": "USART_Configuration",
@@ -32910,7 +32700,7 @@
     "display": "int UARTRead(char *)",
     "location": {
       "column": "5",
-      "line": "6",
+      "line": "7",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
     "name": "UARTRead",
@@ -32918,30 +32708,30 @@
     "scope": null
   },
   {
-    "ID": "c:@F@UARTSend",
+    "ID": "c:@F@UART_Send",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void UARTSend(const char *, int)",
+    "display": "void UART_Send(const char *, int)",
     "location": {
       "column": "6",
-      "line": "7",
+      "line": "8",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
-    "name": "UARTSend",
+    "name": "UART_Send",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@UARTSend",
+    "ID": "c:@F@UART_Send",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void UARTSend(const char *, int)",
+    "display": "void UART_Send(const char *, int)",
     "location": {
       "column": "6",
-      "line": "7",
+      "line": "8",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
-    "name": "UARTSend",
+    "name": "UART_Send",
     "origin": "user_include",
     "scope": null
   },
@@ -32952,7 +32742,7 @@
     "display": "void Uart_Init_Setting(void)",
     "location": {
       "column": "6",
-      "line": "8",
+      "line": "9",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
     "name": "Uart_Init_Setting",
@@ -32966,7 +32756,7 @@
     "display": "void Uart_Init_Setting(void)",
     "location": {
       "column": "6",
-      "line": "8",
+      "line": "9",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
     "name": "Uart_Init_Setting",
@@ -32974,30 +32764,58 @@
     "scope": null
   },
   {
-    "ID": "c:@F@UARTGet",
+    "ID": "c:@F@UART_Get",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void UARTGet(void)",
+    "display": "void UART_Get(void)",
     "location": {
       "column": "6",
-      "line": "9",
+      "line": "10",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
-    "name": "UARTGet",
+    "name": "UART_Get",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@UARTGet",
+    "ID": "c:@F@UART_Get",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void UARTGet(void)",
+    "display": "void UART_Get(void)",
     "location": {
       "column": "6",
-      "line": "9",
+      "line": "10",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
-    "name": "UARTGet",
+    "name": "UART_Get",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_Send_Char",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_Send_Char(u8)",
+    "location": {
+      "column": "6",
+      "line": "11",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "UART_Send_Char",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_Send_Char",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_Send_Char(u8)",
+    "location": {
+      "column": "6",
+      "line": "11",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "UART_Send_Char",
     "origin": "user_include",
     "scope": null
   },
@@ -33008,7 +32826,7 @@
     "display": "int UART_RxAvailable(void)",
     "location": {
       "column": "5",
-      "line": "10",
+      "line": "12",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
     "name": "UART_RxAvailable",
@@ -33022,7 +32840,7 @@
     "display": "int UART_RxAvailable(void)",
     "location": {
       "column": "5",
-      "line": "10",
+      "line": "12",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
     "name": "UART_RxAvailable",
@@ -33036,7 +32854,7 @@
     "display": "void StringCopy(char *, char *, int)",
     "location": {
       "column": "6",
-      "line": "11",
+      "line": "13",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
     "name": "StringCopy",
@@ -33050,7 +32868,7 @@
     "display": "void StringCopy(char *, char *, int)",
     "location": {
       "column": "6",
-      "line": "11",
+      "line": "13",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
     "name": "StringCopy",
@@ -33064,11 +32882,67 @@
     "display": "void MemCopy(char *, char *, int)",
     "location": {
       "column": "6",
-      "line": "12",
+      "line": "14",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
     },
     "name": "MemCopy",
     "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Timer3_Delay_init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void Timer3_Delay_init(void)",
+    "location": {
+      "column": "6",
+      "line": "3",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
+    },
+    "name": "Timer3_Delay_init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:user_delay.c@59@F@Timer3_Delay_init@TIM3_TimeBaseInitStruct",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "TIM3_TimeBaseInitStruct",
+    "location": {
+      "column": "27",
+      "line": "5",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
+    },
+    "name": "TIM3_TimeBaseInitStruct",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@delay_ms",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void delay_ms(u16)",
+    "location": {
+      "column": "6",
+      "line": "17",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
+    },
+    "name": "delay_ms",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:user_delay.c@490@F@delay_ms@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "7",
+      "line": "19",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
+    },
+    "name": "i",
+    "origin": "project_file",
     "scope": null
   },
   {
@@ -33212,41 +33086,55 @@
     "scope": null
   },
   {
-    "ID": "c:@F@UARTSend",
+    "ID": "c:@F@UART_Send",
     "What": "Function",
     "defdec": "Def",
-    "display": "void UARTSend(const char *, int)",
+    "display": "void UART_Send(const char *, int)",
     "location": {
       "column": "6",
       "line": "60",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
     },
-    "name": "UARTSend",
+    "name": "UART_Send",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@UARTGet",
+    "ID": "c:@F@UART_Send_Char",
     "What": "Function",
     "defdec": "Def",
-    "display": "void UARTGet(void)",
+    "display": "void UART_Send_Char(u8)",
     "location": {
       "column": "6",
-      "line": "68",
+      "line": "69",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
     },
-    "name": "UARTGet",
+    "name": "UART_Send_Char",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:UART_lib.c@2095@F@UARTGet@rx",
+    "ID": "c:@F@UART_Get",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void UART_Get(void)",
+    "location": {
+      "column": "6",
+      "line": "75",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
+    },
+    "name": "UART_Get",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:UART_lib.c@2229@F@UART_Get@rx",
     "What": "Variable",
     "defdec": "Def",
     "display": "rx",
     "location": {
       "column": "7",
-      "line": "70",
+      "line": "77",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
     },
     "name": "rx",
@@ -33260,7 +33148,7 @@
     "display": "void UART_GPIO_Configuration(void)",
     "location": {
       "column": "6",
-      "line": "90",
+      "line": "97",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
     },
     "name": "UART_GPIO_Configuration",
@@ -33268,13 +33156,13 @@
     "scope": null
   },
   {
-    "ID": "c:UART_lib.c@2784@F@UART_GPIO_Configuration@GPIO_InitStructure",
+    "ID": "c:UART_lib.c@2918@F@UART_GPIO_Configuration@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
     "location": {
       "column": "19",
-      "line": "92",
+      "line": "99",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
     },
     "name": "GPIO_InitStructure",
@@ -33288,7 +33176,7 @@
     "display": "void StringCopy(char *, char *, int)",
     "location": {
       "column": "6",
-      "line": "107",
+      "line": "114",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
     },
     "name": "StringCopy",
@@ -33296,70 +33184,14 @@
     "scope": null
   },
   {
-    "ID": "c:UART_lib.c@3357@F@StringCopy@i",
+    "ID": "c:UART_lib.c@3491@F@StringCopy@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "12",
-      "line": "109",
+      "line": "116",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Timer3_Delay_init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void Timer3_Delay_init(void)",
-    "location": {
-      "column": "6",
-      "line": "3",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
-    },
-    "name": "Timer3_Delay_init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:user_delay.c@59@F@Timer3_Delay_init@TIM3_TimeBaseInitStruct",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "TIM3_TimeBaseInitStruct",
-    "location": {
-      "column": "27",
-      "line": "5",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
-    },
-    "name": "TIM3_TimeBaseInitStruct",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@delay_ms",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void delay_ms(u16)",
-    "location": {
-      "column": "6",
-      "line": "17",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
-    },
-    "name": "delay_ms",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:user_delay.c@488@F@delay_ms@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "7",
-      "line": "18",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
     },
     "name": "i",
     "origin": "project_file",

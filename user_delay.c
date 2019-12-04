@@ -14,10 +14,12 @@ void Timer3_Delay_init(){
   
 }
 
-void delay_ms(u16 time){
+void delay_ms(u16 time)
+{
   u16 i; 
   TIM_Cmd(TIM3,ENABLE);    
-  for(i=0;i<time;i++){
+  for(i=0;i<time;i++)
+  {
      while(TIM_GetFlagStatus(TIM3,TIM_IT_Update)==RESET);
      TIM_ClearFlag(TIM3,TIM_FLAG_Update);
   }
