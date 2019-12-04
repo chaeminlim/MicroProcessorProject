@@ -32386,13 +32386,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@102@macro@BUFSIZE",
+    "ID": "c:main.c@125@macro@BUFSIZE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "BUFSIZE",
     "location": {
       "column": "9",
-      "line": "6",
+      "line": "7",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "BUFSIZE",
@@ -32400,13 +32400,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@123@macro@TRUE",
+    "ID": "c:main.c@146@macro@TRUE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "TRUE",
     "location": {
       "column": "9",
-      "line": "7",
+      "line": "8",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "TRUE",
@@ -32414,58 +32414,16 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@139@macro@FALSE",
+    "ID": "c:main.c@162@macro@FALSE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FALSE",
     "location": {
       "column": "9",
-      "line": "8",
+      "line": "9",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "FALSE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_NVIC_Configuration",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UART_NVIC_Configuration(void)",
-    "location": {
-      "column": "6",
-      "line": "11",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "UART_NVIC_Configuration",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_GPIO_Configuration",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UART_GPIO_Configuration(void)",
-    "location": {
-      "column": "6",
-      "line": "12",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "UART_GPIO_Configuration",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@USART_Configuration",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void USART_Configuration(void)",
-    "location": {
-      "column": "6",
-      "line": "13",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "USART_Configuration",
     "origin": "project_file",
     "scope": null
   },
@@ -32476,7 +32434,7 @@
     "display": "void Timer_Configuration(int, int)",
     "location": {
       "column": "6",
-      "line": "14",
+      "line": "12",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Timer_Configuration",
@@ -32490,7 +32448,7 @@
     "display": "void EXTI_Interrupt_Configuration(u8, u32, u8, u8)",
     "location": {
       "column": "6",
-      "line": "15",
+      "line": "13",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "EXTI_Interrupt_Configuration",
@@ -32504,7 +32462,7 @@
     "display": "void GPIO_Setting_Output(u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
-      "line": "16",
+      "line": "14",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_Setting_Output",
@@ -32518,108 +32476,10 @@
     "display": "void GPIO_Setting_Input(u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
-      "line": "17",
+      "line": "15",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_Setting_Input",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UARTRead",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int UARTRead(char *)",
-    "location": {
-      "column": "5",
-      "line": "18",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "UARTRead",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UARTSend",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UARTSend(const char *, int)",
-    "location": {
-      "column": "6",
-      "line": "19",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "UARTSend",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Uart_Init_Setting",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Uart_Init_Setting(void)",
-    "location": {
-      "column": "6",
-      "line": "20",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "Uart_Init_Setting",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@StringCopy",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void StringCopy(char *, char *, int)",
-    "location": {
-      "column": "6",
-      "line": "21",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "StringCopy",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@MemCopy",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void MemCopy(char *, char *, int)",
-    "location": {
-      "column": "6",
-      "line": "22",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "MemCopy",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UARTGet",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UARTGet(void)",
-    "location": {
-      "column": "6",
-      "line": "23",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "UARTGet",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_RxAvailable",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int UART_RxAvailable(void)",
-    "location": {
-      "column": "5",
-      "line": "24",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "UART_RxAvailable",
     "origin": "project_file",
     "scope": null
   },
@@ -32630,7 +32490,7 @@
     "display": "void Delay(vu32)",
     "location": {
       "column": "6",
-      "line": "25",
+      "line": "16",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Delay",
@@ -32644,7 +32504,7 @@
     "display": "MainBuffer",
     "location": {
       "column": "6",
-      "line": "30",
+      "line": "21",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "MainBuffer",
@@ -32658,7 +32518,7 @@
     "display": "ReceiveBuffer",
     "location": {
       "column": "6",
-      "line": "31",
+      "line": "22",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "ReceiveBuffer",
@@ -32672,7 +32532,7 @@
     "display": "BufferValid",
     "location": {
       "column": "5",
-      "line": "32",
+      "line": "23",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "BufferValid",
@@ -32686,7 +32546,7 @@
     "display": "ReceiveLength",
     "location": {
       "column": "5",
-      "line": "33",
+      "line": "24",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "ReceiveLength",
@@ -32700,7 +32560,7 @@
     "display": "MainLength",
     "location": {
       "column": "5",
-      "line": "34",
+      "line": "25",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "MainLength",
@@ -32714,7 +32574,7 @@
     "display": "time_10m",
     "location": {
       "column": "15",
-      "line": "38",
+      "line": "29",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "time_10m",
@@ -32728,7 +32588,7 @@
     "display": "time_1m",
     "location": {
       "column": "29",
-      "line": "38",
+      "line": "29",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "time_1m",
@@ -32742,7 +32602,7 @@
     "display": "time_10s",
     "location": {
       "column": "42",
-      "line": "38",
+      "line": "29",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "time_10s",
@@ -32756,7 +32616,7 @@
     "display": "time_1s",
     "location": {
       "column": "56",
-      "line": "38",
+      "line": "29",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "time_1s",
@@ -32770,7 +32630,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "41",
+      "line": "32",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "main",
@@ -32778,13 +32638,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1436@F@main@start_string1",
+    "ID": "c:main.c@1067@F@main@start_string1",
     "What": "Variable",
     "defdec": "Def",
     "display": "start_string1",
     "location": {
       "column": "13",
-      "line": "54",
+      "line": "45",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "start_string1",
@@ -32798,7 +32658,7 @@
     "display": "void EXTI_Interrupt_Configuration(u8, u32, u8, u8)",
     "location": {
       "column": "6",
-      "line": "79",
+      "line": "70",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "EXTI_Interrupt_Configuration",
@@ -32806,13 +32666,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1932@F@EXTI_Interrupt_Configuration@EXTI_InitStructure",
+    "ID": "c:main.c@1563@F@EXTI_Interrupt_Configuration@EXTI_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "EXTI_InitStructure",
     "location": {
       "column": "19",
-      "line": "81",
+      "line": "72",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "EXTI_InitStructure",
@@ -32820,30 +32680,16 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1971@F@EXTI_Interrupt_Configuration@NVIC_InitStructure",
+    "ID": "c:main.c@1602@F@EXTI_Interrupt_Configuration@NVIC_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "NVIC_InitStructure",
     "location": {
       "column": "19",
-      "line": "82",
+      "line": "73",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "NVIC_InitStructure",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Uart_Init_Setting",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void Uart_Init_Setting(void)",
-    "location": {
-      "column": "6",
-      "line": "100",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "Uart_Init_Setting",
     "origin": "project_file",
     "scope": null
   },
@@ -32854,7 +32700,7 @@
     "display": "void GPIO_Setting_Output(u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
-      "line": "111",
+      "line": "91",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_Setting_Output",
@@ -32862,13 +32708,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3013@F@GPIO_Setting_Output@GPIO_InitStructure",
+    "ID": "c:main.c@2323@F@GPIO_Setting_Output@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
     "location": {
       "column": "19",
-      "line": "113",
+      "line": "93",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_InitStructure",
@@ -32882,7 +32728,7 @@
     "display": "void GPIO_Setting_Input(u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
-      "line": "119",
+      "line": "99",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_Setting_Input",
@@ -32890,72 +32736,16 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3308@F@GPIO_Setting_Input@GPIO_InitStructure",
+    "ID": "c:main.c@2618@F@GPIO_Setting_Input@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
     "location": {
       "column": "19",
-      "line": "121",
+      "line": "101",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_InitStructure",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_GPIO_Configuration",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void UART_GPIO_Configuration(void)",
-    "location": {
-      "column": "6",
-      "line": "127",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "UART_GPIO_Configuration",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@3582@F@UART_GPIO_Configuration@GPIO_InitStructure",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "GPIO_InitStructure",
-    "location": {
-      "column": "19",
-      "line": "129",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "GPIO_InitStructure",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@USART_Configuration",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void USART_Configuration(void)",
-    "location": {
-      "column": "6",
-      "line": "142",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "USART_Configuration",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@4114@F@USART_Configuration@USART_InitStructure",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "USART_InitStructure",
-    "location": {
-      "column": "20",
-      "line": "144",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "USART_InitStructure",
     "origin": "project_file",
     "scope": null
   },
@@ -32966,7 +32756,7 @@
     "display": "void Timer_Configuration(int, int)",
     "location": {
       "column": "6",
-      "line": "161",
+      "line": "108",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Timer_Configuration",
@@ -32974,13 +32764,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4961@F@Timer_Configuration@TIM2_TimeBaseInitStruct",
+    "ID": "c:main.c@2911@F@Timer_Configuration@TIM2_TimeBaseInitStruct",
     "What": "Variable",
     "defdec": "Def",
     "display": "TIM2_TimeBaseInitStruct",
     "location": {
       "column": "26",
-      "line": "163",
+      "line": "110",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "TIM2_TimeBaseInitStruct",
@@ -32988,16 +32778,408 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5012@F@Timer_Configuration@NVIC_InitStructure",
+    "ID": "c:main.c@2962@F@Timer_Configuration@NVIC_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "NVIC_InitStructure",
     "location": {
       "column": "19",
-      "line": "164",
+      "line": "111",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "NVIC_InitStructure",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Delay",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void Delay(vu32)",
+    "location": {
+      "column": "6",
+      "line": "131",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "Delay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:UART_lib.h@36@macro@BUFSIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BUFSIZE",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "BUFSIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_NVIC_Configuration",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_NVIC_Configuration(void)",
+    "location": {
+      "column": "6",
+      "line": "3",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "UART_NVIC_Configuration",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_NVIC_Configuration",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_NVIC_Configuration(void)",
+    "location": {
+      "column": "6",
+      "line": "3",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "UART_NVIC_Configuration",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_GPIO_Configuration",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_GPIO_Configuration(void)",
+    "location": {
+      "column": "6",
+      "line": "4",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "UART_GPIO_Configuration",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_GPIO_Configuration",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_GPIO_Configuration(void)",
+    "location": {
+      "column": "6",
+      "line": "4",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "UART_GPIO_Configuration",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@USART_Configuration",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void USART_Configuration(void)",
+    "location": {
+      "column": "6",
+      "line": "5",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "USART_Configuration",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@USART_Configuration",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void USART_Configuration(void)",
+    "location": {
+      "column": "6",
+      "line": "5",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "USART_Configuration",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UARTRead",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int UARTRead(char *)",
+    "location": {
+      "column": "5",
+      "line": "6",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "UARTRead",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UARTSend",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UARTSend(const char *, int)",
+    "location": {
+      "column": "6",
+      "line": "7",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "UARTSend",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UARTSend",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UARTSend(const char *, int)",
+    "location": {
+      "column": "6",
+      "line": "7",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "UARTSend",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Uart_Init_Setting",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Uart_Init_Setting(void)",
+    "location": {
+      "column": "6",
+      "line": "8",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "Uart_Init_Setting",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Uart_Init_Setting",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Uart_Init_Setting(void)",
+    "location": {
+      "column": "6",
+      "line": "8",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "Uart_Init_Setting",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UARTGet",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UARTGet(void)",
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "UARTGet",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UARTGet",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UARTGet(void)",
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "UARTGet",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_RxAvailable",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int UART_RxAvailable(void)",
+    "location": {
+      "column": "5",
+      "line": "10",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "UART_RxAvailable",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_RxAvailable",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int UART_RxAvailable(void)",
+    "location": {
+      "column": "5",
+      "line": "10",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "UART_RxAvailable",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@StringCopy",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void StringCopy(char *, char *, int)",
+    "location": {
+      "column": "6",
+      "line": "11",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "StringCopy",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@StringCopy",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void StringCopy(char *, char *, int)",
+    "location": {
+      "column": "6",
+      "line": "11",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "StringCopy",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@MemCopy",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void MemCopy(char *, char *, int)",
+    "location": {
+      "column": "6",
+      "line": "12",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.h"
+    },
+    "name": "MemCopy",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@MainBuffer",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "MainBuffer",
+    "location": {
+      "column": "13",
+      "line": "4",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
+    },
+    "name": "MainBuffer",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@ReceiveBuffer",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "ReceiveBuffer",
+    "location": {
+      "column": "13",
+      "line": "5",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
+    },
+    "name": "ReceiveBuffer",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@BufferValid",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "BufferValid",
+    "location": {
+      "column": "12",
+      "line": "6",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
+    },
+    "name": "BufferValid",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@ReceiveLength",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "ReceiveLength",
+    "location": {
+      "column": "12",
+      "line": "7",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
+    },
+    "name": "ReceiveLength",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@MainLength",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "MainLength",
+    "location": {
+      "column": "12",
+      "line": "8",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
+    },
+    "name": "MainLength",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Uart_Init_Setting",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void Uart_Init_Setting(void)",
+    "location": {
+      "column": "6",
+      "line": "10",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
+    },
+    "name": "Uart_Init_Setting",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@USART_Configuration",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void USART_Configuration(void)",
+    "location": {
+      "column": "6",
+      "line": "21",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
+    },
+    "name": "USART_Configuration",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:UART_lib.c@519@F@USART_Configuration@USART_InitStructure",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "USART_InitStructure",
+    "location": {
+      "column": "20",
+      "line": "23",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
+    },
+    "name": "USART_InitStructure",
     "origin": "project_file",
     "scope": null
   },
@@ -33008,8 +33190,8 @@
     "display": "void UART_NVIC_Configuration(void)",
     "location": {
       "column": "6",
-      "line": "186",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+      "line": "40",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
     },
     "name": "UART_NVIC_Configuration",
     "origin": "project_file",
@@ -33022,8 +33204,8 @@
     "display": "int UART_RxAvailable(void)",
     "location": {
       "column": "5",
-      "line": "199",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+      "line": "53",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
     },
     "name": "UART_RxAvailable",
     "origin": "project_file",
@@ -33036,8 +33218,8 @@
     "display": "void UARTSend(const char *, int)",
     "location": {
       "column": "6",
-      "line": "206",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+      "line": "60",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
     },
     "name": "UARTSend",
     "origin": "project_file",
@@ -33050,24 +33232,52 @@
     "display": "void UARTGet(void)",
     "location": {
       "column": "6",
-      "line": "214",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+      "line": "68",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
     },
     "name": "UARTGet",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@6533@F@UARTGet@rx",
+    "ID": "c:UART_lib.c@2095@F@UARTGet@rx",
     "What": "Variable",
     "defdec": "Def",
     "display": "rx",
     "location": {
       "column": "7",
-      "line": "216",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+      "line": "70",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
     },
     "name": "rx",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_GPIO_Configuration",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void UART_GPIO_Configuration(void)",
+    "location": {
+      "column": "6",
+      "line": "90",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
+    },
+    "name": "UART_GPIO_Configuration",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:UART_lib.c@2784@F@UART_GPIO_Configuration@GPIO_InitStructure",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "GPIO_InitStructure",
+    "location": {
+      "column": "19",
+      "line": "92",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
+    },
+    "name": "GPIO_InitStructure",
     "origin": "project_file",
     "scope": null
   },
@@ -33078,38 +33288,24 @@
     "display": "void StringCopy(char *, char *, int)",
     "location": {
       "column": "6",
-      "line": "236",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+      "line": "107",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
     },
     "name": "StringCopy",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@7255@F@StringCopy@i",
+    "ID": "c:UART_lib.c@3357@F@StringCopy@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "12",
-      "line": "238",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+      "line": "109",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
     },
     "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Delay",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void Delay(vu32)",
-    "location": {
-      "column": "6",
-      "line": "243",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "Delay",
     "origin": "project_file",
     "scope": null
   },

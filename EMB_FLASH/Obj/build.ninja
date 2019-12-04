@@ -33,11 +33,12 @@ build stm32f10x_vector.pbi : index stm32f10x_vector.xcl
 build key_pad.pbi : index key_pad.xcl
 build lcd.pbi : index lcd.xcl
 build main.pbi : index main.xcl
+build UART_lib.pbi : index UART_lib.xcl
 build user_delay.pbi : index user_delay.xcl
 build UART_Hello_part0.pbi : link System_func.pbi stm32f10x_flash.pbi stm32f10x_gpio.pbi stm32f10x_lib.pbi
 build UART_Hello_part1.pbi : link stm32f10x_nvic.pbi stm32f10x_rcc.pbi stm32f10x_tim.pbi stm32f10x_usart.pbi
 build UART_Hello_part2.pbi : link stm32f10x_it.pbi stm32f10x_vector.pbi key_pad.pbi lcd.pbi
-build UART_Hello_part3.pbi : link main.pbi user_delay.pbi
+build UART_Hello_part3.pbi : link main.pbi UART_lib.pbi user_delay.pbi
 build UART_Hello.pbd : link UART_Hello_part0.pbi UART_Hello_part1.pbi UART_Hello_part2.pbi UART_Hello_part3.pbi
 build UART_Hello.pbw : browsedata UART_Hello.pbd
 
