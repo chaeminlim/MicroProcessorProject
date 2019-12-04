@@ -1,7 +1,8 @@
 stm32f10x_rcc.pbi: \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\cortexm3_macro.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_type.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\stm32f10x_conf.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_map.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\src\stm32f10x_rcc.c \
   C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_rcc.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\src\stm32f10x_rcc.c
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_map.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\stm32f10x_conf.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_type.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_type.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/cortexm3_macro.h

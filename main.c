@@ -11,10 +11,10 @@
 void UART_NVIC_Configuration(void);
 void UART_GPIO_Configuration(void);
 void USART_Configuration(void);
-void Timer_Configuration(int Prescaler, int Period)
-void EXTI_Interrupt_Configuration(u8 EXTIx_IRQChannel, u32 EXTI_Linex, u8 GPIO_PortSourceGPIOx, u8 GPIO_PinSourcex)
-void GPIO_Setting_Output(u16 GPIO_Pin_n, u16 GPIOx);
-void GPIO_Setting_Input(u16 GPIO_Pin_n, u16 GPIOx);
+//void Timer_Configuration(int Prescaler, int Period);
+void EXTI_Interrupt_Configuration(u8 EXTIx_IRQChannel, u32 EXTI_Linex, u8 GPIO_PortSourceGPIOx, u8 GPIO_PinSourcex);
+void GPIO_Setting_Output(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
+void GPIO_Setting_Input(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
 int UARTRead(char* buffer);
 void UARTSend(const  char* pucBuffer, int ulCount);
 void Uart_Init_Setting(void);
@@ -46,7 +46,7 @@ int main(void)
 	// set uart
 	Uart_Init_Setting();
 	// set timer
-	Timer_Configuration(1200, 10000);
+	//Timer_Configuration(1200, 10000);
 	
 //// end initializing
 	
@@ -66,7 +66,7 @@ int main(void)
           }
           else
           {
-			  if (RxAvailable())
+			  if (UART_RxAvailable())
 			  {
 				  UARTGet();
 			  }
@@ -108,7 +108,7 @@ void Uart_Init_Setting(void)
 	/* NVIC Configuration */
 	UART_NVIC_Configuration();
 }
-void GPIO_Setting_Output(u16 GPIO_Pin_n, u16 GPIOx)
+void GPIO_Setting_Output(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_n;
@@ -116,7 +116,7 @@ void GPIO_Setting_Output(u16 GPIO_Pin_n, u16 GPIOx)
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_Init(GPIOx, &GPIO_InitStructure);
 }
-void GPIO_Setting_Input(u16 GPIO_Pin_n, u16 GPIOx)
+void GPIO_Setting_Input(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_n;
@@ -157,6 +157,7 @@ void USART_Configuration(void)
 	 USART1 receive data register is not empty */
 	// USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
 }
+/*
 void Timer_Configuration(int Prescaler, int Period)
 {
 	TIM_TimeBaseInitTypeDef TIM2_TimeBaseInitStruct;
@@ -180,6 +181,7 @@ void Timer_Configuration(int Prescaler, int Period)
 	TIM_Cmd(TIM2, ENABLE);
 
 }
+*/
 void UART_NVIC_Configuration(void)
 {
 /*

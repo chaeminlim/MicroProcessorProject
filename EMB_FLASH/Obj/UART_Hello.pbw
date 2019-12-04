@@ -22332,7 +22332,7 @@
     "display": "void TIM2_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "472",
+      "line": "471",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "TIM2_IRQHandler",
@@ -22346,7 +22346,7 @@
     "display": "void TIM3_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "503",
+      "line": "506",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "TIM3_IRQHandler",
@@ -22360,7 +22360,7 @@
     "display": "void TIM4_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "514",
+      "line": "517",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "TIM4_IRQHandler",
@@ -22374,7 +22374,7 @@
     "display": "void I2C1_EV_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "525",
+      "line": "528",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "I2C1_EV_IRQHandler",
@@ -22388,7 +22388,7 @@
     "display": "void I2C1_ER_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "536",
+      "line": "539",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "I2C1_ER_IRQHandler",
@@ -22402,7 +22402,7 @@
     "display": "void I2C2_EV_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "547",
+      "line": "550",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "I2C2_EV_IRQHandler",
@@ -22416,7 +22416,7 @@
     "display": "void I2C2_ER_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "558",
+      "line": "561",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "I2C2_ER_IRQHandler",
@@ -22430,7 +22430,7 @@
     "display": "void SPI1_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "569",
+      "line": "572",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "SPI1_IRQHandler",
@@ -22444,7 +22444,7 @@
     "display": "void SPI2_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "580",
+      "line": "583",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "SPI2_IRQHandler",
@@ -22458,7 +22458,7 @@
     "display": "void USART1_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "591",
+      "line": "594",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "USART1_IRQHandler",
@@ -22472,7 +22472,7 @@
     "display": "void USART2_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "658",
+      "line": "661",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "USART2_IRQHandler",
@@ -22486,7 +22486,7 @@
     "display": "void USART3_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "669",
+      "line": "672",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "USART3_IRQHandler",
@@ -22500,7 +22500,7 @@
     "display": "void EXTI15_10_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "680",
+      "line": "683",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "EXTI15_10_IRQHandler",
@@ -22514,7 +22514,7 @@
     "display": "void RTCAlarm_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "691",
+      "line": "694",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "RTCAlarm_IRQHandler",
@@ -22528,110 +22528,10 @@
     "display": "void USBWakeUp_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "702",
+      "line": "705",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "USBWakeUp_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_vector.c@T@intfunc",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "void (*)(void)",
-    "location": {
-      "column": "16",
-      "line": "23",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_vector.c"
-    },
-    "name": "intfunc",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@UA@intvec_elem",
-    "What": "Union",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "24",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_vector.c"
-    },
-    "members": [
-      {
-        "ID": "c:@UA@intvec_elem@FI@__fun",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "__fun",
-        "location": {
-          "column": "25",
-          "line": "24",
-          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_vector.c"
-        },
-        "name": "__fun",
-        "origin": "project_file",
-        "scope": "_anonymous_stm32f10x_vector_c_24_9"
-      },
-      {
-        "ID": "c:@UA@intvec_elem@FI@__ptr",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "__ptr",
-        "location": {
-          "column": "39",
-          "line": "24",
-          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_vector.c"
-        },
-        "name": "__ptr",
-        "origin": "project_file",
-        "scope": "_anonymous_stm32f10x_vector_c_24_9"
-      },
-      {
-        "ID": "c:@T@intvec_elem",
-        "What": "TypedefDecl",
-        "defdec": "Def",
-        "display": "union intvec_elem",
-        "location": {
-          "column": "48",
-          "line": "24",
-          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_vector.c"
-        },
-        "name": "intvec_elem",
-        "origin": "project_file",
-        "scope": "_anonymous_stm32f10x_vector_c_24_9"
-      }
-    ],
-    "name": "",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__iar_program_start",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void __iar_program_start(void)",
-    "location": {
-      "column": "6",
-      "line": "36",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_vector.c"
-    },
-    "name": "__iar_program_start",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@__vector_table",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "__vector_table",
-    "location": {
-      "column": "19",
-      "line": "40",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_vector.c"
-    },
-    "name": "__vector_table",
     "origin": "project_file",
     "scope": null
   },
@@ -23081,230 +22981,6 @@
     },
     "name": "i",
     "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@677@macro@LCDCONF_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCDCONF_H",
-    "location": {
-      "column": "9",
-      "line": "19",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCDCONF_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2012@macro@LCD_PORT_INTERFACE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_PORT_INTERFACE",
-    "location": {
-      "column": "9",
-      "line": "43",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_PORT_INTERFACE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2264@macro@LCD_CTRL_PORT_CLK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_PORT_CLK",
-    "location": {
-      "column": "11",
-      "line": "51",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_PORT_CLK",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2328@macro@LCD_CTRL_PORT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_PORT",
-    "location": {
-      "column": "25",
-      "line": "52",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_PORT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2367@macro@LCD_CTRL_RS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_RS",
-    "location": {
-      "column": "11",
-      "line": "53",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_RS",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2402@macro@LCD_CTRL_RW",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_RW",
-    "location": {
-      "column": "11",
-      "line": "54",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_RW",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2437@macro@LCD_CTRL_E",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_E",
-    "location": {
-      "column": "11",
-      "line": "55",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_E",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2539@macro@LCD_DATA",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_DATA",
-    "location": {
-      "column": "11",
-      "line": "59",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_DATA",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2565@macro@LCD_DATA_CLK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_DATA_CLK",
-    "location": {
-      "column": "11",
-      "line": "60",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_DATA_CLK",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2705@macro@LCD_LINES",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINES",
-    "location": {
-      "column": "9",
-      "line": "69",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINES",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2746@macro@LCD_LINE_LENGTH",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE_LENGTH",
-    "location": {
-      "column": "9",
-      "line": "70",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE_LENGTH",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2844@macro@LCD_LINE0_DDRAMADDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE0_DDRAMADDR",
-    "location": {
-      "column": "9",
-      "line": "72",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE0_DDRAMADDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2879@macro@LCD_LINE1_DDRAMADDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE1_DDRAMADDR",
-    "location": {
-      "column": "9",
-      "line": "73",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE1_DDRAMADDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2914@macro@LCD_LINE2_DDRAMADDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE2_DDRAMADDR",
-    "location": {
-      "column": "9",
-      "line": "74",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE2_DDRAMADDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2949@macro@LCD_LINE3_DDRAMADDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE3_DDRAMADDR",
-    "location": {
-      "column": "9",
-      "line": "75",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE3_DDRAMADDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@3290@macro@LCD_DELAY",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_DELAY",
-    "location": {
-      "column": "9",
-      "line": "82",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_DELAY",
-    "origin": "user_include",
     "scope": null
   },
   {
@@ -24722,20 +24398,6 @@
     "scope": null
   },
   {
-    "ID": "c:@F@Timer_Configuration",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Timer_Configuration(int, int)",
-    "location": {
-      "column": "6",
-      "line": "14",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "Timer_Configuration",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:@F@EXTI_Interrupt_Configuration",
     "What": "Function",
     "defdec": "Dec",
@@ -24753,7 +24415,7 @@
     "ID": "c:@F@GPIO_Setting_Output",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void GPIO_Setting_Output(u16, u16)",
+    "display": "void GPIO_Setting_Output(u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
       "line": "16",
@@ -24767,7 +24429,7 @@
     "ID": "c:@F@GPIO_Setting_Input",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void GPIO_Setting_Input(u16, u16)",
+    "display": "void GPIO_Setting_Input(u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
       "line": "17",
@@ -25030,7 +24692,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1412@F@main@start_string1",
+    "ID": "c:main.c@1436@F@main@start_string1",
     "What": "Variable",
     "defdec": "Def",
     "display": "start_string1",
@@ -25058,7 +24720,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1903@F@EXTI_Interrupt_Configuration@EXTI_InitStructure",
+    "ID": "c:main.c@1932@F@EXTI_Interrupt_Configuration@EXTI_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "EXTI_InitStructure",
@@ -25072,7 +24734,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1942@F@EXTI_Interrupt_Configuration@NVIC_InitStructure",
+    "ID": "c:main.c@1971@F@EXTI_Interrupt_Configuration@NVIC_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "NVIC_InitStructure",
@@ -25103,7 +24765,7 @@
     "ID": "c:@F@GPIO_Setting_Output",
     "What": "Function",
     "defdec": "Def",
-    "display": "void GPIO_Setting_Output(u16, u16)",
+    "display": "void GPIO_Setting_Output(u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
       "line": "111",
@@ -25114,7 +24776,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2974@F@GPIO_Setting_Output@GPIO_InitStructure",
+    "ID": "c:main.c@3013@F@GPIO_Setting_Output@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
@@ -25131,7 +24793,7 @@
     "ID": "c:@F@GPIO_Setting_Input",
     "What": "Function",
     "defdec": "Def",
-    "display": "void GPIO_Setting_Input(u16, u16)",
+    "display": "void GPIO_Setting_Input(u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
       "line": "119",
@@ -25142,7 +24804,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3259@F@GPIO_Setting_Input@GPIO_InitStructure",
+    "ID": "c:main.c@3308@F@GPIO_Setting_Input@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
@@ -25170,7 +24832,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3533@F@UART_GPIO_Configuration@GPIO_InitStructure",
+    "ID": "c:main.c@3582@F@UART_GPIO_Configuration@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
@@ -25198,7 +24860,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4065@F@USART_Configuration@USART_InitStructure",
+    "ID": "c:main.c@4114@F@USART_Configuration@USART_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "USART_InitStructure",
@@ -25212,41 +24874,13 @@
     "scope": null
   },
   {
-    "ID": "c:@F@Timer_Configuration",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void Timer_Configuration(int, int)",
-    "location": {
-      "column": "6",
-      "line": "160",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "Timer_Configuration",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@4961@F@Timer_Configuration@NVIC_InitStructure",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "NVIC_InitStructure",
-    "location": {
-      "column": "19",
-      "line": "163",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
-    },
-    "name": "NVIC_InitStructure",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:@F@UART_NVIC_Configuration",
     "What": "Function",
     "defdec": "Def",
     "display": "void UART_NVIC_Configuration(void)",
     "location": {
       "column": "6",
-      "line": "183",
+      "line": "185",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "UART_NVIC_Configuration",
@@ -25260,7 +24894,7 @@
     "display": "int UART_RxAvailable(void)",
     "location": {
       "column": "5",
-      "line": "196",
+      "line": "198",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "UART_RxAvailable",
@@ -25274,7 +24908,7 @@
     "display": "void UARTSend(const char *, int)",
     "location": {
       "column": "6",
-      "line": "203",
+      "line": "205",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "UARTSend",
@@ -25288,7 +24922,7 @@
     "display": "void UARTGet(void)",
     "location": {
       "column": "6",
-      "line": "211",
+      "line": "213",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "UARTGet",
@@ -25296,13 +24930,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6478@F@UARTGet@rx",
+    "ID": "c:main.c@6535@F@UARTGet@rx",
     "What": "Variable",
     "defdec": "Def",
     "display": "rx",
     "location": {
       "column": "7",
-      "line": "213",
+      "line": "215",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "rx",
@@ -25316,7 +24950,7 @@
     "display": "void StringCopy(char *, char *, int)",
     "location": {
       "column": "6",
-      "line": "233",
+      "line": "235",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "StringCopy",
@@ -25324,13 +24958,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7200@F@StringCopy@i",
+    "ID": "c:main.c@7257@F@StringCopy@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "12",
-      "line": "235",
+      "line": "237",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "i",
@@ -25344,11 +24978,377 @@
     "display": "void Delay(vu32)",
     "location": {
       "column": "6",
-      "line": "240",
+      "line": "242",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Delay",
     "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_vector.c@T@intfunc",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(void)",
+    "location": {
+      "column": "16",
+      "line": "23",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_vector.c"
+    },
+    "name": "intfunc",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@UA@intvec_elem",
+    "What": "Union",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "24",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_vector.c"
+    },
+    "members": [
+      {
+        "ID": "c:@UA@intvec_elem@FI@__fun",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "__fun",
+        "location": {
+          "column": "25",
+          "line": "24",
+          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_vector.c"
+        },
+        "name": "__fun",
+        "origin": "project_file",
+        "scope": "_anonymous_stm32f10x_vector_c_24_9"
+      },
+      {
+        "ID": "c:@UA@intvec_elem@FI@__ptr",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "__ptr",
+        "location": {
+          "column": "39",
+          "line": "24",
+          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_vector.c"
+        },
+        "name": "__ptr",
+        "origin": "project_file",
+        "scope": "_anonymous_stm32f10x_vector_c_24_9"
+      },
+      {
+        "ID": "c:@T@intvec_elem",
+        "What": "TypedefDecl",
+        "defdec": "Def",
+        "display": "union intvec_elem",
+        "location": {
+          "column": "48",
+          "line": "24",
+          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_vector.c"
+        },
+        "name": "intvec_elem",
+        "origin": "project_file",
+        "scope": "_anonymous_stm32f10x_vector_c_24_9"
+      }
+    ],
+    "name": "",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@__iar_program_start",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void __iar_program_start(void)",
+    "location": {
+      "column": "6",
+      "line": "36",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_vector.c"
+    },
+    "name": "__iar_program_start",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@__vector_table",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "__vector_table",
+    "location": {
+      "column": "19",
+      "line": "40",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_vector.c"
+    },
+    "name": "__vector_table",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@677@macro@LCDCONF_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCDCONF_H",
+    "location": {
+      "column": "9",
+      "line": "19",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCDCONF_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2012@macro@LCD_PORT_INTERFACE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_PORT_INTERFACE",
+    "location": {
+      "column": "9",
+      "line": "43",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_PORT_INTERFACE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2264@macro@LCD_CTRL_PORT_CLK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_PORT_CLK",
+    "location": {
+      "column": "11",
+      "line": "51",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_CTRL_PORT_CLK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2328@macro@LCD_CTRL_PORT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_PORT",
+    "location": {
+      "column": "25",
+      "line": "52",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_CTRL_PORT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2367@macro@LCD_CTRL_RS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_RS",
+    "location": {
+      "column": "11",
+      "line": "53",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_CTRL_RS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2402@macro@LCD_CTRL_RW",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_RW",
+    "location": {
+      "column": "11",
+      "line": "54",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_CTRL_RW",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2437@macro@LCD_CTRL_E",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_E",
+    "location": {
+      "column": "11",
+      "line": "55",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_CTRL_E",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2539@macro@LCD_DATA",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_DATA",
+    "location": {
+      "column": "11",
+      "line": "59",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_DATA",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2565@macro@LCD_DATA_CLK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_DATA_CLK",
+    "location": {
+      "column": "11",
+      "line": "60",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_DATA_CLK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2705@macro@LCD_LINES",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINES",
+    "location": {
+      "column": "9",
+      "line": "69",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_LINES",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2746@macro@LCD_LINE_LENGTH",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE_LENGTH",
+    "location": {
+      "column": "9",
+      "line": "70",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_LINE_LENGTH",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2844@macro@LCD_LINE0_DDRAMADDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE0_DDRAMADDR",
+    "location": {
+      "column": "9",
+      "line": "72",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_LINE0_DDRAMADDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2879@macro@LCD_LINE1_DDRAMADDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE1_DDRAMADDR",
+    "location": {
+      "column": "9",
+      "line": "73",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_LINE1_DDRAMADDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2914@macro@LCD_LINE2_DDRAMADDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE2_DDRAMADDR",
+    "location": {
+      "column": "9",
+      "line": "74",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_LINE2_DDRAMADDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2949@macro@LCD_LINE3_DDRAMADDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE3_DDRAMADDR",
+    "location": {
+      "column": "9",
+      "line": "75",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_LINE3_DDRAMADDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@3290@macro@LCD_DELAY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_DELAY",
+    "location": {
+      "column": "9",
+      "line": "82",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_DELAY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:user_delay.h@31@macro@_USER_DELAY_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_USER_DELAY_",
+    "location": {
+      "column": "10",
+      "line": "2",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.h"
+    },
+    "name": "_USER_DELAY_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Timer3_Delay_init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Timer3_Delay_init(void)",
+    "location": {
+      "column": "6",
+      "line": "7",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.h"
+    },
+    "name": "Timer3_Delay_init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@delay_ms",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void delay_ms(u16)",
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.h"
+    },
+    "name": "delay_ms",
+    "origin": "user_include",
     "scope": null
   }
 ]
