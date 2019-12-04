@@ -203,7 +203,7 @@ void TIM_OCInit(TIM_TypeDef* TIMx, TIM_OCInitTypeDef* TIM_OCInitStruct)
     tmpccer &= Tab_PolarityMask[TIM_OCInitStruct->TIM_Channel];
 
     if (TIM_OCInitStruct->TIM_Channel == TIM_Channel_1)
-    {
+    { 
       /* Disable the Channel 1: Reset the CCE Bit */
       TIMx->CCER &= CCER_CC1E_Reset;
 

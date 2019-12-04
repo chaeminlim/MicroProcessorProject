@@ -1,5 +1,5 @@
 #include"user_delay.h"
-/*
+
 void Timer3_Delay_init(){
   
   TIM_TimeBaseInitTypeDef TIM3_TimeBaseInitStruct;
@@ -25,4 +25,3 @@ void delay_ms(u16 time){
 
 }
 
-*/

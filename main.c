@@ -11,7 +11,7 @@
 void UART_NVIC_Configuration(void);
 void UART_GPIO_Configuration(void);
 void USART_Configuration(void);
-//void Timer_Configuration(int Prescaler, int Period);
+void Timer_Configuration(int Prescaler, int Period);
 void EXTI_Interrupt_Configuration(u8 EXTIx_IRQChannel, u32 EXTI_Linex, u8 GPIO_PortSourceGPIOx, u8 GPIO_PinSourcex);
 void GPIO_Setting_Output(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
 void GPIO_Setting_Input(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
@@ -157,7 +157,7 @@ void USART_Configuration(void)
 	 USART1 receive data register is not empty */
 	// USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
 }
-/*
+
 void Timer_Configuration(int Prescaler, int Period)
 {
 	TIM_TimeBaseInitTypeDef TIM2_TimeBaseInitStruct;
@@ -181,7 +181,8 @@ void Timer_Configuration(int Prescaler, int Period)
 	TIM_Cmd(TIM2, ENABLE);
 
 }
-*/
+
+
 void UART_NVIC_Configuration(void)
 {
 /*

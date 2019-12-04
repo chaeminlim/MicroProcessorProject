@@ -11,6 +11,7 @@ key_pad.pbi: C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\key_pad.c \
   C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_gpio.h \
   C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_nvic.h \
   C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_rcc.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_tim.h \
   C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_usart.h \
   C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject/lcd.h \
   C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject/lcdconf.h \

@@ -1221,6 +1221,9 @@
             <name>$PROJ_DIR$\Library\src\stm32f10x_rcc.c</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\Library\src\stm32f10x_tim.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\Library\src\stm32f10x_usart.c</name>
         </file>
     </group>
@@ -1253,72 +1256,6 @@
     </file>
     <file>
         <name>$PROJ_DIR$\main.c</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_adc.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_bkp.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_can.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_dma.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_exti.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_flash.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_gpio.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_i2c.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_iwdg.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_lib.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_map.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_nvic.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_pwr.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_rcc.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_rtc.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_spi.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_systick.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_tim.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_tim1.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_type.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_usart.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\Library\inc\stm32f10x_wwdg.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\user_delay.c</name>

@@ -468,9 +468,8 @@ void TIM1_CC_IRQHandler(void)
 
 
 extern unsigned char time_10m, time_1m, time_10s, time_1s;
-void TIM2_IRQHandler(void)
-{}
-/*
+
+
 void TIM2_IRQHandler(void)
 {
 	{
@@ -495,7 +494,7 @@ void TIM2_IRQHandler(void)
 		}
 	}
 }
-*/
+
 /*******************************************************************************
 * Function Name  : TIM3_IRQHandler
 * Description    : This function handles TIM3 global interrupt request.
