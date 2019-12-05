@@ -117,5 +117,6 @@ void StringCopy(char* destination, char* source, int length )
   {
     destination[i] = source[i];
   }
+  destination[length] = '\0';
 }
 
