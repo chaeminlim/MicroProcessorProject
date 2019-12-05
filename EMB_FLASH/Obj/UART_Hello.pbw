@@ -8510,6 +8510,20 @@
     "scope": null
   },
   {
+    "ID": "c:stm32f10x_map.h@12856@macro@TIM4",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM4",
+    "location": {
+      "column": "11",
+      "line": "548",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_map.h"
+    },
+    "name": "TIM4",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:stm32f10x_map.h@13327@macro@USART2",
     "What": "MacroDef",
     "defdec": "Def",
@@ -13472,6 +13486,672 @@
     "scope": null
   },
   {
+    "ID": "c:stm32f10x_type.h@1112@macro@__STM32F10x_TYPE_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__STM32F10x_TYPE_H",
+    "location": {
+      "column": "9",
+      "line": "19",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "__STM32F10x_TYPE_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@s32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "long",
+    "location": {
+      "column": "22",
+      "line": "23",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "s32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@s16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "short",
+    "location": {
+      "column": "22",
+      "line": "24",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "s16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@s8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "signed char",
+    "location": {
+      "column": "22",
+      "line": "25",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "s8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@sc32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "const long",
+    "location": {
+      "column": "28",
+      "line": "27",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "sc32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@sc16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "const short",
+    "location": {
+      "column": "28",
+      "line": "28",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "sc16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@sc8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "const signed char",
+    "location": {
+      "column": "28",
+      "line": "29",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "sc8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@vs32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "volatile long",
+    "location": {
+      "column": "31",
+      "line": "31",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "vs32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@vs16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "volatile short",
+    "location": {
+      "column": "31",
+      "line": "32",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "vs16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@vs8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "volatile signed char",
+    "location": {
+      "column": "31",
+      "line": "33",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "vs8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@vsc32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "const volatile long",
+    "location": {
+      "column": "37",
+      "line": "35",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "vsc32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@vsc16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "const volatile short",
+    "location": {
+      "column": "37",
+      "line": "36",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "vsc16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@vsc8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "const volatile signed char",
+    "location": {
+      "column": "37",
+      "line": "37",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "vsc8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@u32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned long",
+    "location": {
+      "column": "24",
+      "line": "39",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "u32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@u16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned short",
+    "location": {
+      "column": "24",
+      "line": "40",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "u16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@u8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned char",
+    "location": {
+      "column": "24",
+      "line": "41",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "u8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@uc32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "const unsigned long",
+    "location": {
+      "column": "30",
+      "line": "43",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "uc32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@uc16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "const unsigned short",
+    "location": {
+      "column": "30",
+      "line": "44",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "uc16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@uc8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "const unsigned char",
+    "location": {
+      "column": "30",
+      "line": "45",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "uc8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@vu32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "volatile unsigned long",
+    "location": {
+      "column": "33",
+      "line": "47",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "vu32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@vu16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "volatile unsigned short",
+    "location": {
+      "column": "33",
+      "line": "48",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "vu16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@vu8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "volatile unsigned char",
+    "location": {
+      "column": "33",
+      "line": "49",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "vu8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@vuc32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "const volatile unsigned long",
+    "location": {
+      "column": "39",
+      "line": "51",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "vuc32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@vuc16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "const volatile unsigned short",
+    "location": {
+      "column": "39",
+      "line": "52",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "vuc16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@T@vuc8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "const volatile unsigned char",
+    "location": {
+      "column": "39",
+      "line": "53",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "vuc8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@bool",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@bool@FALSE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "FALSE",
+        "location": {
+          "column": "15",
+          "line": "55",
+          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+        },
+        "name": "FALSE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@bool@TRUE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "TRUE",
+        "location": {
+          "column": "26",
+          "line": "55",
+          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+        },
+        "name": "TRUE",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "55",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@FlagStatus",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@FlagStatus@RESET",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "RESET",
+        "location": {
+          "column": "15",
+          "line": "57",
+          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+        },
+        "name": "RESET",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@FlagStatus@SET",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "SET",
+        "location": {
+          "column": "26",
+          "line": "57",
+          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+        },
+        "name": "SET",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "57",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@FunctionalState",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@FunctionalState@DISABLE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "DISABLE",
+        "location": {
+          "column": "15",
+          "line": "59",
+          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+        },
+        "name": "DISABLE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@FunctionalState@ENABLE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ENABLE",
+        "location": {
+          "column": "28",
+          "line": "59",
+          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+        },
+        "name": "ENABLE",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "59",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@2575@macro@IS_FUNCTIONAL_STATE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "IS_FUNCTIONAL_STATE",
+    "location": {
+      "column": "9",
+      "line": "60",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "IS_FUNCTIONAL_STATE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@ErrorStatus",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@ErrorStatus@ERROR",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ERROR",
+        "location": {
+          "column": "15",
+          "line": "62",
+          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+        },
+        "name": "ERROR",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@ErrorStatus@SUCCESS",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "SUCCESS",
+        "location": {
+          "column": "26",
+          "line": "62",
+          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+        },
+        "name": "SUCCESS",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "62",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@2714@macro@U8_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "U8_MAX",
+    "location": {
+      "column": "9",
+      "line": "64",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "U8_MAX",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@2744@macro@S8_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "S8_MAX",
+    "location": {
+      "column": "9",
+      "line": "65",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "S8_MAX",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@2774@macro@S8_MIN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "S8_MIN",
+    "location": {
+      "column": "9",
+      "line": "66",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "S8_MIN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@2805@macro@U16_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "U16_MAX",
+    "location": {
+      "column": "9",
+      "line": "67",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "U16_MAX",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@2839@macro@S16_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "S16_MAX",
+    "location": {
+      "column": "9",
+      "line": "68",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "S16_MAX",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@2872@macro@S16_MIN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "S16_MIN",
+    "location": {
+      "column": "9",
+      "line": "69",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "S16_MIN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@2906@macro@U32_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "U32_MAX",
+    "location": {
+      "column": "9",
+      "line": "70",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "U32_MAX",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@2946@macro@S32_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "S32_MAX",
+    "location": {
+      "column": "9",
+      "line": "71",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "S32_MAX",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_type.h@2984@macro@S32_MIN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "S32_MIN",
+    "location": {
+      "column": "9",
+      "line": "72",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
+    },
+    "name": "S32_MIN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@Init_STM32F103",
     "What": "Function",
     "defdec": "Def",
@@ -15212,672 +15892,6 @@
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_gpio.h"
     },
     "name": "GPIO_EXTILineConfig",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@1112@macro@__STM32F10x_TYPE_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__STM32F10x_TYPE_H",
-    "location": {
-      "column": "9",
-      "line": "19",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "__STM32F10x_TYPE_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@s32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "long",
-    "location": {
-      "column": "22",
-      "line": "23",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "s32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@s16",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "short",
-    "location": {
-      "column": "22",
-      "line": "24",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "s16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@s8",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "signed char",
-    "location": {
-      "column": "22",
-      "line": "25",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "s8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@sc32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "const long",
-    "location": {
-      "column": "28",
-      "line": "27",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "sc32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@sc16",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "const short",
-    "location": {
-      "column": "28",
-      "line": "28",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "sc16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@sc8",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "const signed char",
-    "location": {
-      "column": "28",
-      "line": "29",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "sc8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@vs32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "volatile long",
-    "location": {
-      "column": "31",
-      "line": "31",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "vs32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@vs16",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "volatile short",
-    "location": {
-      "column": "31",
-      "line": "32",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "vs16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@vs8",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "volatile signed char",
-    "location": {
-      "column": "31",
-      "line": "33",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "vs8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@vsc32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "const volatile long",
-    "location": {
-      "column": "37",
-      "line": "35",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "vsc32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@vsc16",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "const volatile short",
-    "location": {
-      "column": "37",
-      "line": "36",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "vsc16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@vsc8",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "const volatile signed char",
-    "location": {
-      "column": "37",
-      "line": "37",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "vsc8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@u32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned long",
-    "location": {
-      "column": "24",
-      "line": "39",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "u32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@u16",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned short",
-    "location": {
-      "column": "24",
-      "line": "40",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "u16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@u8",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned char",
-    "location": {
-      "column": "24",
-      "line": "41",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "u8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@uc32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "const unsigned long",
-    "location": {
-      "column": "30",
-      "line": "43",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "uc32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@uc16",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "const unsigned short",
-    "location": {
-      "column": "30",
-      "line": "44",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "uc16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@uc8",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "const unsigned char",
-    "location": {
-      "column": "30",
-      "line": "45",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "uc8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@vu32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "volatile unsigned long",
-    "location": {
-      "column": "33",
-      "line": "47",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "vu32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@vu16",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "volatile unsigned short",
-    "location": {
-      "column": "33",
-      "line": "48",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "vu16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@vu8",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "volatile unsigned char",
-    "location": {
-      "column": "33",
-      "line": "49",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "vu8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@vuc32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "const volatile unsigned long",
-    "location": {
-      "column": "39",
-      "line": "51",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "vuc32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@vuc16",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "const volatile unsigned short",
-    "location": {
-      "column": "39",
-      "line": "52",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "vuc16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@T@vuc8",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "const volatile unsigned char",
-    "location": {
-      "column": "39",
-      "line": "53",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "vuc8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@bool",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@bool@FALSE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "FALSE",
-        "location": {
-          "column": "15",
-          "line": "55",
-          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-        },
-        "name": "FALSE",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@bool@TRUE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "TRUE",
-        "location": {
-          "column": "26",
-          "line": "55",
-          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-        },
-        "name": "TRUE",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "55",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@FlagStatus",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@FlagStatus@RESET",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "RESET",
-        "location": {
-          "column": "15",
-          "line": "57",
-          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-        },
-        "name": "RESET",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@FlagStatus@SET",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "SET",
-        "location": {
-          "column": "26",
-          "line": "57",
-          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-        },
-        "name": "SET",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "57",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@FunctionalState",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@FunctionalState@DISABLE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "DISABLE",
-        "location": {
-          "column": "15",
-          "line": "59",
-          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-        },
-        "name": "DISABLE",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@FunctionalState@ENABLE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ENABLE",
-        "location": {
-          "column": "28",
-          "line": "59",
-          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-        },
-        "name": "ENABLE",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "59",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@2575@macro@IS_FUNCTIONAL_STATE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "IS_FUNCTIONAL_STATE",
-    "location": {
-      "column": "9",
-      "line": "60",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "IS_FUNCTIONAL_STATE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@ErrorStatus",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@ErrorStatus@ERROR",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ERROR",
-        "location": {
-          "column": "15",
-          "line": "62",
-          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-        },
-        "name": "ERROR",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@ErrorStatus@SUCCESS",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "SUCCESS",
-        "location": {
-          "column": "26",
-          "line": "62",
-          "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-        },
-        "name": "SUCCESS",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "62",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@2714@macro@U8_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "U8_MAX",
-    "location": {
-      "column": "9",
-      "line": "64",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "U8_MAX",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@2744@macro@S8_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "S8_MAX",
-    "location": {
-      "column": "9",
-      "line": "65",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "S8_MAX",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@2774@macro@S8_MIN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "S8_MIN",
-    "location": {
-      "column": "9",
-      "line": "66",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "S8_MIN",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@2805@macro@U16_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "U16_MAX",
-    "location": {
-      "column": "9",
-      "line": "67",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "U16_MAX",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@2839@macro@S16_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "S16_MAX",
-    "location": {
-      "column": "9",
-      "line": "68",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "S16_MAX",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@2872@macro@S16_MIN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "S16_MIN",
-    "location": {
-      "column": "9",
-      "line": "69",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "S16_MIN",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@2906@macro@U32_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "U32_MAX",
-    "location": {
-      "column": "9",
-      "line": "70",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "U32_MAX",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@2946@macro@S32_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "S32_MAX",
-    "location": {
-      "column": "9",
-      "line": "71",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "S32_MAX",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm32f10x_type.h@2984@macro@S32_MIN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "S32_MIN",
-    "location": {
-      "column": "9",
-      "line": "72",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\Library\\inc\\stm32f10x_type.h"
-    },
-    "name": "S32_MIN",
     "origin": "user_include",
     "scope": null
   },
@@ -21212,7 +21226,21 @@
     "scope": null
   },
   {
-    "ID": "c:stm32f10x_conf.h@4048@macro@_USART",
+    "ID": "c:stm32f10x_conf.h@3947@macro@_TIM4",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_TIM4",
+    "location": {
+      "column": "9",
+      "line": "106",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_conf.h"
+    },
+    "name": "_TIM4",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm32f10x_conf.h@4046@macro@_USART",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "_USART",
@@ -21226,7 +21254,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm32f10x_conf.h@4064@macro@_USART1",
+    "ID": "c:stm32f10x_conf.h@4062@macro@_USART1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "_USART1",
@@ -21240,7 +21268,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm32f10x_conf.h@4081@macro@_USART2",
+    "ID": "c:stm32f10x_conf.h@4079@macro@_USART2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "_USART2",
@@ -21254,7 +21282,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm32f10x_conf.h@4098@macro@_USART3",
+    "ID": "c:stm32f10x_conf.h@4096@macro@_USART3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "_USART3",
@@ -21268,7 +21296,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm32f10x_conf.h@4333@macro@HSE_Value",
+    "ID": "c:stm32f10x_conf.h@4331@macro@HSE_Value",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "HSE_Value",
@@ -21282,7 +21310,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm32f10x_conf.h@5401@macro@assert_param",
+    "ID": "c:stm32f10x_conf.h@5399@macro@assert_param",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "assert_param",
@@ -29430,314 +29458,6 @@
     "scope": null
   },
   {
-    "ID": "c:key_pad.h@29@macro@KEY_PAD_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "KEY_PAD_H",
-    "location": {
-      "column": "9",
-      "line": "3",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "KEY_PAD_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@107@macro@ROW_PORT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_PORT",
-    "location": {
-      "column": "9",
-      "line": "9",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "ROW_PORT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@131@macro@ROW_DDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_DDR",
-    "location": {
-      "column": "9",
-      "line": "10",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "ROW_DDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@173@macro@ROW_MASK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_MASK",
-    "location": {
-      "column": "9",
-      "line": "11",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "ROW_MASK",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@200@macro@ROW_1",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_1",
-    "location": {
-      "column": "9",
-      "line": "13",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "ROW_1",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@226@macro@ROW_2",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_2",
-    "location": {
-      "column": "9",
-      "line": "14",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "ROW_2",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@252@macro@ROW_3",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_3",
-    "location": {
-      "column": "9",
-      "line": "15",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "ROW_3",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@278@macro@ROW_4",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_4",
-    "location": {
-      "column": "9",
-      "line": "16",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "ROW_4",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@306@macro@ROW_KEY",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW_KEY",
-    "location": {
-      "column": "9",
-      "line": "18",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "ROW_KEY",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@357@macro@COLUMN_PORT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "COLUMN_PORT",
-    "location": {
-      "column": "9",
-      "line": "20",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "COLUMN_PORT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@388@macro@COLUMN_DDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "COLUMN_DDR",
-    "location": {
-      "column": "9",
-      "line": "21",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "COLUMN_DDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@449@macro@KEY_1",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "KEY_1",
-    "location": {
-      "column": "9",
-      "line": "24",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "KEY_1",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@477@macro@KEY_2",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "KEY_2",
-    "location": {
-      "column": "9",
-      "line": "25",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "KEY_2",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@503@macro@KEY_3",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "KEY_3",
-    "location": {
-      "column": "9",
-      "line": "26",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "KEY_3",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.h@531@macro@COLUMN_MASK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "COLUMN_MASK",
-    "location": {
-      "column": "9",
-      "line": "28",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "COLUMN_MASK",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Init_keypad",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Init_keypad(void)",
-    "location": {
-      "column": "6",
-      "line": "30",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "Init_keypad",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Init_keypad",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Init_keypad(void)",
-    "location": {
-      "column": "6",
-      "line": "30",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "Init_keypad",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GetKeypadInput",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int GetKeypadInput(void)",
-    "location": {
-      "column": "5",
-      "line": "31",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "GetKeypadInput",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GetKeypadInput",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int GetKeypadInput(void)",
-    "location": {
-      "column": "5",
-      "line": "31",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
-    },
-    "name": "GetKeypadInput",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Init_keypad",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void Init_keypad(void)",
-    "location": {
-      "column": "6",
-      "line": "3",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "Init_keypad",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:key_pad.c@54@F@Init_keypad@GPIO_InitStructure",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "GPIO_InitStructure",
-    "location": {
-      "column": "20",
-      "line": "5",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "GPIO_InitStructure",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GetKeypadInput",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "int GetKeypadInput(void)",
-    "location": {
-      "column": "5",
-      "line": "23",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
-    },
-    "name": "GetKeypadInput",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:@F@NMIException",
     "What": "Function",
     "defdec": "Def",
@@ -30518,6 +30238,314 @@
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "USBWakeUp_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@29@macro@KEY_PAD_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "KEY_PAD_H",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "KEY_PAD_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@107@macro@ROW_PORT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_PORT",
+    "location": {
+      "column": "9",
+      "line": "9",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_PORT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@131@macro@ROW_DDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_DDR",
+    "location": {
+      "column": "9",
+      "line": "10",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_DDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@173@macro@ROW_MASK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_MASK",
+    "location": {
+      "column": "9",
+      "line": "11",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_MASK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@200@macro@ROW_1",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_1",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_1",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@226@macro@ROW_2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_2",
+    "location": {
+      "column": "9",
+      "line": "14",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_2",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@252@macro@ROW_3",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_3",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_3",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@278@macro@ROW_4",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_4",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_4",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@306@macro@ROW_KEY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_KEY",
+    "location": {
+      "column": "9",
+      "line": "18",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "ROW_KEY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@357@macro@COLUMN_PORT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "COLUMN_PORT",
+    "location": {
+      "column": "9",
+      "line": "20",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "COLUMN_PORT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@388@macro@COLUMN_DDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "COLUMN_DDR",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "COLUMN_DDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@449@macro@KEY_1",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "KEY_1",
+    "location": {
+      "column": "9",
+      "line": "24",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "KEY_1",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@477@macro@KEY_2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "KEY_2",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "KEY_2",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@503@macro@KEY_3",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "KEY_3",
+    "location": {
+      "column": "9",
+      "line": "26",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "KEY_3",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.h@531@macro@COLUMN_MASK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "COLUMN_MASK",
+    "location": {
+      "column": "9",
+      "line": "28",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "COLUMN_MASK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Init_keypad",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Init_keypad(void)",
+    "location": {
+      "column": "6",
+      "line": "30",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "Init_keypad",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Init_keypad",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Init_keypad(void)",
+    "location": {
+      "column": "6",
+      "line": "30",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "Init_keypad",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GetKeypadInput",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int GetKeypadInput(void)",
+    "location": {
+      "column": "5",
+      "line": "31",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "GetKeypadInput",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GetKeypadInput",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int GetKeypadInput(void)",
+    "location": {
+      "column": "5",
+      "line": "31",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.h"
+    },
+    "name": "GetKeypadInput",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Init_keypad",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void Init_keypad(void)",
+    "location": {
+      "column": "6",
+      "line": "3",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
+    },
+    "name": "Init_keypad",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:key_pad.c@54@F@Init_keypad@GPIO_InitStructure",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "GPIO_InitStructure",
+    "location": {
+      "column": "20",
+      "line": "5",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
+    },
+    "name": "GPIO_InitStructure",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GetKeypadInput",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int GetKeypadInput(void)",
+    "location": {
+      "column": "5",
+      "line": "23",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\key_pad.c"
+    },
+    "name": "GetKeypadInput",
     "origin": "project_file",
     "scope": null
   },
@@ -32179,7 +32207,7 @@
     "ID": "c:@F@Timer_Configuration",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void Timer_Configuration(int, int)",
+    "display": "void Timer_Configuration(int, int, int)",
     "location": {
       "column": "6",
       "line": "12",
@@ -32207,7 +32235,7 @@
     "ID": "c:@F@GPIO_Setting_Output",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void GPIO_Setting_Output(u16, GPIO_TypeDef *)",
+    "display": "void GPIO_Setting_Output(u32, u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
       "line": "14",
@@ -32221,7 +32249,7 @@
     "ID": "c:@F@GPIO_Setting_Input",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void GPIO_Setting_Input(u16, GPIO_TypeDef *)",
+    "display": "void GPIO_Setting_Input(u32, u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
       "line": "15",
@@ -32400,7 +32428,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1138@F@main@start_string1",
+    "ID": "c:main.c@1208@F@main@start_string1",
     "What": "Variable",
     "defdec": "Def",
     "display": "start_string1",
@@ -32414,7 +32442,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1293@F@main@keypadinput",
+    "ID": "c:main.c@1370@F@main@keypadinput",
     "What": "Variable",
     "defdec": "Def",
     "display": "keypadinput",
@@ -32434,7 +32462,7 @@
     "display": "void EXTI_Interrupt_Configuration(u8, u32, u8, u8)",
     "location": {
       "column": "6",
-      "line": "85",
+      "line": "88",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "EXTI_Interrupt_Configuration",
@@ -32442,13 +32470,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1929@F@EXTI_Interrupt_Configuration@EXTI_InitStructure",
+    "ID": "c:main.c@2087@F@EXTI_Interrupt_Configuration@EXTI_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "EXTI_InitStructure",
     "location": {
       "column": "19",
-      "line": "87",
+      "line": "90",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "EXTI_InitStructure",
@@ -32456,13 +32484,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1968@F@EXTI_Interrupt_Configuration@NVIC_InitStructure",
+    "ID": "c:main.c@2126@F@EXTI_Interrupt_Configuration@NVIC_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "NVIC_InitStructure",
     "location": {
       "column": "19",
-      "line": "88",
+      "line": "91",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "NVIC_InitStructure",
@@ -32473,10 +32501,10 @@
     "ID": "c:@F@GPIO_Setting_Output",
     "What": "Function",
     "defdec": "Def",
-    "display": "void GPIO_Setting_Output(u16, GPIO_TypeDef *)",
+    "display": "void GPIO_Setting_Output(u32, u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
-      "line": "106",
+      "line": "109",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_Setting_Output",
@@ -32484,13 +32512,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2689@F@GPIO_Setting_Output@GPIO_InitStructure",
+    "ID": "c:main.c@2931@F@GPIO_Setting_Output@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
     "location": {
       "column": "19",
-      "line": "108",
+      "line": "113",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_InitStructure",
@@ -32501,10 +32529,10 @@
     "ID": "c:@F@GPIO_Setting_Input",
     "What": "Function",
     "defdec": "Def",
-    "display": "void GPIO_Setting_Input(u16, GPIO_TypeDef *)",
+    "display": "void GPIO_Setting_Input(u32, u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
-      "line": "114",
+      "line": "119",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_Setting_Input",
@@ -32512,13 +32540,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2984@F@GPIO_Setting_Input@GPIO_InitStructure",
+    "ID": "c:main.c@3310@F@GPIO_Setting_Input@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
     "location": {
       "column": "19",
-      "line": "116",
+      "line": "123",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_InitStructure",
@@ -32529,10 +32557,10 @@
     "ID": "c:@F@Timer_Configuration",
     "What": "Function",
     "defdec": "Def",
-    "display": "void Timer_Configuration(int, int)",
+    "display": "void Timer_Configuration(int, int, int)",
     "location": {
       "column": "6",
-      "line": "123",
+      "line": "130",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Timer_Configuration",
@@ -32540,27 +32568,55 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3277@F@Timer_Configuration@TIM2_TimeBaseInitStruct",
+    "ID": "c:main.c@3619@F@Timer_Configuration@Timer",
     "What": "Variable",
     "defdec": "Def",
-    "display": "TIM2_TimeBaseInitStruct",
+    "display": "Timer",
     "location": {
-      "column": "26",
-      "line": "125",
+      "column": "16",
+      "line": "132",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
-    "name": "TIM2_TimeBaseInitStruct",
+    "name": "Timer",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@3328@F@Timer_Configuration@NVIC_InitStructure",
+    "ID": "c:main.c@3643@F@Timer_Configuration@TimerInterruptType",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "TimerInterruptType",
+    "location": {
+      "column": "7",
+      "line": "133",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "TimerInterruptType",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3950@F@Timer_Configuration@TIM_TimeBaseInitStruct",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "TIM_TimeBaseInitStruct",
+    "location": {
+      "column": "27",
+      "line": "143",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "TIM_TimeBaseInitStruct",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@4001@F@Timer_Configuration@NVIC_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "NVIC_InitStructure",
     "location": {
-      "column": "19",
-      "line": "126",
+      "column": "20",
+      "line": "144",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "NVIC_InitStructure",
@@ -32574,7 +32630,7 @@
     "display": "void Delay(vu32)",
     "location": {
       "column": "6",
-      "line": "146",
+      "line": "164",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Delay",
@@ -32588,7 +32644,7 @@
     "display": "char NumToChar(int)",
     "location": {
       "column": "6",
-      "line": "150",
+      "line": "168",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "NumToChar",
@@ -32890,62 +32946,6 @@
     "scope": null
   },
   {
-    "ID": "c:@F@Timer3_Delay_init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void Timer3_Delay_init(void)",
-    "location": {
-      "column": "6",
-      "line": "3",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
-    },
-    "name": "Timer3_Delay_init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:user_delay.c@59@F@Timer3_Delay_init@TIM3_TimeBaseInitStruct",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "TIM3_TimeBaseInitStruct",
-    "location": {
-      "column": "27",
-      "line": "5",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
-    },
-    "name": "TIM3_TimeBaseInitStruct",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@delay_ms",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void delay_ms(u16)",
-    "location": {
-      "column": "6",
-      "line": "17",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
-    },
-    "name": "delay_ms",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:user_delay.c@490@F@delay_ms@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "7",
-      "line": "19",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:@MainBuffer",
     "What": "Variable",
     "defdec": "Dec",
@@ -33192,6 +33192,62 @@
       "column": "12",
       "line": "116",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Timer3_Delay_init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void Timer3_Delay_init(void)",
+    "location": {
+      "column": "6",
+      "line": "3",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
+    },
+    "name": "Timer3_Delay_init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:user_delay.c@59@F@Timer3_Delay_init@TIM3_TimeBaseInitStruct",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "TIM3_TimeBaseInitStruct",
+    "location": {
+      "column": "27",
+      "line": "5",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
+    },
+    "name": "TIM3_TimeBaseInitStruct",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@delay_ms",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void delay_ms(u16)",
+    "location": {
+      "column": "6",
+      "line": "17",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
+    },
+    "name": "delay_ms",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:user_delay.c@490@F@delay_ms@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "7",
+      "line": "19",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
     },
     "name": "i",
     "origin": "project_file",

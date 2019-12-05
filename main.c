@@ -9,10 +9,10 @@
 #define FALSE 0
 
 // 프로토타입 선언
-void Timer_Configuration(int Prescaler, int Period);
+void Timer_Configuration(int TimerType, int Prescaler, int Period);
 void EXTI_Interrupt_Configuration(u8 EXTIx_IRQChannel, u32 EXTI_Linex, u8 GPIO_PortSourceGPIOx, u8 GPIO_PinSourcex);
-void GPIO_Setting_Output(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
-void GPIO_Setting_Input(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
+void GPIO_Setting_Output(u32 RCC_APB2Periph_GPIOx, u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
+void GPIO_Setting_Input(u32 RCC_APB2Periph_GPIOx, u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
 void Delay(vu32 nCount);
 char NumToChar(int num);
 //프로토타입 끝
@@ -37,7 +37,7 @@ int main(void)
 	// set uart
 	Uart_Init_Setting();
 	// set timer
-        Timer_Configuration(1200, 10000);
+        Timer_Configuration(2, 1200, 10000);
 	// set keypad
         Init_keypad();
 
@@ -106,16 +106,20 @@ void EXTI_Interrupt_Configuration(u8 EXTIx_IRQChannel, u32 EXTI_Linex, u8 GPIO_P
 	EXTI_Init(&EXTI_InitStructure);
 
 }
-void GPIO_Setting_Output(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx)
+void GPIO_Setting_Output(u32 RCC_APB2Periph_GPIOx, u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx)
 {
+	RCC_APB1PeriphClockCmd(RCC_APB2Periph_GPIOx, ENABLE);
+
 	GPIO_InitTypeDef GPIO_InitStructure;
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_n;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_Init(GPIOx, &GPIO_InitStructure);
 }
-void GPIO_Setting_Input(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx)
+void GPIO_Setting_Input(u32 RCC_APB2Periph_GPIOx, u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx)
 {
+	RCC_APB1PeriphClockCmd(RCC_APB2Periph_GPIOx, ENABLE);
+
 	GPIO_InitTypeDef GPIO_InitStructure;
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_n;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
@@ -123,27 +127,38 @@ void GPIO_Setting_Input(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx)
 	GPIO_Init(GPIOx, &GPIO_InitStructure);
 }
 
-void Timer_Configuration(int Prescaler, int Period)
+void Timer_Configuration(int TimerType, int Prescaler, int Period)
 {
-	TIM_TimeBaseInitTypeDef TIM2_TimeBaseInitStruct;
-	NVIC_InitTypeDef NVIC_InitStructure;
+  TIM_TypeDef* Timer;
+   u8 TimerInterruptType;
+  if (TimerType == 2)
+  {  Timer = TIM2; TimerInterruptType =TIM2_IRQChannel; }
+  else if (TimerType == 3)
+  { Timer = TIM3; TimerInterruptType = TIM3_IRQChannel; }
+  else if (TimerType == 4)
+  { Timer = TIM4; TimerInterruptType = TIM4_IRQChannel; }
+  else
+    return;
+  
+  TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct;
+  NVIC_InitTypeDef NVIC_InitStructure;
 
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+  RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
 
-	TIM2_TimeBaseInitStruct.TIM_Prescaler = Prescaler - 1; // 1200
-	TIM2_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;
-	TIM2_TimeBaseInitStruct.TIM_Period = Period - 1; // 10000
-	TIM2_TimeBaseInitStruct.TIM_ClockDivision = TIM_CKD_DIV1;
-	TIM_TimeBaseInit(TIM2, &TIM2_TimeBaseInitStruct);
+  TIM_TimeBaseInitStruct.TIM_Prescaler = Prescaler - 1; // 1200
+  TIM_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;
+  TIM_TimeBaseInitStruct.TIM_Period = Period - 1; // 10000
+  TIM_TimeBaseInitStruct.TIM_ClockDivision = TIM_CKD_DIV1;
+  TIM_TimeBaseInit(Timer, &TIM_TimeBaseInitStruct);
 
-	NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQChannel;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
-	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-	NVIC_Init(&NVIC_InitStructure);
-	
-	TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
-	TIM_Cmd(TIM2, ENABLE);
+  NVIC_InitStructure.NVIC_IRQChannel = TimerInterruptType;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+  NVIC_Init(&NVIC_InitStructure);
+
+  TIM_ITConfig(Timer, TIM_IT_Update, ENABLE);
+  TIM_Cmd(Timer, ENABLE);
 
 }
 void Delay(vu32 nCount)
