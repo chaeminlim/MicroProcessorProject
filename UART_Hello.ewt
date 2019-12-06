@@ -1206,6 +1206,9 @@
     <group>
         <name>Library</name>
         <file>
+            <name>$PROJ_DIR$\Library\src\stm32f10x_exti.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\Library\src\stm32f10x_flash.c</name>
         </file>
         <file>

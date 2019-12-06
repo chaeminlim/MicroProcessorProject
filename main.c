@@ -12,18 +12,21 @@
 // 프로토타입 선언
 void Timer_Configuration(int TimerType, int Prescaler, int Period);
 void EXTI_Interrupt_Configuration(u8 EXTIx_IRQChannel, u32 EXTI_Linex, u8 GPIO_PortSourceGPIOx, u8 GPIO_PinSourcex);
-void GPIO_Setting_Output(u32 RCC_APB2Periph_GPIOx, u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
-void GPIO_Setting_Input(u32 RCC_APB2Periph_GPIOx, u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
+void GPIO_Setting_Output(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
+void GPIO_Setting_Input(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
+void Switch_Configuration();
+void FND_Configuration();
 void Delay(vu32 nCount);
 char NumToChar(int num);
 void twenty_question_quiz();
-char* Uart_GetData();
+void Uart_GetData();
+int StringCompare(char* str1, char* str2, int size);
 //프로토타입 끝
 
 // uart 통신을 위한 버퍼 및 변수들
 char returnStringBuffer[20];
 char MainBuffer[BUFSIZE];
-char ReceiveBuffer[BUFSIZE];
+char ReceiveBuffer[BUFSIZE]; 
 int BufferValid = 0;
 int ReceiveLength = 0;
 int MainLength = 0;
@@ -35,13 +38,17 @@ unsigned char time_10m = 0, time_1m = 0, time_10s = 0, time_1s = 0;
 
 // 스무고개 변수
 
-const char answerStr[] = "rainbow";
-const char welcomeStr[] = "Welcome to Twenty-Question-Quiz!";
-const char startStr[] = "Here we go!";
-const char failStr[] = "You failed. try again!";
-const char switchStr[] = "know the answer / show hint";
-const char resetStr[] = "If you want to challenge again, please press reset button.";
-const char hints[HINTS_SIZE][] =
+int answerButtonClicked = 0;
+int resetButtonClicked = 0;
+
+char answerStr[] = "rainbow";
+char welcomeStr[] = "Welcome to Twenty-Question-Quiz!";
+char startStr[] = "Here we go!";
+char failStr[] = "You failed. try again!";
+char switchStr[] = "know the answer / show hint";
+char gratStr[] = "Correct!";
+char resetStr[] = "If you want to challenge again, please press reset button.";
+char hints[HINTS_SIZE][80] =
 {
 	"1. It isn't alive.",
 	"2. It is untouchable.",
@@ -51,7 +58,7 @@ const char hints[HINTS_SIZE][] =
 	"6. Generally, it has arc shape.",
 	"7. It has red color.",
 	"8. It has many colors.",
-	"9. It is recognized that it has different number of colors between cultures.",
+	"9. it has different number of colors between cultures.",
 	"10. It is in the air.",
 	"11. It appears the opposite side of the sun.",
 	"12. It's duration is short.",
@@ -60,7 +67,7 @@ const char hints[HINTS_SIZE][] =
 	"15. It can be made artificially.",
 	"16. Principle of its generation is explained first in 1637.",
 	"17. If there is 'it' in the west sky, it will rain after a while.",
-	"18. Actually, it has more colors that cannot be seen by human.",
+	"18. It has more colors that cannot be seen by human.",
 	"19. You can also see 'it' with a piece of prism.",
 	"20. It can be seen in the sky after raining."
 };
@@ -72,25 +79,32 @@ gpioa 0 ~ 7 -> lcd d0 ~ d7
 gpioa 9 10 -> uart tx rx
 gpiob 0 1 2 -> lcd rs rw e
 gpioc 0 ~ 6 -> keypad
-
+gpioc 78 -> switch
 */
 int main(void)
 {
 
 //// setting for initializing
-	// init stm32
-	Init_STM32F103();
-	// set uart
-	Uart_Init_Setting();
-	// set timer
-    Timer_Configuration(2, 1200, 10000);
-	// set keypad
-    Init_keypad();
-	// init lcd
-	lcdInit();
-//// end initializing
+        // init stm32
+        Init_STM32F103();
+        // clock
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC | RCC_APB2Periph_GPIOB |RCC_APB2Periph_GPIOA| RCC_APB2Periph_AFIO, ENABLE);
+        // set uart
+        Uart_Init_Setting();
+        // set timer
+        Timer_Configuration(2, 1200, 10000);
+        // set keypad
+        Init_keypad();
+        // init lcd
+        lcdInit();
+        // switch init
+        Switch_Configuration();
 
-	twenty_question_quiz();
+//// end initializing
+        while(1)
+        {
+          	twenty_question_quiz();
+        }
 
 /*initialzing message 
 	const char start_string1[100] = "Start\n";
@@ -116,40 +130,71 @@ int main(void)
 
 
 }
+void FND_Configuration()
+{
+}
+
+void Switch_Configuration()
+{
+  GPIO_Setting_Input(GPIO_Pin_7, GPIOC);
+  GPIO_Setting_Input(GPIO_Pin_8, GPIOC);
+  EXTI_Interrupt_Configuration(EXTI0_IRQChannel, EXTI_Line7, GPIO_PortSourceGPIOC, GPIO_PinSource7);
+  EXTI_Interrupt_Configuration(EXTI1_IRQChannel, EXTI_Line8, GPIO_PortSourceGPIOC, GPIO_PinSource8);
+  
+}
 
 void twenty_question_quiz() 
 { // 필요한 것: switch, LCD, array FND, LED
 
 	// LCD - 인사와 시작
 	lcdPrintData(welcomeStr, sizeof(welcomeStr));
-	lcdPrintData(startStr, sizeof(startStr));
+        UART_Send("Welcome\n", 9);
+        delay_ms(1500);
 
-	int i = 0;
+	lcdPrintData(startStr, sizeof(startStr));
+        UART_Send("Start\n", 7);        
+        delay_ms(1500);
+
+	int tries = 0;
+        
 	while (1) 
 	{
 
 		// 20개 힌트 다 줬으면 실패함을 알려줌(LCD)
-		if (i >= HINTS_SIZE)
+		if (tries >= HINTS_SIZE)
+                {
 			lcdPrintData(failStr, sizeof(failStr));
+                        UART_Send("Fail\n", 6);
+                        break;
+                }
 
 		// LCD - 처음에 힌트 한 번 줌 (array FND - 제한 시간 10초)
-		lcdPrintData(hints[i], sizeof(hints[i++]));
-		// array FND
+		lcdPrintData(hints[tries], sizeof(hints[tries++]));
+		UART_Send("Hint!\n", 7);
+                // array FND
+                delay_ms(5000);
 
+    
 		// switch - (답 / 힌트) - LCD / 힌트 20개 다 줬으면 힌트 버튼 눌러도 효과 없도록 함
 		lcdPrintData(switchStr, sizeof(switchStr));
-
+                UART_Send("Ans/Hint?\n", 11);
+                
+                delay_ms(5000);
 		// 답을 입력할 경우 - 성공시 축하(LCD, LED)하고 break / 실패시 continue
-		if (답을 입력할 경우) 
+		if (answerButtonClicked) 
 		{
+                  answerButtonClicked = 0;
 			// array FND - 제한 시간 표시
-
 			// UART - 답 입력 받음
+                        UART_Send("Give Answer\n", 13); 
+			Uart_GetData();
 
-			if (정답인 경우(strcmp 사용)) 
+			if (StringCompare(returnStringBuffer, answerStr, sizeof(answerStr)))
 			{
 				// LCD, LED - 축하
-
+				lcdPrintData(gratStr, sizeof(gratStr));
+                                UART_Send("Grats\n", 7);
+                                break;
 			}
 			else continue;
 		} // end if
@@ -157,13 +202,21 @@ void twenty_question_quiz()
 		else 
 		{
 			// array FND - 제한 시간 10초
-			lcdPrintData(hints[i], sizeof(hints[i++]));
+			lcdPrintData(hints[tries], sizeof(hints[tries++]));
+                        UART_Send("AnotherHint\n", 13);
+                        delay_ms(5000);
+                        
 		} //  end else
 
 	} // end while
 
 	// LCD - 또 도전하시려면 리셋버튼을 눌러주세요
 	lcdPrintData(resetStr, sizeof(resetStr));
+        UART_Send("Over\n", 6);
+        delay_ms(5000);
+        if(resetButtonClicked)
+          return;
+        return;
 } // end twenty_question_quiz()
 
 void Uart_GetData()
@@ -172,7 +225,7 @@ void Uart_GetData()
 	{
 		if (BufferValid)
 		{
-			StringCopy(char* returnStringBuffer, char* MainBuffer, int MainLength);
+			StringCopy(returnStringBuffer, MainBuffer,MainLength);
 			BufferValid = 0;
 			return;
 		}
@@ -186,13 +239,21 @@ void Uart_GetData()
 	}
 }
 
+int StringCompare(char* str1, char* str2, int size)
+{
+	for(int i = 0; i < size; i++)
+	{
+		if (str1[i] != str2[i]) return -1;
+	}
+	return 1;
+}
+
+
 
 void EXTI_Interrupt_Configuration(u8 EXTIx_IRQChannel, u32 EXTI_Linex, u8 GPIO_PortSourceGPIOx, u8 GPIO_PinSourcex)
 {
 	EXTI_InitTypeDef EXTI_InitStructure;
 	NVIC_InitTypeDef NVIC_InitStructure;
-
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
 
 	NVIC_InitStructure.NVIC_IRQChannel = EXTIx_IRQChannel;
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
@@ -208,19 +269,16 @@ void EXTI_Interrupt_Configuration(u8 EXTIx_IRQChannel, u32 EXTI_Linex, u8 GPIO_P
 	EXTI_Init(&EXTI_InitStructure);
 
 }
-void GPIO_Setting_Output(u32 RCC_APB2Periph_GPIOx, u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx)
+void GPIO_Setting_Output(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx)
 {
-	RCC_APB1PeriphClockCmd(RCC_APB2Periph_GPIOx, ENABLE);
-
 	GPIO_InitTypeDef GPIO_InitStructure;
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_n;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_Init(GPIOx, &GPIO_InitStructure);
 }
-void GPIO_Setting_Input(u32 RCC_APB2Periph_GPIOx, u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx)
+void GPIO_Setting_Input(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx)
 {
-	RCC_APB1PeriphClockCmd(RCC_APB2Periph_GPIOx, ENABLE);
 
 	GPIO_InitTypeDef GPIO_InitStructure;
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_n;
@@ -233,6 +291,7 @@ void Timer_Configuration(int TimerType, int Prescaler, int Period)
 {
   TIM_TypeDef* Timer;
    u8 TimerInterruptType;
+   
   if (TimerType == 2)
   {  Timer = TIM2; TimerInterruptType =TIM2_IRQChannel; }
   else if (TimerType == 3)
@@ -263,10 +322,12 @@ void Timer_Configuration(int TimerType, int Prescaler, int Period)
   TIM_Cmd(Timer, ENABLE);
 
 }
+                                             
 void Delay(vu32 nCount)
 {
 	for (; nCount != 0; nCount--);
 }
+                                             
 char NumToChar(int num)
 {
   return num + 0x30; 

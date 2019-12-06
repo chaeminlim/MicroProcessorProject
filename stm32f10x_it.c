@@ -21,6 +21,9 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
+#include "UART_Lib.h"
+extern int answerButtonClicked;
+extern int resetButtonClicked;
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -220,6 +223,13 @@ void RCC_IRQHandler(void)
 *******************************************************************************/
 void EXTI0_IRQHandler(void)
 {
+  if(EXTI_GetITStatus(EXTI_Line7) != RESET)
+  {
+    // do stm
+    UART_Send("EXTI0\n", 7);
+    answerButtonClicked = 1;
+    EXTI_ClearITPendingBit(EXTI_Line7);
+  }
 }
 
 /*******************************************************************************
@@ -231,6 +241,13 @@ void EXTI0_IRQHandler(void)
 *******************************************************************************/
 void EXTI1_IRQHandler(void)
 {
+  if(EXTI_GetITStatus(EXTI_Line8) != RESET)
+  {
+    // do stm
+    UART_Send("EXTI1\n", 7);
+    resetButtonClicked = 1;
+    EXTI_ClearITPendingBit(EXTI_Line8);
+  }
 }
 
 /*******************************************************************************
