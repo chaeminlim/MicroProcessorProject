@@ -4,12 +4,12 @@
 #include "key_pad.h"
 #include "UART_lib.h"
 
-void up_and_down_game() { // keypad, LCD, LED, array FND(Á¦ÇÑ ½Ã°£À» ³Ö°í ½Í´Ù¸é.)
-	// Á¤´ä °ªÀ» ·£´ıÀ¸·Î »ı¼º (¹üÀ§: 0 ~ 100)
+void up_and_down_game() { // keypad, LCD, LED, array FND(ì œí•œ ì‹œê°„ì„ ë„£ê³  ì‹¶ë‹¤ë©´.)
+	// ì •ë‹µ ê°’ì„ ëœë¤ìœ¼ë¡œ ìƒì„± (ë²”ìœ„: 0 ~ 100)
 	srand(time(NULL));
 	int answer = rand()%101;
 
-	// LCD - ÀÎ»ç¿Í ½ÃÀÛ
+	// LCD - ì¸ì‚¬ì™€ ì‹œì‘
 	char *str = "Welcome to Up-And-Down Game!";
 	display(str, sizeof(str)/sizeof(char));
 
@@ -18,18 +18,18 @@ void up_and_down_game() { // keypad, LCD, LED, array FND(Á¦ÇÑ ½Ã°£À» ³Ö°í ½Í´Ù¸é
 		str = "Enter a number(0 ~ 100)";
 		display(str, sizeof(str)/sizeof(char));
 
-		// keypad - ¼ıÀÚ¸¦ ÀÔ·Â ¹Ş´Â´Ù
+		// keypad - ìˆ«ìë¥¼ ì…ë ¥ ë°›ëŠ”ë‹¤
 		int num;
 		setbuf(stdout, NULL);
-		gets(num); // ÀÓ½Ã. keypad·Î ´ëÃ¼ÇØ¾ß ÇÔ
+		gets(num); // ì„ì‹œ. keypadë¡œ ëŒ€ì²´í•´ì•¼ í•¨
 
 
-		if (num == answer) { // Á¤´ä
+		if (num == answer) { // ì •ë‹µ
 			// LCD
 			str = "Congratulations! You win!";
 			display(str, sizeof(str)/sizeof(char));
 
-			// LED ÃàÇÏ
+			// LED ì¶•í•˜
 			congratulate();
 			break;
 		}
@@ -48,9 +48,9 @@ void display(char* str, int size) {
 	lcdPrintData(str, size);
 } // end display(char* str, int size)
 
-/* LED·Î ÃàÇÏÇØ ÁÖ´Â ÇÔ¼ö */
+/* LEDë¡œ ì¶•í•˜í•´ ì£¼ëŠ” í•¨ìˆ˜ */
 void congratulate() {
-	// »¬ ºÎºĞÀº »©±â
+	// ëº„ ë¶€ë¶„ì€ ë¹¼ê¸°
 	Init_STM32F103();
 
 	GPIO_InitTypeDef GPIO_InitStructure;
@@ -66,31 +66,33 @@ void congratulate() {
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 
-	for (int a = 0; a < 3; a++) { // 3¹ø
+	for (int a = 0; a < 3; a++) { // 3ë²ˆ
 		LED_data = 0x0080;
-		for (int i = 0; i < 2; i++) { // 2¹ø¾¿
+		for (int i = 0; i < 24; i++) {
 			GPIO_ResetBits(GPIOA, LED_data);
 
-			if(LED_data == 0x0080)
+			if(LED_data >= 0x0080)
 				LED_data = 0x0001;
 			else
 				LED_data <<= 1;
 
 			GPIO_SetBits(GPIOA, LED_data);
 			Delay(0xAFFFF);
+			//delay_ms(1000);
 		}
 
 		LED_data = 0x0001;
-		for (int j = 0; j < 2; j++) { // 2¹ø¾¿
+		for (int j = 0; j < 24; j++) {
 			GPIO_ResetBits(GPIOA, LED_data);
 
-			if(LED_data == 0x0001)
+			if(LED_data <= 0x0001)
 				LED_data = 0x0080;
 			else
 				LED_data >>= 1;
 
 			GPIO_SetBits(GPIOA, LED_data);
 			Delay(0xAFFFF);
+			//delay_ms(1000);
 		}
 	}
 }
