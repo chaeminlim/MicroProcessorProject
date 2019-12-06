@@ -10,6 +10,7 @@
 #define FALSE 0
 
 // 프로토타입 선언
+void Initializer();
 void Timer_Configuration(int TimerType, int Prescaler, int Period);
 void EXTI_Interrupt_Configuration(u8 EXTIx_IRQChannel, u32 EXTI_Linex, u8 GPIO_PortSourceGPIOx, u8 GPIO_PinSourcex);
 void GPIO_Setting_Output(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx);
@@ -19,10 +20,13 @@ void FND_Configuration();
 void Delay(vu32 nCount);
 char NumToChar(int num);
 void twenty_question_quiz();
+void up_and_down_game();
 void Uart_GetData();
+void Show_LED();
 int StringCompare(char* str1, char* str2, int size);
 int keypaduse(); // keypad 입력완료버튼 누를때까지 반복 하며 사용자의 업다운 퀴즈 답안값을 반환하는 함수.
-
+void LED_Configuration();
+void PrintLCDData(char* data, u8 nBytes);
 //프로토타입 끝
 
 // uart 통신을 위한 버퍼 및 변수들
@@ -38,19 +42,24 @@ int MainLength = 0;
 unsigned char time_10m = 0, time_1m = 0, time_10s = 0, time_1s = 0;
 // 타이머 시간 변수 끝
 
+// 그 외 변수
+unsigned int LED_data = 0x0080;
+
+//
+
 // 스무고개 변수
 
 int answerButtonClicked = 0;
 int resetButtonClicked = 0;
 
 char answerStr[] = "rainbow";
-char welcomeStr[] = "Welcome to Twenty-Question-Quiz!";
-char startStr[] = "Here we go!";
-char failStr[] = "You failed. try again!";
-char switchStr[] = "know the answer / show hint";
-char gratStr[] = "Correct!";
-char resetStr[] = "If you want to challenge again, please press reset button.";
-char typeAnsStr[] = "What is Your Answer?";
+char welcomeStr[] = "Welcome to Twenty-Question-Quiz!\n";
+char startStr[] = "Here we go!\n";
+char failStr[] = "You failed. try again!\n";
+char switchStr[] = "know the answer / show hint\n";
+char gratStr[] = "Correct!\n";
+char resetStr[] = "If you want to challenge again, please press reset button.\n";
+char typeAnsStr[] = "What is Your Answer?\n";
 char hints[HINTS_SIZE][80] =
 {
 	"1. It isn't alive.",
@@ -82,111 +91,137 @@ gpioa 0 ~ 7 -> lcd d0 ~ d7
 gpioa 9 10 -> uart tx rx
 gpiob  5 6 7-> lcd rs rw e
 gpioc 0 ~ 6 -> keypad
-gpiob 01 -> switch
+gpiob 0 1 -> switch
+gpioa 8 ~ 15 fnd
+gpiob 8 ~ 10
+gpioc 7 - 14 led
 */
 int main(void)
+{   
+	Initializer();
+	while(1)
+	{
+//		twenty_question_quiz();
+		up_and_down_game();
+	}
+}
+
+void up_and_down_game() 
+{ // keypad, LCD, LED, array FND(제한 시간을 넣고 싶다면.)
+	// 정답 값을 랜덤으로 생성 (범위: 0 ~ 100)
+	int answer = 50;
+
+	// LCD - 인사와 시작
+	char* str = "!UpDown Game!";
+	lcdPrintData(str, sizeof(str) / sizeof(char));
+        delay_ms(5000);
+	while (1) 
+	{
+		// LCD
+		str = "Put number(0~100)";
+		lcdPrintData(str, sizeof(str) / sizeof(char));
+
+		// keypad - 숫자를 입력 받는다
+		int keypadInput = keypaduse();
+
+		if (keypadInput == answer)
+		{ // 정답
+			// LCD
+			str = "Grats! You win!";
+			PrintLCDData(str, sizeof(str) / sizeof(char));
+			// LED 축하
+			Show_LED();
+			break;
+		}
+		else if (keypadInput > answer) 
+		{ // UP
+			str = "UP";
+			PrintLCDData(str, sizeof(str) / sizeof(char));
+
+		}
+		else 
+		{ // DOWN
+			str = "DOWN";
+			PrintLCDData(str, sizeof(str) / sizeof(char));
+		}
+	} // end while
+} // end up_and_down_game()
+
+void Initializer()
+{
+	// init stm32
+	Init_STM32F103();
+	// clock
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC | RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOA | RCC_APB2Periph_AFIO, ENABLE);
+	// set uart
+	Uart_Init_Setting();
+	// set timer
+	Timer_Configuration(2, 1200, 10000);
+	// set keypad
+	Init_keypad();
+	// init lcd
+	lcdInit();
+	// switch init
+	Switch_Configuration();
+	// led setting
+	LED_Configuration();
+}
+void PrintLCDData(char* data, u8 nBytes)
 {
 
-//// setting for initializing
-        // init stm32
-        Init_STM32F103();
-        // clock
-        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC | RCC_APB2Periph_GPIOB |RCC_APB2Periph_GPIOA| RCC_APB2Periph_AFIO, ENABLE);
-        // set uart
-        Uart_Init_Setting();
-        // set timer
-        Timer_Configuration(2, 1200, 10000);
-        // set keypad
-        Init_keypad();
-        // init lcd
-        lcdInit();
-        // switch init
-        Switch_Configuration();
+	u8 i;
+	u8 flag = 0;
+	if (!data) return;
 
-//// end initializing
-        
-        // gpio example
-GPIO_InitTypeDef GPIO_InitStructure;
-  unsigned int LED_data = 0x0080;
-  
-  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+	for (i = 0; i < nBytes; i++)
+	{
+		lcdDataWrite(data[i]);
+		`
+	}
+}
+void Show_LED()
+{
+	for (int a = 0; a < 3; a++)
+	{ // 3번
+		for (int i = 0; i < 24; i++)
+		{
+			GPIO_ResetBits(GPIOA, LED_data);
 
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0| GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-  GPIO_Init(GPIOA, &GPIO_InitStructure);
+			if (LED_data == 0x0080)
+				LED_data = 0x0001;
+			else
+				LED_data <<= 1;
+			GPIO_SetBits(GPIOA, LED_data);
+			delay_ms(1000);
+		}
 
-  for (int a = 0; a < 1000; a++) 
-  { // 3번
-    for (int i = 0; i < 24; i++) 
-    {
-      GPIO_ResetBits(GPIOA, LED_data);
+		for (int j = 0; j < 24; j++)
+		{
+			GPIO_ResetBits(GPIOA, LED_data);
 
-      if(LED_data == 0x0080)
-        LED_data = 0x0001;
-      else
-        LED_data <<= 1;
-      GPIO_SetBits(GPIOA, LED_data);
-      Delay(0xAFFFF);
-    }
+			if (LED_data == 0x0001)
+				LED_data = 0x0080;
+			else
+				LED_data >>= 1;
 
-    for (int j = 0; j < 24; j++) 
-    {
-      GPIO_ResetBits(GPIOA, LED_data);
-
-      if(LED_data == 0x0001)
-        LED_data = 0x0080;
-      else
-        LED_data >>= 1;
-
-      GPIO_SetBits(GPIOA, LED_data);
-      delay_ms(1000);
-    }
-  }
-         
-//// gpio end
-
-        while (1)
-        {
-               UART_Send("In", 3);
-               int keypadInput = keypaduse();
-               UART_Send("In", 3);
-                UART_Send_Char(keypadInput + '0');
-        }
-
-        while(1)
-        {
-          	twenty_question_quiz();
-        }
-
-/*initialzing message 
-	const char start_string1[100] = "Start\n";
-	UART_Send(start_string1, 6);
- message end 
- */
-/*
-        // keypad test code
-        while(1)
-        {
-          int keypadinput = GetKeypadInput();
-          if(keypadinput != -1)
-          {
-            
-            UART_Send_Char(NumToChar(keypadinput));
-            delay_ms(1000);
-
-          }
-          
-        }
-	// keypad test code end
-*/
-
-
+			GPIO_SetBits(GPIOA, LED_data);
+			delay_ms(1000);
+		}
+	}
 }
 void FND_Configuration()
 {
 }
+void LED_Configuration()
+{
+	GPIO_InitTypeDef GPIO_InitStructure;
 
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_7 | GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | 
+		GPIO_Pin_11| GPIO_Pin_12 | GPIO_Pin_13 | GPIO_Pin_14;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+	GPIO_Init(GPIOC, &GPIO_InitStructure);
+}
 void Switch_Configuration()
 {
   GPIO_Setting_Input(GPIO_Pin_0, GPIOB);
@@ -194,7 +229,6 @@ void Switch_Configuration()
   EXTI_Interrupt_Configuration(EXTI0_IRQChannel, EXTI_Line0, GPIO_PortSourceGPIOB, GPIO_PinSource0);
   EXTI_Interrupt_Configuration(EXTI1_IRQChannel, EXTI_Line1, GPIO_PortSourceGPIOB, GPIO_PinSource1);  
 }
-
 void twenty_question_quiz() 
 { // 필요한 것: switch, LCD, array FND, LED
 
@@ -224,7 +258,7 @@ void twenty_question_quiz()
 		// LCD - 처음에 힌트 한 번 줌 (array FND - 제한 시간 10초)
 		UART_Send(hints[tries], sizeof(hints[tries++]));
                 // array FND
-                delay_ms(5000);
+                delay_ms(10000);
 
     
 		// switch - (답 / 힌트) - LCD / 힌트 20개 다 줬으면 힌트 버튼 눌러도 효과 없도록 함
@@ -253,7 +287,7 @@ void twenty_question_quiz()
 		{
 			// array FND - 제한 시간 10초
 			UART_Send(hints[tries], sizeof(hints[tries++]));
-                        delay_ms(5000);
+                        delay_ms(10000);
                         
 		} //  end else
 
@@ -267,7 +301,6 @@ void twenty_question_quiz()
           return;
         return;
 } // end twenty_question_quiz()
-
 void Uart_GetData()
 {
 	while (1)
@@ -287,7 +320,6 @@ void Uart_GetData()
 		}
 	}
 }
-
 int StringCompare(char* str1, char* str2, int size)
 {
 	for(int i = 0; i < size; i++)
@@ -296,7 +328,8 @@ int StringCompare(char* str1, char* str2, int size)
 	}
 	return 1;
 }
-int keypaduse() { // keypad 입력완료버튼 누를때까지 반복 하며 사용자의 업다운 퀴즈 답안값을 반환하는 함수.
+int keypaduse() 
+{ // keypad 입력완료버튼 누를때까지 반복 하며 사용자의 업다운 퀴즈 답안값을 반환하는 함수.
 
 	int keypadinput;
 	int keypadbuffer[2]; // 입력값 저장 버퍼
@@ -307,7 +340,9 @@ int keypaduse() { // keypad 입력완료버튼 누를때까지 반복 하며 사용자의 업다운 퀴
 		*0# 에서 * = 입력버튼 /  #  = delete 버튼
 	*/
 	for (keypadorder = 0; keypadorder < 3; keypadorder++) 
-        {
+    {
+		PrintLCDData("A:", 3);
+
 		keypadinput = GetKeypadInput();
 		delay_ms(500);
 		if (keypadinput != -1)
@@ -324,24 +359,41 @@ int keypaduse() { // keypad 입력완료버튼 누를때까지 반복 하며 사용자의 업다운 퀴
 			}
 
 			//숫자입력
-			if (keypadinput >= 0 && keypadinput <= 9) {
-				if (keypadorder != 2) {
+			if (keypadinput >= 0 && keypadinput <= 9) 
+{
+				if (keypadorder == 0) 
+				{
+					lcdGotoXY(2, 0); 
+					lcdDataWrite(keypadinput +  '0');
 					keypadbuffer[keypadorder] = keypadinput;
+
 				}
-				else {
+				else if (keypadorder == 1)
+				{
+					lcdGotoXY(3, 0);
+					lcdDataWrite(keypadinput + '0');
+					keypadbuffer[keypadorder] = keypadinput;
+
+				}
+				else 
+				{
 					keypadorder--;
 				}
 			}
 
 			// 숫자 입력완료
-			if (keypadinput == 10) {
-				if (keypadorder == 0) {
+			if (keypadinput == 10) 
+			{
+				if (keypadorder == 0) 
+				{
 					keypadorder--;
 				}
-				if (keypadorder == 1) {
+				if (keypadorder == 1) 
+				{
 					keypadorder = 10;
 				}
-				else {
+				else 
+				{
 					keypadorder = 3;
 				}
 			}
@@ -352,24 +404,20 @@ int keypaduse() { // keypad 입력완료버튼 누를때까지 반복 하며 사용자의 업다운 퀴
 		{
 			keypadoutput = keypadbuffer[0];
 		}
-		else {
+		else 
+		{
 			keypadoutput = keypadbuffer[0] * 10;
+
 			keypadoutput += keypadbuffer[1];
 		}
-		keypaddisplay = keypadoutput;
-		/*
-		lcdGotoXY(0, 1);
-		lcdDataWrite(keypaddisplay);
-		*/
-		if (keypadinput == -1) {
+				
+		if (keypadinput == -1) 
+		{
 			keypadorder--;
 		}
 	}
 	return keypadoutput;
 }   // keypad  code end
-
-
-
 void EXTI_Interrupt_Configuration(u8 EXTIx_IRQChannel, u32 EXTI_Linex, u8 GPIO_PortSourceGPIOx, u8 GPIO_PinSourcex)
 {
 	EXTI_InitTypeDef EXTI_InitStructure;
@@ -406,7 +454,6 @@ void GPIO_Setting_Input(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx)
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
 	GPIO_Init(GPIOx, &GPIO_InitStructure);
 }
-
 void Timer_Configuration(int TimerType, int Prescaler, int Period)
 {
   TIM_TypeDef* Timer;
@@ -441,47 +488,15 @@ void Timer_Configuration(int TimerType, int Prescaler, int Period)
   TIM_ITConfig(Timer, TIM_IT_Update, ENABLE);
   TIM_Cmd(Timer, ENABLE);
 
-}
-                                             
+}                                             
 void Delay(vu32 nCount)
 {
 	for (; nCount != 0; nCount--);
-}
-                                             
+}                                           
 char NumToChar(int num)
 {
   return num + 0x30; 
 }
-
-
-/*
-void USART1_IRQHandler(void)
-{
-	// RXNE handler
-	if (USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
-	{
-		char rx = (char)USART_ReceiveData(USART1);
-		if ((rx == '\r') || (rx == '\n'))
-		{
-			if (ReceiveLength != 0) // Line has some content?
-			{
-				memcpy((void*)MainBuffer, ReceiveBuffer, ReceiveLength);
-				// Copy to static line buffer from dynamic receive buffer
-				MainBuffer[ReceiveLength] = 0; // Add terminating NUL
-				BufferValid = 1; // flag new line valid for processing
-				MainLength = ReceiveLength;
-				ReceiveLength = 0; // Reset content pointer
-			}
-		}
-		else
-		{
-			if (ReceiveLength == BUFSIZE) // If overflows pull back to start
-				ReceiveLength = 0;
-			ReceiveBuffer[ReceiveLength++] = rx; // Copy to buffer and increment
-		}
-	}
-}
-*/
 
 
              
