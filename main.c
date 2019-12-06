@@ -21,6 +21,8 @@ char NumToChar(int num);
 void twenty_question_quiz();
 void Uart_GetData();
 int StringCompare(char* str1, char* str2, int size);
+int keypaduse(); // keypad 입력완료버튼 누를때까지 반복 하며 사용자의 업다운 퀴즈 답안값을 반환하는 함수.
+
 //프로토타입 끝
 
 // uart 통신을 위한 버퍼 및 변수들
@@ -77,7 +79,7 @@ char hints[HINTS_SIZE][80] =
 선 연결법
 gpioa 0 ~ 7 -> lcd d0 ~ d7
 gpioa 9 10 -> uart tx rx
-gpiob 2 3  4 -> lcd rs rw e
+gpiob  5 6 7-> lcd rs rw e
 gpioc 0 ~ 6 -> keypad
 gpiob 01 -> switch
 */
@@ -101,6 +103,12 @@ int main(void)
         Switch_Configuration();
 
 //// end initializing
+		while (1)
+		{
+			int keypadInput = keypaduse();
+			UART_Send_Char(keypadInput + '0');
+		}
+
         while(1)
         {
           	twenty_question_quiz();
@@ -185,7 +193,7 @@ void twenty_question_quiz()
                   answerButtonClicked = 0;
 			// array FND - 제한 시간 표시
 			// UART - 답 입력 받음
-                        UART_Send("Give Answer\n", 13); 
+            UART_Send("Give Answer\n", 13); 
 			Uart_GetData();
 
 			if (StringCompare(returnStringBuffer, answerStr, sizeof(answerStr)))
@@ -246,6 +254,77 @@ int StringCompare(char* str1, char* str2, int size)
 	}
 	return 1;
 }
+int keypaduse() { // keypad 입력완료버튼 누를때까지 반복 하며 사용자의 업다운 퀴즈 답안값을 반환하는 함수.
+
+	int keypadinput;
+	int keypadbuffer[2]; // 입력값 저장 버퍼
+	int keypadorder, keypadoutput = 0; // keypad의 입력중인 자릿수를 가리키는 변수 / keypadcheck  입력값이 답인지 확인 하는 변수
+	u8 keypaddisplay;
+	/*  123
+		456
+		789
+		*0# 에서 * = 입력버튼 /  #  = delete 버튼
+	*/
+	for (keypadorder = 0; keypadorder < 3; keypadorder++) {
+		keypadinput = GetKeypadInput();
+		delay_ms(500);
+		if (keypadinput != -1)
+		{
+
+			// 숫자 지우기
+			if (keypadinput == 11)
+			{
+				keypadorder--;
+				if (keypadorder >= 0)
+				{
+					keypadbuffer[keypadorder] = 0;
+				}
+			}
+
+			//숫자입력
+			if (keypadinput >= 0 && keypadinput <= 9) {
+				if (keypadorder != 2) {
+					keypadbuffer[keypadorder] = keypadinput;
+				}
+				else {
+					keypadorder--;
+				}
+			}
+
+			// 숫자 입력완료
+			if (keypadinput == 10) {
+				if (keypadorder == 0) {
+					keypadorder--;
+				}
+				if (keypadorder == 1) {
+					keypadorder = 10;
+				}
+				else {
+					keypadorder = 3;
+				}
+			}
+		}
+
+		//keypad display
+		if (keypadorder >= 10)
+		{
+			keypadoutput = keypadbuffer[0];
+		}
+		else {
+			keypadoutput = keypadbuffer[0] * 10;
+			keypadoutput += keypadbuffer[1];
+		}
+		keypaddisplay = keypadoutput;
+		/*
+		lcdGotoXY(0, 1);
+		lcdDataWrite(keypaddisplay);
+		*/
+		if (keypadinput == -1) {
+			keypadorder--;
+		}
+	}
+	return keypadoutput;
+}   // keypad  code end
 
 
 
