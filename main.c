@@ -50,6 +50,7 @@ char failStr[] = "You failed. try again!";
 char switchStr[] = "know the answer / show hint";
 char gratStr[] = "Correct!";
 char resetStr[] = "If you want to challenge again, please press reset button.";
+char typeAnsStr[] = "What is Your Answer?";
 char hints[HINTS_SIZE][80] =
 {
 	"1. It isn't alive.",
@@ -103,11 +104,55 @@ int main(void)
         Switch_Configuration();
 
 //// end initializing
-		while (1)
-		{
-			int keypadInput = keypaduse();
-			UART_Send_Char(keypadInput + '0');
-		}
+        
+        // gpio example
+GPIO_InitTypeDef GPIO_InitStructure;
+  unsigned int LED_data = 0x0080;
+  
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0| GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7;
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+  GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+  for (int a = 0; a < 1000; a++) 
+  { // 3번
+    for (int i = 0; i < 24; i++) 
+    {
+      GPIO_ResetBits(GPIOA, LED_data);
+
+      if(LED_data == 0x0080)
+        LED_data = 0x0001;
+      else
+        LED_data <<= 1;
+      GPIO_SetBits(GPIOA, LED_data);
+      Delay(0xAFFFF);
+    }
+
+    for (int j = 0; j < 24; j++) 
+    {
+      GPIO_ResetBits(GPIOA, LED_data);
+
+      if(LED_data == 0x0001)
+        LED_data = 0x0080;
+      else
+        LED_data >>= 1;
+
+      GPIO_SetBits(GPIOA, LED_data);
+      delay_ms(1000);
+    }
+  }
+         
+//// gpio end
+
+        while (1)
+        {
+               UART_Send("In", 3);
+               int keypadInput = keypaduse();
+               UART_Send("In", 3);
+                UART_Send_Char(keypadInput + '0');
+        }
 
         while(1)
         {
@@ -174,17 +219,16 @@ void twenty_question_quiz()
                         UART_Send("Fail\n", 6);
                         break;
                 }
-
+                
+                
 		// LCD - 처음에 힌트 한 번 줌 (array FND - 제한 시간 10초)
-		lcdPrintData(hints[tries], sizeof(hints[tries++]));
-		UART_Send("Hint!\n", 7);
+		UART_Send(hints[tries], sizeof(hints[tries++]));
                 // array FND
                 delay_ms(5000);
 
     
 		// switch - (답 / 힌트) - LCD / 힌트 20개 다 줬으면 힌트 버튼 눌러도 효과 없도록 함
-		lcdPrintData(switchStr, sizeof(switchStr));
-                UART_Send("Ans/Hint?\n", 11);
+		UART_Send(switchStr, sizeof(switchStr));
                 
                 delay_ms(5000);
 		// 답을 입력할 경우 - 성공시 축하(LCD, LED)하고 break / 실패시 continue
@@ -193,14 +237,13 @@ void twenty_question_quiz()
                   answerButtonClicked = 0;
 			// array FND - 제한 시간 표시
 			// UART - 답 입력 받음
-            UART_Send("Give Answer\n", 13); 
-			Uart_GetData();
+            UART_Send(typeAnsStr, sizeof(typeAnsStr)); 
+            Uart_GetData();
 
 			if (StringCompare(returnStringBuffer, answerStr, sizeof(answerStr)))
 			{
 				// LCD, LED - 축하
-				lcdPrintData(gratStr, sizeof(gratStr));
-                                UART_Send("Grats\n", 7);
+				UART_Send(gratStr, sizeof(gratStr));
                                 break;
 			}
 			else continue;
@@ -209,8 +252,7 @@ void twenty_question_quiz()
 		else 
 		{
 			// array FND - 제한 시간 10초
-			lcdPrintData(hints[tries], sizeof(hints[tries++]));
-                        UART_Send("AnotherHint\n", 13);
+			UART_Send(hints[tries], sizeof(hints[tries++]));
                         delay_ms(5000);
                         
 		} //  end else
@@ -259,13 +301,13 @@ int keypaduse() { // keypad 입력완료버튼 누를때까지 반복 하며 사용자의 업다운 퀴
 	int keypadinput;
 	int keypadbuffer[2]; // 입력값 저장 버퍼
 	int keypadorder, keypadoutput = 0; // keypad의 입력중인 자릿수를 가리키는 변수 / keypadcheck  입력값이 답인지 확인 하는 변수
-	u8 keypaddisplay;
 	/*  123
 		456
 		789
 		*0# 에서 * = 입력버튼 /  #  = delete 버튼
 	*/
-	for (keypadorder = 0; keypadorder < 3; keypadorder++) {
+	for (keypadorder = 0; keypadorder < 3; keypadorder++) 
+        {
 		keypadinput = GetKeypadInput();
 		delay_ms(500);
 		if (keypadinput != -1)
