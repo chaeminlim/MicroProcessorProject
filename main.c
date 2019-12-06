@@ -77,9 +77,9 @@ char hints[HINTS_SIZE][80] =
 선 연결법
 gpioa 0 ~ 7 -> lcd d0 ~ d7
 gpioa 9 10 -> uart tx rx
-gpiob 0 1 2 -> lcd rs rw e
+gpiob 2 3  4 -> lcd rs rw e
 gpioc 0 ~ 6 -> keypad
-gpioc 78 -> switch
+gpiob 01 -> switch
 */
 int main(void)
 {
@@ -136,11 +136,10 @@ void FND_Configuration()
 
 void Switch_Configuration()
 {
-  GPIO_Setting_Input(GPIO_Pin_7, GPIOC);
-  GPIO_Setting_Input(GPIO_Pin_8, GPIOC);
-  EXTI_Interrupt_Configuration(EXTI0_IRQChannel, EXTI_Line7, GPIO_PortSourceGPIOC, GPIO_PinSource7);
-  EXTI_Interrupt_Configuration(EXTI1_IRQChannel, EXTI_Line8, GPIO_PortSourceGPIOC, GPIO_PinSource8);
-  
+  GPIO_Setting_Input(GPIO_Pin_0, GPIOB);
+  GPIO_Setting_Input(GPIO_Pin_1, GPIOB);
+  EXTI_Interrupt_Configuration(EXTI0_IRQChannel, EXTI_Line0, GPIO_PortSourceGPIOB, GPIO_PinSource0);
+  EXTI_Interrupt_Configuration(EXTI1_IRQChannel, EXTI_Line1, GPIO_PortSourceGPIOB, GPIO_PinSource1);  
 }
 
 void twenty_question_quiz() 

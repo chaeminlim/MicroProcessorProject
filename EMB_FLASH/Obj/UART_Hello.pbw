@@ -29332,20 +29332,6 @@
     "scope": null
   },
   {
-    "ID": "c:@F@TIM2_IRQHandler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void TIM2_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "65",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.h"
-    },
-    "name": "TIM2_IRQHandler",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:@F@TIM3_IRQHandler",
     "What": "Function",
     "defdec": "Dec",
@@ -30284,83 +30270,13 @@
     "scope": null
   },
   {
-    "ID": "c:@time_10m",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "time_10m",
-    "location": {
-      "column": "22",
-      "line": "487",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "time_10m",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@time_1m",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "time_1m",
-    "location": {
-      "column": "32",
-      "line": "487",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "time_1m",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@time_10s",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "time_10s",
-    "location": {
-      "column": "41",
-      "line": "487",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "time_10s",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@time_1s",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "time_1s",
-    "location": {
-      "column": "51",
-      "line": "487",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "time_1s",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TIM2_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TIM2_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "490",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
-    },
-    "name": "TIM2_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:@F@TIM3_IRQHandler",
     "What": "Function",
     "defdec": "Def",
     "display": "void TIM3_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "522",
+      "line": "523",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "TIM3_IRQHandler",
@@ -30374,7 +30290,7 @@
     "display": "void TIM4_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "533",
+      "line": "534",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "TIM4_IRQHandler",
@@ -30388,7 +30304,7 @@
     "display": "void I2C1_EV_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "544",
+      "line": "545",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "I2C1_EV_IRQHandler",
@@ -30402,7 +30318,7 @@
     "display": "void I2C1_ER_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "555",
+      "line": "556",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "I2C1_ER_IRQHandler",
@@ -30416,7 +30332,7 @@
     "display": "void I2C2_EV_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "566",
+      "line": "567",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "I2C2_EV_IRQHandler",
@@ -30430,7 +30346,7 @@
     "display": "void I2C2_ER_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "577",
+      "line": "578",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "I2C2_ER_IRQHandler",
@@ -30444,7 +30360,7 @@
     "display": "void SPI1_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "588",
+      "line": "589",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "SPI1_IRQHandler",
@@ -30458,7 +30374,7 @@
     "display": "void SPI2_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "599",
+      "line": "600",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "SPI2_IRQHandler",
@@ -30472,7 +30388,7 @@
     "display": "void USART1_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "610",
+      "line": "611",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "USART1_IRQHandler",
@@ -30486,7 +30402,7 @@
     "display": "void USART2_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "677",
+      "line": "678",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "USART2_IRQHandler",
@@ -30500,7 +30416,7 @@
     "display": "void USART3_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "688",
+      "line": "689",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "USART3_IRQHandler",
@@ -30514,7 +30430,7 @@
     "display": "void EXTI15_10_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "699",
+      "line": "700",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "EXTI15_10_IRQHandler",
@@ -30528,7 +30444,7 @@
     "display": "void RTCAlarm_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "710",
+      "line": "711",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "RTCAlarm_IRQHandler",
@@ -30542,7 +30458,7 @@
     "display": "void USBWakeUp_IRQHandler(void)",
     "location": {
       "column": "6",
-      "line": "721",
+      "line": "722",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "USBWakeUp_IRQHandler",
@@ -33092,7 +33008,7 @@
     "display": "void twenty_question_quiz(void)",
     "location": {
       "column": "6",
-      "line": "146",
+      "line": "145",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "twenty_question_quiz",
@@ -33100,13 +33016,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4255@F@twenty_question_quiz@tries",
+    "ID": "c:main.c@4254@F@twenty_question_quiz@tries",
     "What": "Variable",
     "defdec": "Def",
     "display": "tries",
     "location": {
       "column": "6",
-      "line": "158",
+      "line": "157",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "tries",
@@ -33120,7 +33036,7 @@
     "display": "void Uart_GetData(void)",
     "location": {
       "column": "6",
-      "line": "222",
+      "line": "221",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Uart_GetData",
@@ -33134,7 +33050,7 @@
     "display": "int StringCompare(char *, char *, int)",
     "location": {
       "column": "5",
-      "line": "242",
+      "line": "241",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "StringCompare",
@@ -33142,13 +33058,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6454@F@StringCompare@i",
+    "ID": "c:main.c@6453@F@StringCompare@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "10",
-      "line": "244",
+      "line": "243",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "i",
@@ -33162,7 +33078,7 @@
     "display": "void EXTI_Interrupt_Configuration(u8, u32, u8, u8)",
     "location": {
       "column": "6",
-      "line": "253",
+      "line": "252",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "EXTI_Interrupt_Configuration",
@@ -33170,13 +33086,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6669@F@EXTI_Interrupt_Configuration@EXTI_InitStructure",
+    "ID": "c:main.c@6668@F@EXTI_Interrupt_Configuration@EXTI_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "EXTI_InitStructure",
     "location": {
       "column": "19",
-      "line": "255",
+      "line": "254",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "EXTI_InitStructure",
@@ -33184,13 +33100,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6708@F@EXTI_Interrupt_Configuration@NVIC_InitStructure",
+    "ID": "c:main.c@6707@F@EXTI_Interrupt_Configuration@NVIC_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "NVIC_InitStructure",
     "location": {
       "column": "19",
-      "line": "256",
+      "line": "255",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "NVIC_InitStructure",
@@ -33204,7 +33120,7 @@
     "display": "void GPIO_Setting_Output(u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
-      "line": "272",
+      "line": "271",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_Setting_Output",
@@ -33212,13 +33128,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7372@F@GPIO_Setting_Output@GPIO_InitStructure",
+    "ID": "c:main.c@7371@F@GPIO_Setting_Output@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
     "location": {
       "column": "19",
-      "line": "274",
+      "line": "273",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_InitStructure",
@@ -33232,7 +33148,7 @@
     "display": "void GPIO_Setting_Input(u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
-      "line": "280",
+      "line": "279",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_Setting_Input",
@@ -33240,13 +33156,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7669@F@GPIO_Setting_Input@GPIO_InitStructure",
+    "ID": "c:main.c@7668@F@GPIO_Setting_Input@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
     "location": {
       "column": "19",
-      "line": "283",
+      "line": "282",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_InitStructure",
@@ -33260,7 +33176,7 @@
     "display": "void Timer_Configuration(int, int, int)",
     "location": {
       "column": "6",
-      "line": "290",
+      "line": "289",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Timer_Configuration",
@@ -33268,13 +33184,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7978@F@Timer_Configuration@Timer",
+    "ID": "c:main.c@7977@F@Timer_Configuration@Timer",
     "What": "Variable",
     "defdec": "Def",
     "display": "Timer",
     "location": {
       "column": "16",
-      "line": "292",
+      "line": "291",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Timer",
@@ -33282,13 +33198,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@8002@F@Timer_Configuration@TimerInterruptType",
+    "ID": "c:main.c@8001@F@Timer_Configuration@TimerInterruptType",
     "What": "Variable",
     "defdec": "Def",
     "display": "TimerInterruptType",
     "location": {
       "column": "7",
-      "line": "293",
+      "line": "292",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "TimerInterruptType",
@@ -33296,13 +33212,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@8314@F@Timer_Configuration@TIM_TimeBaseInitStruct",
+    "ID": "c:main.c@8313@F@Timer_Configuration@TIM_TimeBaseInitStruct",
     "What": "Variable",
     "defdec": "Def",
     "display": "TIM_TimeBaseInitStruct",
     "location": {
       "column": "27",
-      "line": "304",
+      "line": "303",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "TIM_TimeBaseInitStruct",
@@ -33310,13 +33226,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@8365@F@Timer_Configuration@NVIC_InitStructure",
+    "ID": "c:main.c@8364@F@Timer_Configuration@NVIC_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "NVIC_InitStructure",
     "location": {
       "column": "20",
-      "line": "305",
+      "line": "304",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "NVIC_InitStructure",
@@ -33330,7 +33246,7 @@
     "display": "void Delay(vu32)",
     "location": {
       "column": "6",
-      "line": "326",
+      "line": "325",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Delay",
@@ -33344,7 +33260,7 @@
     "display": "char NumToChar(int)",
     "location": {
       "column": "6",
-      "line": "331",
+      "line": "330",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "NumToChar",
