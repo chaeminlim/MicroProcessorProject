@@ -223,12 +223,12 @@ void RCC_IRQHandler(void)
 *******************************************************************************/
 void EXTI0_IRQHandler(void)
 {
-  if(EXTI_GetITStatus(EXTI_Line7) != RESET)
+  if(EXTI_GetITStatus(EXTI_Line0) != RESET)
   {
     // do stm
     UART_Send("EXTI0\n", 7);
     answerButtonClicked = 1;
-    EXTI_ClearITPendingBit(EXTI_Line7);
+    EXTI_ClearITPendingBit(EXTI_Line0);
   }
 }
 
@@ -241,12 +241,12 @@ void EXTI0_IRQHandler(void)
 *******************************************************************************/
 void EXTI1_IRQHandler(void)
 {
-  if(EXTI_GetITStatus(EXTI_Line8) != RESET)
+  if(EXTI_GetITStatus(EXTI_Line1) != RESET)
   {
     // do stm
     UART_Send("EXTI1\n", 7);
     resetButtonClicked = 1;
-    EXTI_ClearITPendingBit(EXTI_Line8);
+    EXTI_ClearITPendingBit(EXTI_Line1);
   }
 }
 
@@ -483,7 +483,7 @@ void TIM1_CC_IRQHandler(void)
 * Return         : None
 *******************************************************************************/
 
-/*
+
 extern unsigned char time_10m, time_1m, time_10s, time_1s;
 
 
@@ -511,7 +511,7 @@ void TIM2_IRQHandler(void)
 		}
 	}
 }
-*/
+
 
 /*******************************************************************************
 * Function Name  : TIM3_IRQHandler

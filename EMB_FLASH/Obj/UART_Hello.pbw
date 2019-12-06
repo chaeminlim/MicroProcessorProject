@@ -29332,6 +29332,20 @@
     "scope": null
   },
   {
+    "ID": "c:@F@TIM2_IRQHandler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void TIM2_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "65",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.h"
+    },
+    "name": "TIM2_IRQHandler",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@TIM3_IRQHandler",
     "What": "Function",
     "defdec": "Dec",
@@ -30266,6 +30280,76 @@
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
     },
     "name": "TIM1_CC_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@time_10m",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "time_10m",
+    "location": {
+      "column": "22",
+      "line": "487",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "time_10m",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@time_1m",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "time_1m",
+    "location": {
+      "column": "32",
+      "line": "487",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "time_1m",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@time_10s",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "time_10s",
+    "location": {
+      "column": "41",
+      "line": "487",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "time_10s",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@time_1s",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "time_1s",
+    "location": {
+      "column": "51",
+      "line": "487",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "time_1s",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TIM2_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TIM2_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "490",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\stm32f10x_it.c"
+    },
+    "name": "TIM2_IRQHandler",
     "origin": "project_file",
     "scope": null
   },
