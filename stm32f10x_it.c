@@ -484,32 +484,31 @@ void TIM1_CC_IRQHandler(void)
 *******************************************************************************/
 
 
-extern unsigned char time_10m, time_1m, time_10s, time_1s;
+extern int time_10m, time_1m, time_10s, time_1s;
 
-
-void TIM2_IRQHandler(void)
-{
-	{
-		if (TIM_GetFlagStatus(TIM2, TIM_IT_Update) == SET) {
-			TIM_ClearITPendingBit(TIM2, TIM_FLAG_Update);
-			time_1s++;
-			if (time_1s == 10) {
-				time_10s++;
-				time_1s = 0;
-			}
-			if (time_10s == 6) {
-				time_1m++;
-				time_10s = 0;
-			}
-			if (time_1m == 10) {
-				time_10m++;
-				time_1m = 0;
-			}
-			if (time_10m == 6) {
-				time_10m = 0;
-			}
-		}
-	}
+void TIM2_IRQHandler(){ // XX:XX 부터 00:00 까지, 00:00 이하로 내려가면 00:00 지속[]
+  if(TIM_GetFlagStatus(TIM2,TIM_IT_Update)==SET){ 
+     TIM_ClearITPendingBit(TIM2,TIM_FLAG_Update);  
+     time_1s-=1;
+     if(time_1s==-1 && time_10s >= 1 ){
+      time_10s--;
+      time_1s = 9;    
+    }
+    if(time_1s==-1 && time_1m >= 1 && time_10s == 0){
+      time_1m--;
+      time_10s = 5;
+      time_1s = 9; 
+    }
+    if(time_1s== -1 && time_1m == 0 && time_10s == 0 && time_10m >= 1){
+      time_10m-- ;
+      time_1m = 9;
+      time_10s = 5;
+      time_1s = 9; 
+    }
+    if(time_1s==-1 && time_1m == 0 && time_10s == 0){
+      time_1s = 0; 
+    }
+  }
 }
 
 

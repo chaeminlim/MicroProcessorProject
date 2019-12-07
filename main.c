@@ -26,6 +26,7 @@ void Show_LED();
 int StringCompare(char* str1, char* str2, int size);
 int keypaduse(); // keypad 입력완료버튼 누를때까지 반복 하며 사용자의 업다운 퀴즈 답안값을 반환하는 함수.
 void LED_Configuration();
+void DelayFND(int tensec, int sec);
 //프로토타입 끝
 
 // uart 통신을 위한 버퍼 및 변수들
@@ -38,11 +39,15 @@ int MainLength = 0;
 // uart 변수 끝
 
 //  타이머 시간 변수
-unsigned char time_10m = 0, time_1m = 0, time_10s = 0, time_1s = 0;
+int time_10m = 0, time_1m = 0, time_10s = 0, time_1s = 0;
 // 타이머 시간 변수 끝
 
 // 그 외 변수
 unsigned int LED_data = 0x0080;
+u16 FND_Pin = GPIO_Pin_8 |GPIO_Pin_9|GPIO_Pin_10|GPIO_Pin_11|GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14|GPIO_Pin_15;
+u16 FND_COM_pin = GPIO_Pin_2 |GPIO_Pin_5|GPIO_Pin_6|GPIO_Pin_7;
+unsigned char FND_DATA_TBL[]={0x3F,0X06,0X5B,0X4F,0X66,0X6D,0X7C,0X07,0X7F, 0X67,0X77,0X7C,0X39,0X5E,0X79,0X71,0X08,0X80};
+
 
 //
 
@@ -120,7 +125,7 @@ void up_and_down_game()
 
 	// LCD - 인사와 시작
 	UART_Send(updownStr, sizeof(updownStr));
-        delay_ms(5000);
+	DelayFND(3, 0);
 	while (1) 
 	{
 		// LCD
@@ -194,6 +199,9 @@ void Initializer()
 	Switch_Configuration();
 	// led setting
 	LED_Configuration();
+	//fnd
+	FND_Configuration();
+
 }
 void Show_LED()
 {
@@ -208,7 +216,7 @@ void Show_LED()
 			else
 				LED_data <<= 1;
 			GPIO_SetBits(GPIOA, LED_data);
-			delay_ms(1000);
+			delay_ms(200);
 		}
 
 		for (int j = 0; j < 24; j++)
@@ -221,12 +229,15 @@ void Show_LED()
 				LED_data >>= 1;
 
 			GPIO_SetBits(GPIOA, LED_data);
-			delay_ms(1000);
+			delay_ms(200);
 		}
 	}
 }
 void FND_Configuration()
 {
+	GPIO_Setting_Output(FND_Pin, GPIOB);
+	GPIO_Setting_Input(FND_COM_pin, GPIOB);
+
 }
 void LED_Configuration()
 {
@@ -505,6 +516,45 @@ void Delay(vu32 nCount)
 char NumToChar(int num)
 {
   return num + 0x30; 
+}
+
+void DelayFND(int tensec, int sec)
+{
+  time_10s = tensec;
+  time_1s = sec;
+  while (1)
+  {
+    GPIO_SetBits(GPIOB, FND_COM_pin);
+    GPIO_ResetBits(GPIOB, GPIO_Pin_7); 
+
+    GPIO_ResetBits(GPIOB, FND_Pin); 
+    GPIO_SetBits(GPIOB, FND_DATA_TBL[time_1s]); 
+    Delay(0x1FFF);
+
+    GPIO_SetBits(GPIOB, FND_COM_pin);
+    GPIO_ResetBits(GPIOB, GPIO_Pin_6);
+
+    GPIO_ResetBits(GPIOB, FND_Pin);
+    GPIO_SetBits(GPIOB, FND_DATA_TBL[time_10s]); 
+    Delay(0x1FFF);
+
+
+    GPIO_SetBits(GPIOB, FND_COM_pin);
+    GPIO_ResetBits(GPIOB, GPIO_Pin_5); 
+
+    GPIO_ResetBits(GPIOB, FND_Pin);
+    GPIO_SetBits(GPIOB, FND_DATA_TBL[time_1m]|0x80); 
+    Delay(0x1FFF);
+
+    GPIO_SetBits(GPIOB, FND_COM_pin);
+    GPIO_ResetBits(GPIOB, GPIO_Pin_2); 
+
+    GPIO_ResetBits(GPIOB, FND_Pin);
+    GPIO_SetBits(GPIOB, FND_DATA_TBL[time_10m]); 
+    Delay(0x1FFF);        
+    
+    if(time_1s==0 && time_1m == 0 && time_10s == 0) break;
+  }//end while
 }
 
 
