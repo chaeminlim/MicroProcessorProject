@@ -59,11 +59,11 @@ char switchStr[] = "know the answer / show hint\n";
 char gratStr[] = "Correct!\n";
 char resetStr[] = "If you want to challenge again, please press reset button.\n";
 char typeAnsStr[] = "What is Your Answer?\n";
-char updownStr[] = "!UpDown Game!";
-char putStr[] = "Put number(0~100)";
-char gratsStr[] = "Grats! You win!";
-char upStr[] = "UP";
-char downStr[] = "DOWN";
+char updownStr[] = "!UpDown Game!\n";
+char putStr[] = "Put number(0~100)\n";
+char gratsStr[] = "Grats! You win!\n";
+char upStr[] = "UP\n";
+char downStr[] = "DOWN\n";
 char hints[HINTS_SIZE][80] =
 {
 	"1. It isn't alive.",
@@ -132,17 +132,17 @@ void up_and_down_game()
                 int keypadten;
                 while(1)
                 {
-                  keypadone = GetKeypadInput();
-                  delay_ms(100);
-                  if (keypadone != -1)
+                  keypadten = GetKeypadInput();
+                  delay_ms(300);
+                  if (keypadten != -1)
                     break; 
                 }
                 
                 while(1)
                 {
-                  keypadten = GetKeypadInput();
-                  delay_ms(100);
-                  if (keypadten != -1)
+                  keypadone = GetKeypadInput();
+                  delay_ms(300);
+                  if (keypadone != -1)
                     break; 
                 }
                 
