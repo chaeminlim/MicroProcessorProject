@@ -50,9 +50,9 @@
 		// port and pins you will use for control lines
 		#define LCD_CTRL_PORT_CLK	RCC_APB2Periph_GPIOB
                 #define LCD_CTRL_PORT	        GPIOB
-		#define LCD_CTRL_RS		GPIO_Pin_5
-		#define LCD_CTRL_RW		GPIO_Pin_6
-		#define LCD_CTRL_E		GPIO_Pin_7
+		#define LCD_CTRL_RS		GPIO_Pin_2
+		#define LCD_CTRL_RW		GPIO_Pin_5
+		#define LCD_CTRL_E		GPIO_Pin_6
 	#endif
 	#ifndef LCD_DATA 
 		// port you will use for data lines

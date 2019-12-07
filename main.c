@@ -1,6 +1,6 @@
 #include "stm32f10x_lib.h"
 #include"system_func.h"
-#include"lcd.h"
+//#include"lcd.h"
 #include "key_pad.h"
 #include "UART_lib.h"
 
@@ -26,7 +26,6 @@ void Show_LED();
 int StringCompare(char* str1, char* str2, int size);
 int keypaduse(); // keypad 입력완료버튼 누를때까지 반복 하며 사용자의 업다운 퀴즈 답안값을 반환하는 함수.
 void LED_Configuration();
-void PrintLCDData(char* data, u8 nBytes);
 //프로토타입 끝
 
 // uart 통신을 위한 버퍼 및 변수들
@@ -87,14 +86,16 @@ char hints[HINTS_SIZE][80] =
 //
 /*
 선 연결법
-gpioa 0 ~ 7 -> lcd d0 ~ d7
+gpioa 0 - 7 led
 gpioa 9 10 -> uart tx rx
-gpiob  5 6 7-> lcd rs rw e
-gpioc 0 ~ 6 -> keypad
+
 gpiob 0 1 -> switch
-gpioa 8 ~ 15 fnd
-gpiob 8 ~ 10
-gpioc 7 - 14 led
+gpiob 2567 -> FND c1~4
+gpiob 8~15 -> FND 0~7
+
+gpioc 0 ~ 6 -> keypad
+
+
 */
 int main(void)
 {   
@@ -113,13 +114,13 @@ void up_and_down_game()
 
 	// LCD - 인사와 시작
 	char* str = "!UpDown Game!";
-	lcdPrintData(str, sizeof(str) / sizeof(char));
+	UART_Send(str, sizeof(str) / sizeof(char));
         delay_ms(5000);
 	while (1) 
 	{
 		// LCD
 		str = "Put number(0~100)";
-		lcdPrintData(str, sizeof(str) / sizeof(char));
+		UART_Send(str, sizeof(str) / sizeof(char));
 
 		// keypad - 숫자를 입력 받는다
 		int keypadInput = keypaduse();
@@ -128,7 +129,7 @@ void up_and_down_game()
 		{ // 정답
 			// LCD
 			str = "Grats! You win!";
-			PrintLCDData(str, sizeof(str) / sizeof(char));
+			UART_Send(str, sizeof(str) / sizeof(char));
 			// LED 축하
 			Show_LED();
 			break;
@@ -136,13 +137,13 @@ void up_and_down_game()
 		else if (keypadInput > answer) 
 		{ // UP
 			str = "UP";
-			PrintLCDData(str, sizeof(str) / sizeof(char));
+			UART_Send(str, sizeof(str) / sizeof(char));
 
 		}
 		else 
 		{ // DOWN
 			str = "DOWN";
-			PrintLCDData(str, sizeof(str) / sizeof(char));
+			UART_Send(str, sizeof(str) / sizeof(char));
 		}
 	} // end while
 } // end up_and_down_game()
@@ -160,24 +161,11 @@ void Initializer()
 	// set keypad
 	Init_keypad();
 	// init lcd
-	lcdInit();
+	//lcdInit();
 	// switch init
 	Switch_Configuration();
 	// led setting
 	LED_Configuration();
-}
-void PrintLCDData(char* data, u8 nBytes)
-{
-
-	u8 i;
-	u8 flag = 0;
-	if (!data) return;
-
-	for (i = 0; i < nBytes; i++)
-	{
-		lcdDataWrite(data[i]);
-		`
-	}
 }
 void Show_LED()
 {
@@ -216,11 +204,11 @@ void LED_Configuration()
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_7 | GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | 
-		GPIO_Pin_11| GPIO_Pin_12 | GPIO_Pin_13 | GPIO_Pin_14;
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | 
+		GPIO_Pin_4| GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-	GPIO_Init(GPIOC, &GPIO_InitStructure);
+	GPIO_Init(GPIOA, &GPIO_InitStructure);
 }
 void Switch_Configuration()
 {
@@ -233,13 +221,11 @@ void twenty_question_quiz()
 { // 필요한 것: switch, LCD, array FND, LED
 
 	// LCD - 인사와 시작
-	lcdPrintData(welcomeStr, sizeof(welcomeStr));
-        UART_Send("Welcome\n", 9);
-        delay_ms(1500);
+	UART_Send(welcomeStr, sizeof(welcomeStr));
+	delay_ms(1500);
 
-	lcdPrintData(startStr, sizeof(startStr));
-        UART_Send("Start\n", 7);        
-        delay_ms(1500);
+	UART_Send(startStr, sizeof(startStr));
+	delay_ms(1500);
 
 	int tries = 0;
         
@@ -249,9 +235,8 @@ void twenty_question_quiz()
 		// 20개 힌트 다 줬으면 실패함을 알려줌(LCD)
 		if (tries >= HINTS_SIZE)
                 {
-			lcdPrintData(failStr, sizeof(failStr));
-                        UART_Send("Fail\n", 6);
-                        break;
+			UART_Send(failStr, sizeof(failStr));
+			break;
                 }
                 
                 
@@ -294,12 +279,11 @@ void twenty_question_quiz()
 	} // end while
 
 	// LCD - 또 도전하시려면 리셋버튼을 눌러주세요
-	lcdPrintData(resetStr, sizeof(resetStr));
-        UART_Send("Over\n", 6);
-        delay_ms(5000);
-        if(resetButtonClicked)
-          return;
-        return;
+	UART_Send(resetStr, sizeof(resetStr));
+	delay_ms(5000);
+	if(resetButtonClicked)
+		return;
+	return;
 } // end twenty_question_quiz()
 void Uart_GetData()
 {
@@ -341,7 +325,7 @@ int keypaduse()
 	*/
 	for (keypadorder = 0; keypadorder < 3; keypadorder++) 
     {
-		PrintLCDData("A:", 3);
+		UART_Send("A:", 3);
 
 		keypadinput = GetKeypadInput();
 		delay_ms(500);
@@ -363,15 +347,12 @@ int keypaduse()
 {
 				if (keypadorder == 0) 
 				{
-					lcdGotoXY(2, 0); 
-					lcdDataWrite(keypadinput +  '0');
+
 					keypadbuffer[keypadorder] = keypadinput;
 
 				}
 				else if (keypadorder == 1)
 				{
-					lcdGotoXY(3, 0);
-					lcdDataWrite(keypadinput + '0');
 					keypadbuffer[keypadorder] = keypadinput;
 
 				}
