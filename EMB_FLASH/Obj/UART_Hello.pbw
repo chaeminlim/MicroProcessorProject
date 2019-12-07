@@ -31602,230 +31602,6 @@
     "scope": null
   },
   {
-    "ID": "c:lcdconf.h@677@macro@LCDCONF_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCDCONF_H",
-    "location": {
-      "column": "9",
-      "line": "19",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCDCONF_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2012@macro@LCD_PORT_INTERFACE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_PORT_INTERFACE",
-    "location": {
-      "column": "9",
-      "line": "43",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_PORT_INTERFACE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2264@macro@LCD_CTRL_PORT_CLK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_PORT_CLK",
-    "location": {
-      "column": "11",
-      "line": "51",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_PORT_CLK",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2328@macro@LCD_CTRL_PORT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_PORT",
-    "location": {
-      "column": "25",
-      "line": "52",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_PORT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2367@macro@LCD_CTRL_RS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_RS",
-    "location": {
-      "column": "11",
-      "line": "53",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_RS",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2402@macro@LCD_CTRL_RW",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_RW",
-    "location": {
-      "column": "11",
-      "line": "54",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_RW",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2437@macro@LCD_CTRL_E",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CTRL_E",
-    "location": {
-      "column": "11",
-      "line": "55",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_CTRL_E",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2539@macro@LCD_DATA",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_DATA",
-    "location": {
-      "column": "11",
-      "line": "59",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_DATA",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2565@macro@LCD_DATA_CLK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_DATA_CLK",
-    "location": {
-      "column": "11",
-      "line": "60",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_DATA_CLK",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2705@macro@LCD_LINES",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINES",
-    "location": {
-      "column": "9",
-      "line": "69",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINES",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2746@macro@LCD_LINE_LENGTH",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE_LENGTH",
-    "location": {
-      "column": "9",
-      "line": "70",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE_LENGTH",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2844@macro@LCD_LINE0_DDRAMADDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE0_DDRAMADDR",
-    "location": {
-      "column": "9",
-      "line": "72",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE0_DDRAMADDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2879@macro@LCD_LINE1_DDRAMADDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE1_DDRAMADDR",
-    "location": {
-      "column": "9",
-      "line": "73",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE1_DDRAMADDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2914@macro@LCD_LINE2_DDRAMADDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE2_DDRAMADDR",
-    "location": {
-      "column": "9",
-      "line": "74",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE2_DDRAMADDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@2949@macro@LCD_LINE3_DDRAMADDR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_LINE3_DDRAMADDR",
-    "location": {
-      "column": "9",
-      "line": "75",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_LINE3_DDRAMADDR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcdconf.h@3290@macro@LCD_DELAY",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_DELAY",
-    "location": {
-      "column": "9",
-      "line": "82",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
-    },
-    "name": "LCD_DELAY",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:main.c@127@macro@HINTS_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
@@ -33125,6 +32901,286 @@
     },
     "name": "DelayFND",
     "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@13730@F@DelayFND@s10",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "s10",
+    "location": {
+      "column": "7",
+      "line": "528",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "s10",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@13730@F@DelayFND@s1",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "s1",
+    "location": {
+      "column": "16",
+      "line": "528",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "s1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@13730@F@DelayFND@ms10",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "ms10",
+    "location": {
+      "column": "24",
+      "line": "528",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "ms10",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@13730@F@DelayFND@ms100",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "ms100",
+    "location": {
+      "column": "34",
+      "line": "528",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "ms100",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@677@macro@LCDCONF_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCDCONF_H",
+    "location": {
+      "column": "9",
+      "line": "19",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCDCONF_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2012@macro@LCD_PORT_INTERFACE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_PORT_INTERFACE",
+    "location": {
+      "column": "9",
+      "line": "43",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_PORT_INTERFACE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2264@macro@LCD_CTRL_PORT_CLK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_PORT_CLK",
+    "location": {
+      "column": "11",
+      "line": "51",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_CTRL_PORT_CLK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2328@macro@LCD_CTRL_PORT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_PORT",
+    "location": {
+      "column": "25",
+      "line": "52",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_CTRL_PORT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2367@macro@LCD_CTRL_RS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_RS",
+    "location": {
+      "column": "11",
+      "line": "53",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_CTRL_RS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2402@macro@LCD_CTRL_RW",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_RW",
+    "location": {
+      "column": "11",
+      "line": "54",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_CTRL_RW",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2437@macro@LCD_CTRL_E",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CTRL_E",
+    "location": {
+      "column": "11",
+      "line": "55",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_CTRL_E",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2539@macro@LCD_DATA",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_DATA",
+    "location": {
+      "column": "11",
+      "line": "59",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_DATA",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2565@macro@LCD_DATA_CLK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_DATA_CLK",
+    "location": {
+      "column": "11",
+      "line": "60",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_DATA_CLK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2705@macro@LCD_LINES",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINES",
+    "location": {
+      "column": "9",
+      "line": "69",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_LINES",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2746@macro@LCD_LINE_LENGTH",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE_LENGTH",
+    "location": {
+      "column": "9",
+      "line": "70",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_LINE_LENGTH",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2844@macro@LCD_LINE0_DDRAMADDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE0_DDRAMADDR",
+    "location": {
+      "column": "9",
+      "line": "72",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_LINE0_DDRAMADDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2879@macro@LCD_LINE1_DDRAMADDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE1_DDRAMADDR",
+    "location": {
+      "column": "9",
+      "line": "73",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_LINE1_DDRAMADDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2914@macro@LCD_LINE2_DDRAMADDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE2_DDRAMADDR",
+    "location": {
+      "column": "9",
+      "line": "74",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_LINE2_DDRAMADDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@2949@macro@LCD_LINE3_DDRAMADDR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_LINE3_DDRAMADDR",
+    "location": {
+      "column": "9",
+      "line": "75",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_LINE3_DDRAMADDR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcdconf.h@3290@macro@LCD_DELAY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_DELAY",
+    "location": {
+      "column": "9",
+      "line": "82",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcdconf.h"
+    },
+    "name": "LCD_DELAY",
+    "origin": "user_include",
     "scope": null
   },
   {

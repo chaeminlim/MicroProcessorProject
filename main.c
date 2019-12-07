@@ -98,11 +98,10 @@ gpioa 0 - 7 led
 gpioa 9 10 -> uart tx rx
 
 gpiob 0 1 -> switch
-gpiob 2567 -> FND c1~4
-gpiob 8~15 -> FND 0~7
 
 gpioc 0 ~ 6 -> keypad
-
+gbioc 8 ~ 11 -> c0 ~ c3
+gpioa 0 ~ 7 A ~ H
 
 */
 int main(void)
@@ -189,7 +188,7 @@ void Initializer()
 	// set uart
 	Uart_Init_Setting();
 	// set timer
-	Timer_Configuration(2, 1200, 10000);
+	Timer_Configuration(2, 7200, 10000);
 	// set keypad
 	Init_keypad();
 	// init lcd
@@ -242,7 +241,7 @@ void FND_Configuration()
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
         
         GPIO_InitStructure.GPIO_Pin = FND_COM_pin;
-	GPIO_Init(GPIOB, &GPIO_InitStructure);
+	GPIO_Init(GPIOC, &GPIO_InitStructure);
         
 }
 void LED_Configuration()
@@ -525,41 +524,59 @@ char NumToChar(int num)
 
 void DelayFND(int tensec, int sec)
 {
-  time_10s = tensec;
-  time_1s = sec;
-  while(1)
+  int s10 = 0, s1 = 0, ms10 = 0, ms100 = 0;
+
+   while (1)
   {
     GPIO_SetBits(GPIOC, FND_COM_pin);
     GPIO_ResetBits(GPIOC, GPIO_Pin_8); 
-
-    GPIO_ResetBits(GPIOA, FND_Pin); 
-    GPIO_SetBits(GPIOA, FND_DATA_TBL[time_1s]); 
+    
+    GPIO_ResetBits(GPIOA, 0x00FF); 
+    GPIO_SetBits(GPIOA, FND_DATA_TBL[ms10]); 
     Delay(0x1FFF);
 
     GPIO_SetBits(GPIOC, FND_COM_pin);
-    GPIO_ResetBits(GPIOC, GPIO_Pin_9);
+    GPIO_ResetBits(GPIOC, GPIO_Pin_9); 
 
-    GPIO_ResetBits(GPIOA, FND_Pin);
-    GPIO_SetBits(GPIOA, FND_DATA_TBL[time_10s]); 
+    GPIO_ResetBits(GPIOA, 0x00FF);
+    GPIO_SetBits(GPIOA, FND_DATA_TBL[ms100]); 
     Delay(0x1FFF);
 
     GPIO_SetBits(GPIOC, FND_COM_pin);
     GPIO_ResetBits(GPIOC, GPIO_Pin_10); 
 
-    GPIO_ResetBits(GPIOA, FND_Pin);
-    GPIO_SetBits(GPIOA, FND_DATA_TBL[time_1m]|0x80); 
+    GPIO_ResetBits(GPIOA, 0x00FF);
+    GPIO_SetBits(GPIOA, FND_DATA_TBL[s1]|0x80); 
     Delay(0x1FFF);
-
+    
     GPIO_SetBits(GPIOC, FND_COM_pin);
     GPIO_ResetBits(GPIOC, GPIO_Pin_11); 
 
-    GPIO_ResetBits(GPIOA, FND_Pin);
-    GPIO_SetBits(GPIOA, FND_DATA_TBL[time_10m]); 
-    Delay(0x1FFF);        
+    GPIO_ResetBits(GPIOA, 0x00FF);
+    GPIO_SetBits(GPIOA, FND_DATA_TBL[s10]); 
+    Delay(0x1FFF);
+    	
+    ms10++;
+ 
+    if(ms10 == 10){ 
+      ms10 = 0;
+      ms10++ ; 
+    }
+ 
+    if(ms100 == 10){ 
+      ms100 = 0;
+      s1++ ; 
+    }
+ 
+    if(s1 == 10){ 
+      s1 = 0;
+      s10++ ; 
+    }
+  
+    if(s10 == 10){ 
+      s10 = 0; 
+    } 
     
-    if(time_1s==0 && time_1m == 0 && time_10s == 0) break;
-  }//end while
+  }
 }
-
-
              
