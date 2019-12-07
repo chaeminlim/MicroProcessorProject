@@ -22290,7 +22290,7 @@
     "scope": null
   },
   {
-    "ID": "c:System_func.h@86@macro@FLASH_ADDR",
+    "ID": "c:system_func.h@86@macro@FLASH_ADDR",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_ADDR",
@@ -22304,7 +22304,7 @@
     "scope": null
   },
   {
-    "ID": "c:system_func.h@86@macro@FLASH_ADDR",
+    "ID": "c:System_func.h@86@macro@FLASH_ADDR",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_ADDR",
@@ -31336,6 +31336,272 @@
     "scope": null
   },
   {
+    "ID": "c:@GPIO_LCD",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "GPIO_LCD",
+    "location": {
+      "column": "18",
+      "line": "24",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "GPIO_LCD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdInitHW",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdInitHW(void)",
+    "location": {
+      "column": "6",
+      "line": "26",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdInitHW",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdBusyWait",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdBusyWait(void)",
+    "location": {
+      "column": "6",
+      "line": "69",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdBusyWait",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdControlWrite",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdControlWrite(u8)",
+    "location": {
+      "column": "6",
+      "line": "125",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdControlWrite",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdControlRead",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "u8 lcdControlRead(void)",
+    "location": {
+      "column": "4",
+      "line": "179",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdControlRead",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@5822@F@lcdControlRead@data",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "data",
+    "location": {
+      "column": "5",
+      "line": "182",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "data",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdDataWrite",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdDataWrite(u8)",
+    "location": {
+      "column": "6",
+      "line": "233",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdDataWrite",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdDataRead",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "u8 lcdDataRead(void)",
+    "location": {
+      "column": "4",
+      "line": "286",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdDataRead",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@9431@F@lcdDataRead@data",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "data",
+    "location": {
+      "column": "5",
+      "line": "289",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "data",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdInit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdInit(void)",
+    "location": {
+      "column": "6",
+      "line": "345",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@11265@F@lcdInit@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "6",
+      "line": "347",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdHome",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdHome(void)",
+    "location": {
+      "column": "6",
+      "line": "366",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdHome",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdClear",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdClear(void)",
+    "location": {
+      "column": "6",
+      "line": "372",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdClear",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdGotoXY",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdGotoXY(u8, u8)",
+    "location": {
+      "column": "6",
+      "line": "378",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdGotoXY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@12016@F@lcdGotoXY@DDRAMAddr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "DDRAMAddr",
+    "location": {
+      "column": "6",
+      "line": "380",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "DDRAMAddr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdPrintData",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdPrintData(char *, u8)",
+    "location": {
+      "column": "6",
+      "line": "398",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdPrintData",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@12467@F@lcdPrintData@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "6",
+      "line": "400",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@lcdPrint",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void lcdPrint(char *)",
+    "location": {
+      "column": "6",
+      "line": "412",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "lcdPrint",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@12659@F@lcdPrint@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "6",
+      "line": "414",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:lcdconf.h@677@macro@LCDCONF_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -32134,13 +32400,83 @@
     "scope": null
   },
   {
+    "ID": "c:@updownStr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "updownStr",
+    "location": {
+      "column": "6",
+      "line": "62",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "updownStr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@putStr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "putStr",
+    "location": {
+      "column": "6",
+      "line": "63",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "putStr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@gratsStr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "gratsStr",
+    "location": {
+      "column": "6",
+      "line": "64",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "gratsStr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@upStr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "upStr",
+    "location": {
+      "column": "6",
+      "line": "65",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "upStr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@downStr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "downStr",
+    "location": {
+      "column": "6",
+      "line": "66",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "downStr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@hints",
     "What": "Variable",
     "defdec": "Def",
     "display": "hints",
     "location": {
       "column": "6",
-      "line": "62",
+      "line": "67",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "hints",
@@ -32154,7 +32490,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "100",
+      "line": "105",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "main",
@@ -32168,7 +32504,7 @@
     "display": "void up_and_down_game(void)",
     "location": {
       "column": "6",
-      "line": "110",
+      "line": "116",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "up_and_down_game",
@@ -32176,13 +32512,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3085@F@up_and_down_game@answer",
+    "ID": "c:main.c@3288@F@up_and_down_game@answer",
     "What": "Variable",
     "defdec": "Def",
     "display": "answer",
     "location": {
       "column": "6",
-      "line": "113",
+      "line": "119",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "answer",
@@ -32190,27 +32526,55 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3129@F@up_and_down_game@str",
+    "ID": "c:main.c@3552@F@up_and_down_game@keypadone",
     "What": "Variable",
     "defdec": "Def",
-    "display": "str",
+    "display": "keypadone",
     "location": {
-      "column": "8",
-      "line": "116",
+      "column": "21",
+      "line": "131",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
-    "name": "str",
+    "name": "keypadone",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@3372@F@up_and_down_game@keypadInput",
+    "ID": "c:main.c@3584@F@up_and_down_game@keypadten",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "keypadten",
+    "location": {
+      "column": "21",
+      "line": "132",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "keypadten",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@4084@F@up_and_down_game@buff",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "buff",
+    "location": {
+      "column": "22",
+      "line": "149",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
+    },
+    "name": "buff",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@4309@F@up_and_down_game@keypadInput",
     "What": "Variable",
     "defdec": "Def",
     "display": "keypadInput",
     "location": {
-      "column": "7",
-      "line": "126",
+      "column": "21",
+      "line": "156",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "keypadInput",
@@ -32224,7 +32588,7 @@
     "display": "void Initializer(void)",
     "location": {
       "column": "6",
-      "line": "151",
+      "line": "179",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Initializer",
@@ -32238,7 +32602,7 @@
     "display": "void Show_LED(void)",
     "location": {
       "column": "6",
-      "line": "170",
+      "line": "198",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Show_LED",
@@ -32246,13 +32610,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4302@F@Show_LED@a",
+    "ID": "c:main.c@5186@F@Show_LED@a",
     "What": "Variable",
     "defdec": "Def",
     "display": "a",
     "location": {
       "column": "11",
-      "line": "172",
+      "line": "200",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "a",
@@ -32260,13 +32624,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4344@F@Show_LED@i",
+    "ID": "c:main.c@5228@F@Show_LED@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "12",
-      "line": "174",
+      "line": "202",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "i",
@@ -32274,13 +32638,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4564@F@Show_LED@j",
+    "ID": "c:main.c@5448@F@Show_LED@j",
     "What": "Variable",
     "defdec": "Def",
     "display": "j",
     "location": {
       "column": "12",
-      "line": "186",
+      "line": "214",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "j",
@@ -32294,7 +32658,7 @@
     "display": "void FND_Configuration(void)",
     "location": {
       "column": "6",
-      "line": "200",
+      "line": "228",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "FND_Configuration",
@@ -32308,7 +32672,7 @@
     "display": "void LED_Configuration(void)",
     "location": {
       "column": "6",
-      "line": "203",
+      "line": "231",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "LED_Configuration",
@@ -32316,13 +32680,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4846@F@LED_Configuration@GPIO_InitStructure",
+    "ID": "c:main.c@5730@F@LED_Configuration@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
     "location": {
       "column": "19",
-      "line": "205",
+      "line": "233",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_InitStructure",
@@ -32336,7 +32700,7 @@
     "display": "void Switch_Configuration(void)",
     "location": {
       "column": "6",
-      "line": "213",
+      "line": "241",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Switch_Configuration",
@@ -32350,7 +32714,7 @@
     "display": "void twenty_question_quiz(void)",
     "location": {
       "column": "6",
-      "line": "220",
+      "line": "248",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "twenty_question_quiz",
@@ -32358,13 +32722,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5723@F@twenty_question_quiz@tries",
+    "ID": "c:main.c@6607@F@twenty_question_quiz@tries",
     "What": "Variable",
     "defdec": "Def",
     "display": "tries",
     "location": {
       "column": "6",
-      "line": "230",
+      "line": "258",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "tries",
@@ -32378,7 +32742,7 @@
     "display": "void Uart_GetData(void)",
     "location": {
       "column": "6",
-      "line": "288",
+      "line": "316",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Uart_GetData",
@@ -32392,7 +32756,7 @@
     "display": "int StringCompare(char *, char *, int)",
     "location": {
       "column": "5",
-      "line": "307",
+      "line": "335",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "StringCompare",
@@ -32400,13 +32764,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7622@F@StringCompare@i",
+    "ID": "c:main.c@8506@F@StringCompare@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "10",
-      "line": "309",
+      "line": "337",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "i",
@@ -32420,7 +32784,7 @@
     "display": "int keypaduse(void)",
     "location": {
       "column": "5",
-      "line": "315",
+      "line": "343",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "keypaduse",
@@ -32428,13 +32792,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7823@F@keypaduse@keypadinput",
+    "ID": "c:main.c@8707@F@keypaduse@keypadinput",
     "What": "Variable",
     "defdec": "Def",
     "display": "keypadinput",
     "location": {
       "column": "6",
-      "line": "318",
+      "line": "346",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "keypadinput",
@@ -32442,13 +32806,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7842@F@keypaduse@keypadbuffer",
+    "ID": "c:main.c@8726@F@keypaduse@keypadbuffer",
     "What": "Variable",
     "defdec": "Def",
     "display": "keypadbuffer",
     "location": {
       "column": "6",
-      "line": "319",
+      "line": "347",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "keypadbuffer",
@@ -32456,13 +32820,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7885@F@keypaduse@keypadorder",
+    "ID": "c:main.c@8769@F@keypaduse@keypadorder",
     "What": "Variable",
     "defdec": "Def",
     "display": "keypadorder",
     "location": {
       "column": "6",
-      "line": "320",
+      "line": "348",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "keypadorder",
@@ -32470,13 +32834,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7885@F@keypaduse@keypadoutput",
+    "ID": "c:main.c@8769@F@keypaduse@keypadoutput",
     "What": "Variable",
     "defdec": "Dec",
     "display": "keypadoutput",
     "location": {
       "column": "19",
-      "line": "320",
+      "line": "348",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "keypadoutput",
@@ -32490,7 +32854,7 @@
     "display": "void EXTI_Interrupt_Configuration(u8, u32, u8, u8)",
     "location": {
       "column": "6",
-      "line": "402",
+      "line": "430",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "EXTI_Interrupt_Configuration",
@@ -32498,13 +32862,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9396@F@EXTI_Interrupt_Configuration@EXTI_InitStructure",
+    "ID": "c:main.c@10282@F@EXTI_Interrupt_Configuration@EXTI_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "EXTI_InitStructure",
     "location": {
       "column": "19",
-      "line": "404",
+      "line": "432",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "EXTI_InitStructure",
@@ -32512,13 +32876,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@9435@F@EXTI_Interrupt_Configuration@NVIC_InitStructure",
+    "ID": "c:main.c@10321@F@EXTI_Interrupt_Configuration@NVIC_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "NVIC_InitStructure",
     "location": {
       "column": "19",
-      "line": "405",
+      "line": "433",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "NVIC_InitStructure",
@@ -32532,7 +32896,7 @@
     "display": "void GPIO_Setting_Output(u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
-      "line": "421",
+      "line": "449",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_Setting_Output",
@@ -32540,13 +32904,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@10099@F@GPIO_Setting_Output@GPIO_InitStructure",
+    "ID": "c:main.c@10985@F@GPIO_Setting_Output@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
     "location": {
       "column": "19",
-      "line": "423",
+      "line": "451",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_InitStructure",
@@ -32560,7 +32924,7 @@
     "display": "void GPIO_Setting_Input(u16, GPIO_TypeDef *)",
     "location": {
       "column": "6",
-      "line": "429",
+      "line": "457",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_Setting_Input",
@@ -32568,13 +32932,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@10396@F@GPIO_Setting_Input@GPIO_InitStructure",
+    "ID": "c:main.c@11282@F@GPIO_Setting_Input@GPIO_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "GPIO_InitStructure",
     "location": {
       "column": "19",
-      "line": "432",
+      "line": "460",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "GPIO_InitStructure",
@@ -32588,7 +32952,7 @@
     "display": "void Timer_Configuration(int, int, int)",
     "location": {
       "column": "6",
-      "line": "438",
+      "line": "466",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Timer_Configuration",
@@ -32596,13 +32960,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@10703@F@Timer_Configuration@Timer",
+    "ID": "c:main.c@11589@F@Timer_Configuration@Timer",
     "What": "Variable",
     "defdec": "Def",
     "display": "Timer",
     "location": {
       "column": "16",
-      "line": "440",
+      "line": "468",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Timer",
@@ -32610,13 +32974,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@10727@F@Timer_Configuration@TimerInterruptType",
+    "ID": "c:main.c@11613@F@Timer_Configuration@TimerInterruptType",
     "What": "Variable",
     "defdec": "Def",
     "display": "TimerInterruptType",
     "location": {
       "column": "7",
-      "line": "441",
+      "line": "469",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "TimerInterruptType",
@@ -32624,13 +32988,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@11039@F@Timer_Configuration@TIM_TimeBaseInitStruct",
+    "ID": "c:main.c@11925@F@Timer_Configuration@TIM_TimeBaseInitStruct",
     "What": "Variable",
     "defdec": "Def",
     "display": "TIM_TimeBaseInitStruct",
     "location": {
       "column": "27",
-      "line": "452",
+      "line": "480",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "TIM_TimeBaseInitStruct",
@@ -32638,13 +33002,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@11090@F@Timer_Configuration@NVIC_InitStructure",
+    "ID": "c:main.c@11976@F@Timer_Configuration@NVIC_InitStructure",
     "What": "Variable",
     "defdec": "Def",
     "display": "NVIC_InitStructure",
     "location": {
       "column": "20",
-      "line": "453",
+      "line": "481",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "NVIC_InitStructure",
@@ -32658,7 +33022,7 @@
     "display": "void Delay(vu32)",
     "location": {
       "column": "6",
-      "line": "473",
+      "line": "501",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "Delay",
@@ -32672,276 +33036,10 @@
     "display": "char NumToChar(int)",
     "location": {
       "column": "6",
-      "line": "477",
+      "line": "505",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\main.c"
     },
     "name": "NumToChar",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@GPIO_LCD",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "GPIO_LCD",
-    "location": {
-      "column": "18",
-      "line": "24",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "GPIO_LCD",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdInitHW",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdInitHW(void)",
-    "location": {
-      "column": "6",
-      "line": "26",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdInitHW",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdBusyWait",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdBusyWait(void)",
-    "location": {
-      "column": "6",
-      "line": "69",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdBusyWait",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdControlWrite",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdControlWrite(u8)",
-    "location": {
-      "column": "6",
-      "line": "125",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdControlWrite",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdControlRead",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "u8 lcdControlRead(void)",
-    "location": {
-      "column": "4",
-      "line": "179",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdControlRead",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@5822@F@lcdControlRead@data",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "data",
-    "location": {
-      "column": "5",
-      "line": "182",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "data",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdDataWrite",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdDataWrite(u8)",
-    "location": {
-      "column": "6",
-      "line": "233",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdDataWrite",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdDataRead",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "u8 lcdDataRead(void)",
-    "location": {
-      "column": "4",
-      "line": "286",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdDataRead",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@9431@F@lcdDataRead@data",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "data",
-    "location": {
-      "column": "5",
-      "line": "289",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "data",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdInit",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdInit(void)",
-    "location": {
-      "column": "6",
-      "line": "345",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdInit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@11265@F@lcdInit@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "6",
-      "line": "347",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdHome",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdHome(void)",
-    "location": {
-      "column": "6",
-      "line": "366",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdHome",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdClear",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdClear(void)",
-    "location": {
-      "column": "6",
-      "line": "372",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdClear",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdGotoXY",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdGotoXY(u8, u8)",
-    "location": {
-      "column": "6",
-      "line": "378",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdGotoXY",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@12016@F@lcdGotoXY@DDRAMAddr",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "DDRAMAddr",
-    "location": {
-      "column": "6",
-      "line": "380",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "DDRAMAddr",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdPrintData",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdPrintData(char *, u8)",
-    "location": {
-      "column": "6",
-      "line": "398",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdPrintData",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@12467@F@lcdPrintData@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "6",
-      "line": "400",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@lcdPrint",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void lcdPrint(char *)",
-    "location": {
-      "column": "6",
-      "line": "412",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "lcdPrint",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@12659@F@lcdPrint@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "6",
-      "line": "414",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\lcd.c"
-    },
-    "name": "i",
     "origin": "project_file",
     "scope": null
   },
@@ -33730,6 +33828,62 @@
     "scope": null
   },
   {
+    "ID": "c:@F@Timer3_Delay_init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void Timer3_Delay_init(void)",
+    "location": {
+      "column": "6",
+      "line": "3",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
+    },
+    "name": "Timer3_Delay_init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:user_delay.c@59@F@Timer3_Delay_init@TIM3_TimeBaseInitStruct",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "TIM3_TimeBaseInitStruct",
+    "location": {
+      "column": "27",
+      "line": "5",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
+    },
+    "name": "TIM3_TimeBaseInitStruct",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@delay_ms",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void delay_ms(u16)",
+    "location": {
+      "column": "6",
+      "line": "17",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
+    },
+    "name": "delay_ms",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:user_delay.c@490@F@delay_ms@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "7",
+      "line": "19",
+      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@MainBuffer",
     "What": "Variable",
     "defdec": "Dec",
@@ -33976,62 +34130,6 @@
       "column": "12",
       "line": "116",
       "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\UART_lib.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Timer3_Delay_init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void Timer3_Delay_init(void)",
-    "location": {
-      "column": "6",
-      "line": "3",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
-    },
-    "name": "Timer3_Delay_init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:user_delay.c@59@F@Timer3_Delay_init@TIM3_TimeBaseInitStruct",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "TIM3_TimeBaseInitStruct",
-    "location": {
-      "column": "27",
-      "line": "5",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
-    },
-    "name": "TIM3_TimeBaseInitStruct",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@delay_ms",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void delay_ms(u16)",
-    "location": {
-      "column": "6",
-      "line": "17",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
-    },
-    "name": "delay_ms",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:user_delay.c@490@F@delay_ms@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "7",
-      "line": "19",
-      "path": "C:\\Users\\Chaemin Lim\\Desktop\\MicroProcessorProject\\user_delay.c"
     },
     "name": "i",
     "origin": "project_file",

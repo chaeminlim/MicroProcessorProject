@@ -59,6 +59,11 @@ char switchStr[] = "know the answer / show hint\n";
 char gratStr[] = "Correct!\n";
 char resetStr[] = "If you want to challenge again, please press reset button.\n";
 char typeAnsStr[] = "What is Your Answer?\n";
+char updownStr[] = "!UpDown Game!";
+char putStr[] = "Put number(0~100)";
+char gratsStr[] = "Grats! You win!";
+char upStr[] = "UP";
+char downStr[] = "DOWN";
 char hints[HINTS_SIZE][80] =
 {
 	"1. It isn't alive.",
@@ -102,6 +107,7 @@ int main(void)
 	Initializer();
 	while(1)
 	{
+          UART_Send("GameStart\n", 11); 
 //		twenty_question_quiz();
 		up_and_down_game();
 	}
@@ -113,37 +119,59 @@ void up_and_down_game()
 	int answer = 50;
 
 	// LCD - 인사와 시작
-	char* str = "!UpDown Game!";
-	UART_Send(str, sizeof(str) / sizeof(char));
+	UART_Send(updownStr, sizeof(updownStr));
         delay_ms(5000);
 	while (1) 
 	{
 		// LCD
-		str = "Put number(0~100)";
-		UART_Send(str, sizeof(str) / sizeof(char));
+		UART_Send(putStr, sizeof(putStr));
 
 		// keypad - 숫자를 입력 받는다
-		int keypadInput = keypaduse();
-
-		if (keypadInput == answer)
+		//int keypadInput = keypaduse();
+                int keypadone;
+                int keypadten;
+                while(1)
+                {
+                  keypadone = GetKeypadInput();
+                  delay_ms(100);
+                  if (keypadone != -1)
+                    break; 
+                }
+                
+                while(1)
+                {
+                  keypadten = GetKeypadInput();
+                  delay_ms(100);
+                  if (keypadten != -1)
+                    break; 
+                }
+                
+                char buff[3];
+                
+                buff[0] = keypadten + '0';
+                buff[1] = keypadone + '0';
+                buff[2] = '\0';
+                UART_Send(buff, 3);
+                
+                int keypadInput = keypadone + keypadten * 10;
+		
+                if (keypadInput == answer)
 		{ // 정답
 			// LCD
-			str = "Grats! You win!";
-			UART_Send(str, sizeof(str) / sizeof(char));
+			UART_Send(gratsStr, sizeof(gratsStr));
 			// LED 축하
 			Show_LED();
 			break;
 		}
 		else if (keypadInput > answer) 
 		{ // UP
-			str = "UP";
-			UART_Send(str, sizeof(str) / sizeof(char));
+
+			UART_Send(upStr, sizeof(upStr));
 
 		}
 		else 
 		{ // DOWN
-			str = "DOWN";
-			UART_Send(str, sizeof(str) / sizeof(char));
+			UART_Send(downStr, sizeof(downStr));
 		}
 	} // end while
 } // end up_and_down_game()
@@ -325,7 +353,7 @@ int keypaduse()
 	*/
 	for (keypadorder = 0; keypadorder < 3; keypadorder++) 
     {
-		UART_Send("A:", 3);
+		UART_Send("A:\n", 4);
 
 		keypadinput = GetKeypadInput();
 		delay_ms(500);
