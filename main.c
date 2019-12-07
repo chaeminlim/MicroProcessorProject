@@ -94,7 +94,7 @@ char hints[HINTS_SIZE][80] =
 //
 /*
 선 연결법
-gpioa 0 - 7 led
+gpiob 8 - 15 led
 gpioa 9 10 -> uart tx rx
 
 gpiob 0 1 -> switch
