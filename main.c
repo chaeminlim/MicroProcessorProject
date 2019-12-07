@@ -26,7 +26,7 @@ void Show_LED();
 int StringCompare(char* str1, char* str2, int size);
 int keypaduse(); // keypad 입력완료버튼 누를때까지 반복 하며 사용자의 업다운 퀴즈 답안값을 반환하는 함수.
 void LED_Configuration();
-void DelayFND(int tensec, int sec);
+void DelayFND(int min, int tensec, int sec);
 //프로토타입 끝
 
 // uart 통신을 위한 버퍼 및 변수들
@@ -39,11 +39,11 @@ int MainLength = 0;
 // uart 변수 끝
 
 //  타이머 시간 변수
-int time_10m = 0, time_1m = 0, time_10s = 0, time_1s = 0;
+int time_1m = 0, time_10s = 0, time_1s = 0;
 // 타이머 시간 변수 끝
 
 // 그 외 변수
-unsigned int LED_data = 0x0080;
+unsigned int LED_data = 0x8000;
 u16 FND_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7 ;
 u16 FND_COM_pin = GPIO_Pin_8 |GPIO_Pin_9|GPIO_Pin_10 |GPIO_Pin_11;
 unsigned char FND_DATA_TBL[]={0x3F,0X06,0X5B,0X4F,0X66,0X6D,0X7C,0X07,0X7F, 0X67,0X77,0X7C,0X39,0X5E,0X79,0X71,0X08,0X80};
@@ -109,7 +109,6 @@ int main(void)
 	Initializer();
 	while(1)
 	{
-          DelayFND(1, 5);
           UART_Send("GameStart\n", 11); 
 //		twenty_question_quiz();
 		up_and_down_game();
@@ -123,7 +122,7 @@ void up_and_down_game()
 
 	// LCD - 인사와 시작
 	UART_Send(updownStr, sizeof(updownStr));
-	DelayFND(3, 0);
+	DelayFND(0, 1, 0);
 	while (1) 
 	{
 		// LCD
@@ -187,8 +186,6 @@ void Initializer()
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC | RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOA | RCC_APB2Periph_AFIO, ENABLE);
 	// set uart
 	Uart_Init_Setting();
-	// set timer
-	Timer_Configuration(2, 7200, 10000);
 	// set keypad
 	Init_keypad();
 	// init lcd
@@ -207,32 +204,34 @@ void Show_LED()
 	{ // 3번
 		for (int i = 0; i < 24; i++)
 		{
-			GPIO_ResetBits(GPIOA, LED_data);
+			GPIO_ResetBits(GPIOB, LED_data);
 
-			if (LED_data == 0x0080)
-				LED_data = 0x0001;
+			if (LED_data == 0x8000)
+				LED_data = 0x0100;
 			else
 				LED_data <<= 1;
-			GPIO_SetBits(GPIOA, LED_data);
+			GPIO_SetBits(GPIOB, LED_data);
 			delay_ms(200);
 		}
 
 		for (int j = 0; j < 24; j++)
 		{
-			GPIO_ResetBits(GPIOA, LED_data);
+			GPIO_ResetBits(GPIOB, LED_data);
 
-			if (LED_data == 0x0001)
-				LED_data = 0x0080;
+			if (LED_data == 0x0100)
+				LED_data = 0x8000;
 			else
 				LED_data >>= 1;
 
-			GPIO_SetBits(GPIOA, LED_data);
+			GPIO_SetBits(GPIOB, LED_data);
 			delay_ms(200);
 		}
 	}
 }
 void FND_Configuration()
 {
+	Timer_Configuration(2, 7200, 10000);
+
 	GPIO_InitTypeDef GPIO_InitStructure;
         
 	GPIO_InitStructure.GPIO_Pin = FND_Pin;
@@ -251,7 +250,7 @@ void LED_Configuration()
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11 | GPIO_Pin_12 | GPIO_Pin_13 | GPIO_Pin_14 | GPIO_Pin_15 ;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-	GPIO_Init(GPIOB, &GPIO_InitStructure);
+	GPIO_Init(GPIOB, &GPIO_InitStructure );
 }
 void Switch_Configuration()
 {
@@ -494,6 +493,7 @@ void Timer_Configuration(int TimerType, int Prescaler, int Period)
   TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct;
   NVIC_InitTypeDef NVIC_InitStructure;
 
+  RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
 
   TIM_TimeBaseInitStruct.TIM_Prescaler = Prescaler - 1; // 1200
   TIM_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;
@@ -506,8 +506,6 @@ void Timer_Configuration(int TimerType, int Prescaler, int Period)
   NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure);
-
-  RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
 
   TIM_ITConfig(Timer, TIM_IT_Update, ENABLE);
   TIM_Cmd(Timer, ENABLE);
@@ -522,61 +520,37 @@ char NumToChar(int num)
   return num + 0x30; 
 }
 
-void DelayFND(int tensec, int sec)
+void DelayFND(int min, int tensec, int sec)
 {
-  int s10 = 0, s1 = 0, ms10 = 0, ms100 = 0;
+	time_1m = min;
+	time_10s = tensec;
+	time_1s = sec;
+	while (1) 
+	{
+		if (time_1m + time_10s + time_1s == 0) break;
 
-   while (1)
-  {
-    GPIO_SetBits(GPIOC, FND_COM_pin);
-    GPIO_ResetBits(GPIOC, GPIO_Pin_8); 
-    
-    GPIO_ResetBits(GPIOA, 0x00FF); 
-    GPIO_SetBits(GPIOA, FND_DATA_TBL[ms10]); 
-    Delay(0x1FFF);
+		GPIO_SetBits(GPIOC, FND_COM_pin);
+		GPIO_ResetBits(GPIOC, GPIO_Pin_8);
 
-    GPIO_SetBits(GPIOC, FND_COM_pin);
-    GPIO_ResetBits(GPIOC, GPIO_Pin_9); 
+		GPIO_ResetBits(GPIOA, FND_Pin);
+		GPIO_SetBits(GPIOA, FND_DATA_TBL[time_1s]);
+		Delay(0x1FFF);
 
-    GPIO_ResetBits(GPIOA, 0x00FF);
-    GPIO_SetBits(GPIOA, FND_DATA_TBL[ms100]); 
-    Delay(0x1FFF);
+		GPIO_SetBits(GPIOC, FND_COM_pin);
+		GPIO_ResetBits(GPIOC, GPIO_Pin_9);
 
-    GPIO_SetBits(GPIOC, FND_COM_pin);
-    GPIO_ResetBits(GPIOC, GPIO_Pin_10); 
+		GPIO_ResetBits(GPIOA, FND_Pin);
+		GPIO_SetBits(GPIOA, FND_DATA_TBL[time_10s]);
+		Delay(0x1FFF);
 
-    GPIO_ResetBits(GPIOA, 0x00FF);
-    GPIO_SetBits(GPIOA, FND_DATA_TBL[s1]|0x80); 
-    Delay(0x1FFF);
-    
-    GPIO_SetBits(GPIOC, FND_COM_pin);
-    GPIO_ResetBits(GPIOC, GPIO_Pin_11); 
 
-    GPIO_ResetBits(GPIOA, 0x00FF);
-    GPIO_SetBits(GPIOA, FND_DATA_TBL[s10]); 
-    Delay(0x1FFF);
-    	
-    ms10++;
- 
-    if(ms10 == 10){ 
-      ms10 = 0;
-      ms10++ ; 
-    }
- 
-    if(ms100 == 10){ 
-      ms100 = 0;
-      s1++ ; 
-    }
- 
-    if(s1 == 10){ 
-      s1 = 0;
-      s10++ ; 
-    }
-  
-    if(s10 == 10){ 
-      s10 = 0; 
-    } 
-    
-  }
+		GPIO_SetBits(GPIOC, FND_COM_pin);
+		GPIO_ResetBits(GPIOC, GPIO_Pin_10);
+
+		GPIO_ResetBits(GPIOA, FND_Pin);
+		GPIO_SetBits(GPIOA, FND_DATA_TBL[time_1m] | 0x80);
+		Delay(0x1FFF);
+
+	}//end while
 }
              
