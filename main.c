@@ -44,11 +44,9 @@ int time_10m = 0, time_1m = 0, time_10s = 0, time_1s = 0;
 
 // 그 외 변수
 unsigned int LED_data = 0x0080;
-u16 FND_Pin = GPIO_Pin_8 |GPIO_Pin_9|GPIO_Pin_10|GPIO_Pin_11|GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14|GPIO_Pin_15;
-u16 FND_COM_pin = GPIO_Pin_2 |GPIO_Pin_5|GPIO_Pin_6|GPIO_Pin_7;
+u16 FND_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7 ;
+u16 FND_COM_pin = GPIO_Pin_8 |GPIO_Pin_9|GPIO_Pin_10 |GPIO_Pin_11;
 unsigned char FND_DATA_TBL[]={0x3F,0X06,0X5B,0X4F,0X66,0X6D,0X7C,0X07,0X7F, 0X67,0X77,0X7C,0X39,0X5E,0X79,0X71,0X08,0X80};
-
-
 //
 
 // 스무고개 변수
@@ -112,6 +110,7 @@ int main(void)
 	Initializer();
 	while(1)
 	{
+          DelayFND(1, 5);
           UART_Send("GameStart\n", 11); 
 //		twenty_question_quiz();
 		up_and_down_game();
@@ -235,19 +234,25 @@ void Show_LED()
 }
 void FND_Configuration()
 {
-	GPIO_Setting_Output(FND_Pin, GPIOB);
-	GPIO_Setting_Input(FND_COM_pin, GPIOB);
-
+	GPIO_InitTypeDef GPIO_InitStructure;
+        
+	GPIO_InitStructure.GPIO_Pin = FND_Pin;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+	GPIO_Init(GPIOA, &GPIO_InitStructure);
+        
+        GPIO_InitStructure.GPIO_Pin = FND_COM_pin;
+	GPIO_Init(GPIOB, &GPIO_InitStructure);
+        
 }
 void LED_Configuration()
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | 
-		GPIO_Pin_4| GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7;
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11 | GPIO_Pin_12 | GPIO_Pin_13 | GPIO_Pin_14 | GPIO_Pin_15 ;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-	GPIO_Init(GPIOA, &GPIO_InitStructure);
+	GPIO_Init(GPIOB, &GPIO_InitStructure);
 }
 void Switch_Configuration()
 {
@@ -440,22 +445,21 @@ int keypaduse()
 }   // keypad  code end
 void EXTI_Interrupt_Configuration(u8 EXTIx_IRQChannel, u32 EXTI_Linex, u8 GPIO_PortSourceGPIOx, u8 GPIO_PinSourcex)
 {
-	EXTI_InitTypeDef EXTI_InitStructure;
-	NVIC_InitTypeDef NVIC_InitStructure;
+  EXTI_InitTypeDef EXTI_InitStructure;
+  NVIC_InitTypeDef NVIC_InitStructure;
 
-	NVIC_InitStructure.NVIC_IRQChannel = EXTIx_IRQChannel;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
-	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-	NVIC_Init(&NVIC_InitStructure);
+  NVIC_InitStructure.NVIC_IRQChannel = EXTIx_IRQChannel;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+  NVIC_Init(&NVIC_InitStructure);
 
-	GPIO_EXTILineConfig(GPIO_PortSourceGPIOx, GPIO_PinSourcex);
-	EXTI_InitStructure.EXTI_Line = EXTI_Linex;
-	EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
-	EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising;
-	EXTI_InitStructure.EXTI_LineCmd = ENABLE;
-	EXTI_Init(&EXTI_InitStructure);
-
+  GPIO_EXTILineConfig(GPIO_PortSourceGPIOx, GPIO_PinSourcex);
+  EXTI_InitStructure.EXTI_Line = EXTI_Linex;
+  EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+  EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising;
+  EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+  EXTI_Init(&EXTI_InitStructure);
 }
 void GPIO_Setting_Output(u16 GPIO_Pin_n, GPIO_TypeDef* GPIOx)
 {
@@ -491,7 +495,6 @@ void Timer_Configuration(int TimerType, int Prescaler, int Period)
   TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct;
   NVIC_InitTypeDef NVIC_InitStructure;
 
-  RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
 
   TIM_TimeBaseInitStruct.TIM_Prescaler = Prescaler - 1; // 1200
   TIM_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;
@@ -504,6 +507,8 @@ void Timer_Configuration(int TimerType, int Prescaler, int Period)
   NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure);
+
+  RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
 
   TIM_ITConfig(Timer, TIM_IT_Update, ENABLE);
   TIM_Cmd(Timer, ENABLE);
@@ -522,35 +527,34 @@ void DelayFND(int tensec, int sec)
 {
   time_10s = tensec;
   time_1s = sec;
-  while (1)
+  while(1)
   {
-    GPIO_SetBits(GPIOB, FND_COM_pin);
-    GPIO_ResetBits(GPIOB, GPIO_Pin_7); 
+    GPIO_SetBits(GPIOC, FND_COM_pin);
+    GPIO_ResetBits(GPIOC, GPIO_Pin_8); 
 
-    GPIO_ResetBits(GPIOB, FND_Pin); 
-    GPIO_SetBits(GPIOB, FND_DATA_TBL[time_1s]); 
+    GPIO_ResetBits(GPIOA, FND_Pin); 
+    GPIO_SetBits(GPIOA, FND_DATA_TBL[time_1s]); 
     Delay(0x1FFF);
 
-    GPIO_SetBits(GPIOB, FND_COM_pin);
-    GPIO_ResetBits(GPIOB, GPIO_Pin_6);
+    GPIO_SetBits(GPIOC, FND_COM_pin);
+    GPIO_ResetBits(GPIOC, GPIO_Pin_9);
 
-    GPIO_ResetBits(GPIOB, FND_Pin);
-    GPIO_SetBits(GPIOB, FND_DATA_TBL[time_10s]); 
+    GPIO_ResetBits(GPIOA, FND_Pin);
+    GPIO_SetBits(GPIOA, FND_DATA_TBL[time_10s]); 
     Delay(0x1FFF);
 
+    GPIO_SetBits(GPIOC, FND_COM_pin);
+    GPIO_ResetBits(GPIOC, GPIO_Pin_10); 
 
-    GPIO_SetBits(GPIOB, FND_COM_pin);
-    GPIO_ResetBits(GPIOB, GPIO_Pin_5); 
-
-    GPIO_ResetBits(GPIOB, FND_Pin);
-    GPIO_SetBits(GPIOB, FND_DATA_TBL[time_1m]|0x80); 
+    GPIO_ResetBits(GPIOA, FND_Pin);
+    GPIO_SetBits(GPIOA, FND_DATA_TBL[time_1m]|0x80); 
     Delay(0x1FFF);
 
-    GPIO_SetBits(GPIOB, FND_COM_pin);
-    GPIO_ResetBits(GPIOB, GPIO_Pin_2); 
+    GPIO_SetBits(GPIOC, FND_COM_pin);
+    GPIO_ResetBits(GPIOC, GPIO_Pin_11); 
 
-    GPIO_ResetBits(GPIOB, FND_Pin);
-    GPIO_SetBits(GPIOB, FND_DATA_TBL[time_10m]); 
+    GPIO_ResetBits(GPIOA, FND_Pin);
+    GPIO_SetBits(GPIOA, FND_DATA_TBL[time_10m]); 
     Delay(0x1FFF);        
     
     if(time_1s==0 && time_1m == 0 && time_10s == 0) break;
