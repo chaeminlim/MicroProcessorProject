@@ -273,6 +273,12 @@ void twenty_question_quiz()
 
 	int tries = 0;
         
+        		// LCD - 처음에 힌트 한 번 줌 (array FND - 제한 시간 10초)
+        UART_Send(hints[tries], sizeof(hints[tries]));
+        tries += 1;
+        // array FND
+        DelayFND(0, 1, 0);
+
 	while (1) 
 	{
 
@@ -281,13 +287,7 @@ void twenty_question_quiz()
                 {
 			UART_Send(failStr, sizeof(failStr));
 			break;
-                }
-                
-                
-		// LCD - 처음에 힌트 한 번 줌 (array FND - 제한 시간 10초)
-		UART_Send(hints[tries], sizeof(hints[tries++]));
-                // array FND
-                DelayFND(0, 1, 0);
+                }                
 
     
 		// switch - (답 / 힌트) - LCD / 힌트 20개 다 줬으면 힌트 버튼 눌러도 효과 없도록 함
@@ -299,9 +299,9 @@ void twenty_question_quiz()
 		{
                   answerButtonClicked = 0;
 			// array FND - 제한 시간 표시
-			// UART - 답 입력 받음
-            UART_Send(typeAnsStr, sizeof(typeAnsStr)); 
-            Uart_GetData();
+                          // UART - 답 입력 받음
+              UART_Send(typeAnsStr, sizeof(typeAnsStr)); 
+              Uart_GetData();
 
 			if (StringCompare(returnStringBuffer, answerStr, sizeof(answerStr)))
 			{
@@ -315,7 +315,8 @@ void twenty_question_quiz()
 		else 
 		{
 			// array FND - 제한 시간 10초
-			UART_Send(hints[tries], sizeof(hints[tries++]));
+			UART_Send(hints[tries], sizeof(hints[tries]));
+                        tries += 1;
                         DelayFND(0, 1, 0);
                         
 		} //  end else
