@@ -1,18 +1,17 @@
-main.pbi: C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\main.c \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_lib.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_map.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\stm32f10x_conf.h \
+main.pbi: C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\UART_lib.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\user_delay.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\key_pad.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\system_func.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_usart.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_tim.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_rcc.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_nvic.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_gpio.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_flash.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_exti.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\cortexm3_macro.h \
   C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_type.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_type.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/cortexm3_macro.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_exti.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_flash.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_gpio.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_nvic.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_rcc.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_tim.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc/stm32f10x_usart.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject/system_func.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject/key_pad.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject/user_delay.h \
-  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject/UART_lib.h
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\stm32f10x_conf.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_map.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\Library\inc\stm32f10x_lib.h \
+  C:\Users\Chaemin\ Lim\Desktop\MicroProcessorProject\main.c

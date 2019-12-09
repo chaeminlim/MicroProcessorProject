@@ -109,9 +109,11 @@ int main(void)
 	Initializer();
 	while(1)
 	{
-          UART_Send("GameStart\n", 11); 
-//		twenty_question_quiz();
-		up_and_down_game();
+          UART_Send("ProgramGameStart\n", 18); 
+          DelayFND(0, 0, 5);
+          twenty_question_quiz();
+          DelayFND(0, 0, 5);
+          up_and_down_game();
 	}
 }
 
@@ -264,10 +266,10 @@ void twenty_question_quiz()
 
 	// LCD - 인사와 시작
 	UART_Send(welcomeStr, sizeof(welcomeStr));
-	delay_ms(1500);
+	DelayFND(0, 0, 2);
 
 	UART_Send(startStr, sizeof(startStr));
-	delay_ms(1500);
+	DelayFND(0, 0, 2);
 
 	int tries = 0;
         
@@ -285,13 +287,13 @@ void twenty_question_quiz()
 		// LCD - 처음에 힌트 한 번 줌 (array FND - 제한 시간 10초)
 		UART_Send(hints[tries], sizeof(hints[tries++]));
                 // array FND
-                delay_ms(10000);
+                DelayFND(0, 1, 0);
 
     
 		// switch - (답 / 힌트) - LCD / 힌트 20개 다 줬으면 힌트 버튼 눌러도 효과 없도록 함
 		UART_Send(switchStr, sizeof(switchStr));
                 
-                delay_ms(5000);
+                DelayFND(0, 0, 5);
 		// 답을 입력할 경우 - 성공시 축하(LCD, LED)하고 break / 실패시 continue
 		if (answerButtonClicked) 
 		{
@@ -314,7 +316,7 @@ void twenty_question_quiz()
 		{
 			// array FND - 제한 시간 10초
 			UART_Send(hints[tries], sizeof(hints[tries++]));
-                        delay_ms(10000);
+                        DelayFND(0, 1, 0);
                         
 		} //  end else
 
@@ -322,7 +324,7 @@ void twenty_question_quiz()
 
 	// LCD - 또 도전하시려면 리셋버튼을 눌러주세요
 	UART_Send(resetStr, sizeof(resetStr));
-	delay_ms(5000);
+	DelayFND(0, 0, 5);
 	if(resetButtonClicked)
 		return;
 	return;
