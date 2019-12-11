@@ -69,26 +69,26 @@ char upStr[] = "UP\n";
 char downStr[] = "DOWN\n";
 char hints[HINTS_SIZE][80] =
 {
-	"1. It isn't alive.",
-	"2. It is untouchable.",
-	"3. It isn't an emotion.",
-	"4. It is rare.",
-	"5. It is beautiful.",
-	"6. Generally, it has arc shape.",
-	"7. It has red color.",
-	"8. It has many colors.",
-	"9. it has different number of colors between cultures.",
-	"10. It is in the air.",
-	"11. It appears the opposite side of the sun.",
-	"12. It's duration is short.",
-	"13. Sometimes, it has its sister or sisters.",
-	"14. It appears at bible as a gift of god.",
-	"15. It can be made artificially.",
-	"16. Principle of its generation is explained first in 1637.",
-	"17. If there is 'it' in the west sky, it will rain after a while.",
-	"18. It has more colors that cannot be seen by human.",
-	"19. You can also see 'it' with a piece of prism.",
-	"20. It can be seen in the sky after raining."
+	"1. It isn't alive.\n",
+	"2. It is untouchable.\n",
+	"3. It isn't an emotion.\n",
+	"4. It is rare.\n",
+	"5. It is beautiful.\n",
+	"6. Generally, it has arc shape.\n",
+	"7. It has red color.\n",
+	"8. It has many colors.\n",
+	"9. it has different number of colors between cultures.\n",
+	"10. It is in the air.\n",
+	"11. It appears the opposite side of the sun.\n",
+	"12. It's duration is short.\n",
+	"13. Sometimes, it has its sister or sisters.\n",
+	"14. It appears at bible as a gift of god.\n",
+	"15. It can be made artificially.\n",
+	"16. Principle of its generation is explained first in 1637.\n",
+	"17. If there is 'it' in the west sky, it will rain after a while.\n",
+	"18. It has more colors that cannot be seen by human.\n",
+	"19. You can also see 'it' with a piece of prism.\n",
+	"20. It can be seen in the sky after raining.\n"
 };
 
 //
