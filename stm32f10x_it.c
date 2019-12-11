@@ -241,13 +241,6 @@ void EXTI0_IRQHandler(void)
 *******************************************************************************/
 void EXTI1_IRQHandler(void)
 {
-  if(EXTI_GetITStatus(EXTI_Line1) != RESET)
-  {
-    // do stm
-    UART_Send("HINT!\n", 7);
-    resetButtonClicked = 1;
-    EXTI_ClearITPendingBit(EXTI_Line1);
-  }
 }
 
 /*******************************************************************************

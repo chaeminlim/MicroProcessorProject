@@ -257,79 +257,84 @@ void LED_Configuration()
 void Switch_Configuration()
 {
   GPIO_Setting_Input(GPIO_Pin_0, GPIOB);
-  GPIO_Setting_Input(GPIO_Pin_1, GPIOB);
   EXTI_Interrupt_Configuration(EXTI0_IRQChannel, EXTI_Line0, GPIO_PortSourceGPIOB, GPIO_PinSource0);
-  EXTI_Interrupt_Configuration(EXTI1_IRQChannel, EXTI_Line1, GPIO_PortSourceGPIOB, GPIO_PinSource1);  
 }
+
 void twenty_question_quiz() 
-{ // 필요한 것: switch, LCD, array FND, LED
+{ // 필요한 것: switch, LCD, array FND, LED // hint: 제한시간 지나면 그냥 나옴 / answer: 0번 스위치 / 1번 스위치: 지우기
 
-	// LCD - 인사와 시작
-	UART_Send(welcomeStr, sizeof(welcomeStr));
-	DelayFND(0, 0, 2);
+   // LCD - 인사와 시작
+   UART_Send(welcomeStr, sizeof(welcomeStr));
+   DelayFND(0, 0, 2);
 
-	UART_Send(startStr, sizeof(startStr));
-	DelayFND(0, 0, 2);
+   UART_Send(startStr, sizeof(startStr));
+   DelayFND(0, 0, 2);
 
-	int tries = 0;
+   int tries = 0;
         
-        		// LCD - 처음에 힌트 한 번 줌 (array FND - 제한 시간 10초)
-        UART_Send(hints[tries], sizeof(hints[tries]));
-        tries += 1;
-        // array FND
-        DelayFND(0, 1, 0);
 
-	while (1) 
-	{
 
-		// 20개 힌트 다 줬으면 실패함을 알려줌(LCD)
-		if (tries >= HINTS_SIZE)
+   while (1) 
+   {
+
+      // 20개 힌트 다 줬으면 실패함을 알려줌(LCD)
+      if (tries >= HINTS_SIZE)
                 {
-			UART_Send(failStr, sizeof(failStr));
-			break;
+         UART_Send(failStr, sizeof(failStr));
+         break;
                 }                
 
+      // LCD - 처음에 힌트 한 번 줌 (array FND - 제한 시간 10초)
+      UART_Send(hints[tries], sizeof(hints[tries]));
+      tries += 1;
+      // array FND
+      DelayFND(0, 1, 0);
     
-		// switch - (답 / 힌트) - LCD / 힌트 20개 다 줬으면 힌트 버튼 눌러도 효과 없도록 함
-		UART_Send(switchStr, sizeof(switchStr));
+      // switch - (답 / 힌트) - LCD / 힌트 20개 다 줬으면 힌트 버튼 눌러도 효과 없도록 함
+      UART_Send(switchStr, sizeof(switchStr));
                 
                 DelayFND(0, 0, 5);
-		// 답을 입력할 경우 - 성공시 축하(LCD, LED)하고 break / 실패시 continue
-		if (answerButtonClicked) 
-		{
+      // 답을 입력할 경우 - 성공시 축하(LCD, LED)하고 break / 실패시 continue
+      if (answerButtonClicked) 
+      {
                   answerButtonClicked = 0;
-			// array FND - 제한 시간 표시
+         // array FND - 제한 시간 표시
                           // UART - 답 입력 받음
               UART_Send(typeAnsStr, sizeof(typeAnsStr)); 
               Uart_GetData();
 
-			if (StringCompare(returnStringBuffer, answerStr, sizeof(answerStr)))
-			{
-				// LCD, LED - 축하
-				UART_Send(gratStr, sizeof(gratStr));
+         if (StringCompare(returnStringBuffer, answerStr, sizeof(answerStr)))
+         {
+            // LCD, LED - 축하
+            UART_Send(gratStr, sizeof(gratStr));
                                 break;
-			}
-			else continue;
-		} // end if
-		// LCD - 힌트를 보는 경우 (array FND - 제한 시간 10초)
-		else 
-		{
-			// array FND - 제한 시간 10초
-			UART_Send(hints[tries], sizeof(hints[tries]));
+         }
+         else {
+            UART_Send("Try again!", sizeof("Try again!"));
+            continue;
+         } // end else
+      } // end if
+      // LCD - 힌트를 보는 경우 (array FND - 제한 시간 10초)
+      else 
+      {
+         // array FND - 제한 시간 10초
+         UART_Send(hints[tries], sizeof(hints[tries]));
                         tries += 1;
                         DelayFND(0, 1, 0);
                         
-		} //  end else
+      } //  end else
 
-	} // end while
+   } // end while
 
-	// LCD - 또 도전하시려면 리셋버튼을 눌러주세요
-	UART_Send(resetStr, sizeof(resetStr));
-	DelayFND(0, 0, 5);
-	if(resetButtonClicked)
-		return;
-	return;
+   // LCD - 또 도전하시려면 리셋버튼을 눌러주세요
+   UART_Send(resetStr, sizeof(resetStr));
+   DelayFND(0, 0, 5);
+   if(resetButtonClicked)
+      return;
+   return;
 } // end twenty_question_quiz()
+
+
 void Uart_GetData()
 {
 	while (1)
@@ -349,14 +354,17 @@ void Uart_GetData()
 		}
 	}
 }
+
 int StringCompare(char* str1, char* str2, int size)
 {
 	for(int i = 0; i < size; i++)
 	{
-		if (str1[i] != str2[i]) return -1;
+		if (str1[i] != str2[i]) 
+                  return 0;
 	}
 	return 1;
 }
+
 int keypaduse() 
 { // keypad 입력완료버튼 누를때까지 반복 하며 사용자의 업다운 퀴즈 답안값을 반환하는 함수.
 
